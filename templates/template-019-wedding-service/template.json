@@ -1,0 +1,46 @@
+﻿{
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "author": "Omniscient Gallery",
+  "updated": "2026-05-25",
+  "name": "wedding-service",
+  "framework": "Bootstrap 5",
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "colors": {
+    "accent": "#ffffff",
+    "primary": "#c9a96e",
+    "secondary": "#faf3e0",
+    "dark": "#6b5b4a"
+  },
+  "created": "2026-05-25",
+  "name_zh": "婚禮服務",
+  "description_zh": "專業婚禮服務網站模板",
+  "version": "1.0.0",
+  "description": "Professional wedding-service website template",
+  "id": "T019",
+  "features": [
+    "Responsive Design",
+    "Schema Markup",
+    "Booking",
+    "FAQ Accordion",
+    "Mobile Menu"
+  ],
+  "category": "events",
+  "fonts": [
+    "Great Vibes",
+    "Cormorant"
+  ],
+  "hasZip": false
+}

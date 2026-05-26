@@ -1,0 +1,26 @@
+﻿{
+    "id": "T002",
+    "name": "Modern Restaurant",
+    "nameTW": "御膳坊",
+    "category": "餐廳美食",
+    "description": "溫暖食慾風格的餐廳網站模板，適合中式料理、西式餐廳、美食餐廳等餐飲業使用。",
+    "version": "1.0.0",
+    "author": "Omniscient Template Gallery",
+    "tags": ["restaurant", "food", "餐廳", "美食", "料理", "中式", "餐飲"],
+    "colors": {
+        "primary": "#c0392b",
+        "secondary": "#2c3e50",
+        "accent": "#d4a843",
+        "text": "#333333",
+        "background": "#1a1a1a"
+    },
+    "fonts": {
+        "heading": "Merriweather",
+        "body": "Noto Sans TC"
+    },
+    "features": ["Bootstrap 5", "響應式設計", "SEO優化", "視差效果", "表單驗證"],
+    "pages": ["index.html", "about.html", "services.html", "service-detail.html", "portfolio.html", "reviews.html", "faq.html", "booking.html", "process.html", "blog.html", "blog-detail.html", "contact.html"],
+    "hasZip": false,
+    "demoUrl": "#",
+    "lastUpdated": "2025-05-25"
+}

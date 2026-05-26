@@ -1,0 +1,15 @@
+﻿{
+    "id": "T008",
+    "name": "Clinic Wellness",
+    "nameTW": "康禾診所",
+    "category": "診所健康",
+    "description": "乾淨、專業風格的診所網站模板，適合醫療院所、健康管理中心、預防醫學中心使用。",
+    "version": "1.0.0",
+    "author": "Omniscient Template Gallery",
+    "tags": ["clinic", "health", "診所", "醫療", "健康"],
+    "colors": { "primary": "#2980b9", "secondary": "#ecf0f1" },
+    "fonts": { "heading": "Inter", "body": "Noto Sans TC" },
+    "features": ["Bootstrap 5", "響應式設計", "SEO優化"],
+    "pages": ["index.html", "about.html", "services.html", "service-detail.html", "portfolio.html", "reviews.html", "faq.html", "booking.html", "process.html", "blog.html", "blog-detail.html", "contact.html"],
+    "hasZip": false
+}

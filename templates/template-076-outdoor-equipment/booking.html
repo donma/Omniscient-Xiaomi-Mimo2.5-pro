@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>預約服務｜山岳裝備</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html"><span>▲</span> 山岳裝備</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navM"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navM">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">關於</a></li>
+<li class="nav-item"><a class="nav-link" href="services.html">服務</a></li>
+<li class="nav-item"><a class="nav-link" href="portfolio.html">裝備圖鑑</a></li>
+<li class="nav-item"><a class="nav-link" href="reviews.html">評價</a></li>
+<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">聯絡</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<main>
+<section class="page-hero">
+<div class="container">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb mb-3">
+<li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+<li class="breadcrumb-item active">預約服務</li>
+</ol>
+<h1>預約服務</h1>
+</div>
+</section>
+
+<section class="py-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="booking-form">
+<h3 style="font-weight:900;letter-spacing:2px;margin-bottom:2rem;font-family:'Barlow',sans-serif">線上預約</h3>
+<form id="bookingForm">
+<div class="row g-3">
+<div class="col-md-6">
+<label class="form-label fw-bold">姓名 *</label>
+<input type="text" class="form-control" required>
+</div>
+<div class="col-md-6">
+<label class="form-label fw-bold">電話 *</label>
+<input type="tel" class="form-control" required>
+</div>
+<div class="col-md-6">
+<label class="form-label fw-bold">電子郵件</label>
+<input type="email" class="form-control">
+</div>
+<div class="col-md-6">
+<label class="form-label fw-bold">預約服務 *</label>
+<select class="form-select" required>
+<option value="">請選擇服務</option>
+<option>裝備選購諮詢</option>
+<option>裝備維修保養</option>
+<option>戶外課程報名</option>
+<option>團體租借洽詢</option>
+</select>
+</div>
+<div class="col-md-6">
+<label class="form-label fw-bold">預約日期 *</label>
+<input type="date" class="form-control" required>
+</div>
+<div class="col-md-6">
+<label class="form-label fw-bold">預約時段 *</label>
+<select class="form-select" required>
+<option value="">請選擇時段</option>
+<option>11:00 - 12:00</option>
+<option>13:00 - 14:00</option>
+<option>14:00 - 15:00</option>
+<option>15:00 - 16:00</option>
+<option>16:00 - 17:00</option>
+<option>19:00 - 20:00</option>
+</select>
+</div>
+<div class="col-12">
+<label class="form-label fw-bold">備註</label>
+<textarea class="form-control" rows="4" placeholder="請描述你的需求..."></textarea>
+</div>
+<div class="col-12">
+<button type="submit" class="btn btn-submit w-100 py-3">送出預約</button>
+</div>
+</div>
+</form>
+<div id="successMsg" style="display:none" class="text-center py-5">
+<i class="bi bi-check-circle" style="font-size:4rem;color:var(--green)"></i>
+<h4 class="mt-3 fw-bold" style="font-family:'Barlow',sans-serif">感謝您的詢問</h4>
+<p class="text-muted">我們已收到您的預約，將於24小時內與您聯繫確認。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer-outdoor">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-4">
+<h6><i class="bi bi-mountain me-2"></i>山岳裝備</h6>
+<p>專業戶外裝備選品店。</p>
+</div>
+<div class="col-lg-2">
+<h6>快速連結</h6>
+<ul class="list-unstyled">
+<li class="mb-2"><a href="index.html">首頁</a></li>
+<li class="mb-2"><a href="about.html">關於</a></li>
+<li class="mb-2"><a href="services.html">服務</a></li>
+<li class="mb-2"><a href="contact.html">聯絡</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h6>服務項目</h6>
+<ul class="list-unstyled">
+<li class="mb-2"><a href="service-detail.html">裝備選購諮詢</a></li>
+<li class="mb-2"><a href="service-detail.html">裝備維修保養</a></li>
+<li class="mb-2"><a href="service-detail.html">戶外課程</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h6>營業時間</h6>
+<p class="mb-1">週一至週五 11:00 - 21:00</p>
+<p class="mb-1">週六日 10:00 - 22:00</p>
+<p class="mt-3"><i class="bi bi-telephone me-2"></i>02-2345-6789</p>
+</div>
+</div>
+<hr style="border-color:rgba(255,255,255,.08);margin:2rem 0">
+<div class="text-center" style="color:rgba(255,255,255,.4);font-size:.8rem">&copy; 2026 山岳裝備 All Rights Reserved.</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+e.preventDefault();
+this.style.display='none';
+document.getElementById('successMsg').style.display='block';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "templateId": "T010",
+    "tags": {
+        "industry": ["product", "brand", "茶葉", "食品", "在地品牌"],
+        "style": ["commercial", "product-focused", "clean", "商業"],
+        "features": ["responsive", "seo", "product-grid"],
+        "layout": ["full-hero", "product-grid", "dark-nav"],
+        "colors": ["dark", "gray", "gold"]
+    },
+    "hasZip": false
+}

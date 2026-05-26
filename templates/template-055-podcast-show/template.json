@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Space Grotesk",
+    "Roboto"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "episodes.html",
+    "episode-detail.html",
+    "categories.html",
+    "hosts.html",
+    "blog.html",
+    "newsletter.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "guest.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Podcast Show",
+  "hasZip": false,
+  "id": "T055",
+  "category": "Media",
+  "colors": {
+    "accent": "#1db954",
+    "light": "#1a1a1a",
+    "dark": "#0a0a0a",
+    "primary": "#1db954",
+    "secondary": "#191414"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Dark audio-themed podcast website"
+}

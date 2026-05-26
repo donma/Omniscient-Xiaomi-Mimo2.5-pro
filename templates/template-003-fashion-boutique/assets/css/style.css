@@ -1,0 +1,508 @@
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --gold: #C9A96E;
+    --gray-light: #F5F5F5;
+    --gray: #999999;
+    --gray-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.bg-light {
+    background-color: var(--gray-light) !important;
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: var(--black);
+}
+
+.nav-link {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.nav-link:hover {
+    color: var(--gold);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Buttons */
+.btn-dark {
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-dark:hover {
+    background: var(--gray-dark);
+    color: var(--white);
+}
+
+.btn-light {
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-light:hover {
+    background: var(--gray-light);
+    color: var(--black);
+}
+
+/* Hero Section */
+.hero-section {padding-top:80px;
+    min-height: 100vh;
+}
+
+.hero-image {padding-top:80px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image img {padding-top:80px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {padding-top:80px;
+    padding: 100px;
+}
+
+.hero-season {padding-top:80px;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--gray);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hero-title {padding-top:80px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.hero-desc {padding-top:80px;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+/* Section Headers */
+.section-tag {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Product Cards */
+.product-card {
+    margin-bottom: 30px;
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.product-card:hover .product-overlay {
+    transform: translateY(0);
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+/* Lookbook */
+.lookbook-full {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.lookbook-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lookbook-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+}
+
+.lookbook-tag {
+    font-size: 12px;
+    letter-spacing: 5px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.lookbook-overlay h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Brand Story */
+.brand-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.brand-story .lead {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.brand-story p {
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Instagram */
+.ig-item {
+    overflow: hidden;
+}
+
+.ig-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ig-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 60px 0 30px;
+}
+
+.footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.footer h5 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.footer-contact i {
+    color: var(--gold);
+    margin-top: 3px;
+}
+
+.footer hr {
+    border-color: rgba(255,255,255,0.1);
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: var(--gray);
+}
+
+/* Page Header */
+.page-header {
+    padding: 150px 0 50px;
+    text-align: center;
+    background: var(--gray-light);
+}
+
+.page-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.breadcrumb {
+    justify-content: center;
+}
+
+.breadcrumb-item a {
+    color: var(--gold);
+}
+
+.breadcrumb-item.active {
+    color: var(--gray);
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .hero-section {padding-top:80px;
+        min-height: auto;
+    }
+    
+    .hero-image {padding-top:80px;
+        height: 50vh;
+    }
+    
+    .hero-content {padding-top:80px;
+        padding: 50px 30px;
+    }
+    
+    .hero-title {padding-top:80px;
+        font-size: 48px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .lookbook-full {
+        height: 50vh;
+    }
+    
+    .lookbook-overlay h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {padding-top:80px;
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .product-image img {
+        height: 250px;
+    }
+    
+    .brand-image img {
+        height: 300px;
+    }
+    
+    .ig-item img {
+        height: 150px;
+    }
+    
+    .page-header h1 {
+        font-size: 36px;
+    }
+}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .navbar {
+  background: var(--white) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .navbar-brand { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-link { color: #2d2d2d !important; }
+body:not(.page-home) .navbar .navbar-toggler,
+body:not(.page-home) .navbar .nav-toggle { color: #2d2d2d !important; }

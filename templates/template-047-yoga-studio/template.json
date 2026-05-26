@@ -1,0 +1,20 @@
+﻿{
+  "id": "T047",
+  "name": "Yoga Studio",
+  "category": "Health & Wellness",
+  "description": "Serene yoga studio website with zen calm design, class scheduling, instructor profiles, and wellness blog.",
+  "version": "1.0.0",
+  "author": "Omniscient Gallery",
+  "createdAt": "2026-05-25",
+  "hasZip": false,
+  "colors": {
+    "primary": "#8baa7e",
+    "secondary": "#f7f3ee",
+    "accent": "#d4a574",
+    "dark": "#3d4f3a",
+    "light": "#faf9f6"
+  },
+  "fonts": ["Cormorant Garamond", "Noto Sans TC"],
+  "pages": ["index.html","about.html","classes.html","instructors.html","schedule.html","gallery.html","blog.html","blog-post.html","testimonials.html","faq.html","contact.html","trial.html"],
+  "features": ["Class scheduling","Instructor profiles","Wellness blog","Gallery","Trial class booking","FAQ accordion","Contact form"]
+}

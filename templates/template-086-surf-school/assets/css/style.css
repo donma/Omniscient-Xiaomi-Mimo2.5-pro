@@ -1,0 +1,51 @@
+/* 浪人衝浪 - 海灘活力風 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+:root{--surf-blue:#00bcd4;--surf-orange:#ff9800;--surf-bg:#e0f7fa;--surf-text:#333;--surf-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins','Noto Sans TC',sans-serif;color:var(--surf-text);background:var(--surf-bg)}
+h1,h2,h3,h4,h5{font-weight:600}
+.nav-surf{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 0;transition:.3s}
+.nav-surf.scrolled{background:rgba(224,247,250,.95);backdrop-filter:blur(10px)}
+.nav-surf-logo{color:#fff;text-decoration:none;font-weight:700;font-size:1.3rem}
+.nav-surf-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-surf-menu a{color:#fff;text-decoration:none;font-size:.9rem;font-weight:500;opacity:.8;transition:.2s}
+.nav-surf-menu a:hover,.nav-surf-menu a.active{opacity:1}
+.nav-surf-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-surf-toggle{display:block;margin-left:auto}.nav-surf-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surf-blue);flex-direction:column;padding:1rem;gap:1rem}.nav-surf.scrolled .nav-surf-logo,.nav-surf.scrolled .nav-surf-menu a{color:var(--surf-text)}.nav-surf-menu.open{display:flex}}
+body.subpage .nav-surf{background:rgba(224,247,250,.95);backdrop-filter:blur(10px)}
+body.subpage .nav-surf-logo,body.subpage .nav-surf-menu a,body.subpage .nav-surf-toggle{color:var(--surf-text)}
+body.subpage .nav-surf-menu{background:#fff}
+.hero-surf{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;text-align:center}
+.hero-surf-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-surf-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,188,212,.5),rgba(0,188,212,.7))}
+.hero-surf-content{position:relative;color:#fff;max-width:600px;margin:0 auto;padding:0 2rem}
+.hero-surf h1{font-size:3.5rem;font-weight:700;line-height:1.2;margin-bottom:1.5rem}
+.hero-surf h1 span{color:var(--surf-orange)}
+.hero-surf-content p{font-size:1rem;opacity:.9;margin-bottom:2rem}
+.btn-surf{display:inline-block;background:var(--surf-orange);color:#fff;padding:.8rem 2.5rem;border-radius:25px;text-decoration:none;font-weight:600;transition:.3s}
+.btn-surf:hover{background:#f57c00;color:#fff}
+.sec-surf-lessons{padding:5rem 0}
+.surf-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.surf-lesson{padding:2rem;background:#fff;border-radius:16px;text-align:center;height:100%}
+.surf-lesson.featured{border:2px solid var(--surf-orange)}
+.surf-lesson h5{font-size:1.2rem;margin-bottom:.5rem}
+.surf-lesson p{color:var(--surf-blue);font-weight:600;font-size:1.1rem;margin-bottom:1rem}
+.surf-lesson ul{list-style:none;padding:0;text-align:left}
+.surf-lesson ul li{padding:.4rem 0;font-size:.9rem;color:var(--surf-muted)}
+.surf-lesson ul li::before{content:'✓';color:var(--surf-blue);margin-right:.5rem}
+.sec-surf-spots{padding:5rem 0;background:#fff}
+.surf-spot{overflow:hidden;border-radius:16px}
+.surf-spot img{width:100%;height:250px;object-fit:cover}
+.surf-spot h5{font-size:1.1rem;margin:1rem 0 .3rem}
+.surf-spot p{font-size:.85rem;color:var(--surf-muted)}
+.sec-surf-cta{padding:5rem 0;background:var(--surf-blue);color:#fff;text-align:center;border-radius:16px;margin:2rem}
+.sec-surf-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-surf-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-surf{padding:2rem 0;background:var(--surf-blue);color:rgba(255,255,255,.6)}
+.ft-surf h5{color:#fff}
+.ft-surf hr{border-color:rgba(255,255,255,.2)}
+.page-surf-hero{padding:8rem 0 3rem;text-align:center;background:linear-gradient(180deg,rgba(0,188,212,.18),rgba(255,255,255,0))}
+.page-surf-hero p{max-width:640px;margin:1rem auto 0;color:var(--surf-muted);line-height:1.8}
+.surf-detail{padding:1.5rem;background:#fff;border-radius:16px;height:100%}
+.surf-detail h5{font-size:1.1rem;margin-bottom:.75rem}
+.surf-detail p{margin:0;color:var(--surf-muted);line-height:1.7}

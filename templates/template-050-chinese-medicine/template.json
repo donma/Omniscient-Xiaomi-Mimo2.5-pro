@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Noto Serif TC",
+    "Noto Sans TC"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "doctors.html",
+    "philosophy.html",
+    "testimonials.html",
+    "health-tips.html",
+    "blog.html",
+    "faq.html",
+    "contact.html",
+    "appointment.html",
+    "herbs.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Chinese Medicine",
+  "hasZip": false,
+  "id": "T050",
+  "category": "Health",
+  "colors": {
+    "accent": "#8b6914",
+    "light": "#faf8f5",
+    "dark": "#1a3a0a",
+    "primary": "#2d5016",
+    "secondary": "#f5f0e8"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Traditional Chinese medicine with Eastern earth tones"
+}

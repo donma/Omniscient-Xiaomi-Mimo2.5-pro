@@ -1,0 +1,44 @@
+/* T012 Pet Grooming - Responsive */
+
+@media (max-width: 991.98px) {
+  .nav-pet {
+    max-width: 95%;
+    padding: 0.5rem 1rem;
+  }
+  .nav-pet .navbar-collapse {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: var(--shadow-md);
+  }
+  .hero-pet { padding: 7rem 0 3rem; }
+  .hero-pet h1 { font-size: 2.2rem; }
+  .hero-pet .hero-cards { grid-template-columns: 1fr; margin-top: 2rem; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-item.big { grid-column: span 2; grid-row: span 1; }
+  .section-pet, .section-pet-warm, .section-pet-pink { padding: 3.5rem 0; }
+}
+
+@media (max-width: 767.98px) {
+  .hero-pet h1 { font-size: 1.8rem; }
+  .hero-pet .hero-image { max-height: 280px; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item.big { grid-column: span 1; }
+  .section-title-pet h2 { font-size: 1.6rem; }
+  .cta-pet { padding: 2.5rem 1.5rem; margin: 0; border-radius: var(--radius-lg); }
+  .cta-pet h2 { font-size: 1.5rem; }
+  .page-header-pet { padding: 6rem 0 2rem; }
+  .page-header-pet h1 { font-size: 1.8rem; }
+  .footer-pet { text-align: center; }
+  .footer-pet .footer-contact li { justify-content: center; }
+  .footer-pet .footer-social { justify-content: center; }
+}
+
+@media (max-width: 575.98px) {
+  .hero-pet { padding: 6rem 0 2rem; }
+  .hero-pet h1 { font-size: 1.6rem; }
+  .btn-pet, .btn-pet-outline { width: 100%; justify-content: center; }
+  .section-pet, .section-pet-warm { padding: 2.5rem 0; }
+  .card-pet { padding: 1.5rem; }
+}

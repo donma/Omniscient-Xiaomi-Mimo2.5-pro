@@ -1,0 +1,82 @@
+/* 禪意料理 - 日式禪意捲軸風 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+:root{--jp-black:#1a1a1a;--jp-cream:#f5f0e8;--jp-red:#8b0000;--jp-gold:#c9a96e;--jp-text:#2c2c2c;--jp-muted:#888;--jp-border:#d4c5a9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--jp-text);background:var(--jp-cream);line-height:2}
+h1,h2,h3,h4,h5{font-family:'Noto Serif TC',serif;font-weight:500}
+
+/* NAV */
+.nav-jp{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 0;transition:.3s}
+.nav-jp.scrolled{background:rgba(245,240,232,.95);backdrop-filter:blur(10px)}
+.nav-jp-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:between}
+.nav-jp-logo{font-family:'Noto Serif TC',serif;font-size:1.8rem;color:var(--jp-black);text-decoration:none;font-weight:700;letter-spacing:.3em}
+.nav-jp-menu{list-style:none;display:flex;gap:2.5rem;margin:0;padding:0;margin-left:auto}
+.nav-jp-menu a{color:var(--jp-black);text-decoration:none;font-size:.85rem;letter-spacing:.15em;transition:.2s;opacity:.6}
+.nav-jp-menu a:hover{opacity:1}
+.nav-jp-menu a.active{opacity:1}
+.nav-jp-toggle{display:none;background:none;border:none;cursor:pointer;padding:.5rem}
+.nav-jp-toggle span{display:block;width:24px;height:2px;background:var(--jp-black);margin:5px 0;transition:.3s}
+@media(max-width:991px){.nav-jp-toggle{display:block;margin-left:auto}.nav-jp-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--jp-cream);flex-direction:column;padding:2rem 2rem;gap:1.5rem}.nav-jp.open .nav-jp-menu{display:flex}}
+
+/* HERO */
+.hero-jp{position:relative;height:100vh;min-height:600px;display:flex;align-items:center}
+.hero-jp-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-jp-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,26,26,.7),rgba(26,26,26,.4))}
+.hero-jp-content{position:relative;color:#fff;display:flex;align-items:center;gap:3rem;padding:0 4rem}
+.hero-jp-vertical{writing-mode:vertical-rl;font-family:'Noto Serif TC',serif;font-size:1.5rem;letter-spacing:.5em;opacity:.5}
+.hero-jp-en{font-size:.8rem;letter-spacing:.3em;opacity:.6;margin-bottom:1rem}
+.hero-jp h1{font-family:'Noto Serif TC',serif;font-size:4rem;font-weight:400;letter-spacing:.2em;margin-bottom:1.5rem}
+.hero-jp-sub{font-size:1rem;opacity:.7;line-height:2;margin-bottom:2rem}
+.btn-jp{display:inline-block;border:1px solid rgba(255,255,255,.4);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.85rem;letter-spacing:.2em;transition:.3s}
+.btn-jp:hover{background:rgba(255,255,255,.1);color:#fff}
+
+/* SECTION LABELS */
+.jp-section-label{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--jp-red);margin-bottom:.5rem}
+.jp-section-label.center{text-align:center}
+.jp-heading{font-size:2.5rem;font-weight:400;margin-bottom:2rem;letter-spacing:.1em}
+.jp-heading.center{text-align:center}
+.jp-text{font-size:1rem;color:var(--jp-muted);line-height:2}
+.jp-text.center{text-align:center}
+.jp-img{width:100%;height:400px;object-fit:cover}
+
+/* PHILOSOPHY */
+.sec-jp-philosophy{padding:8rem 0}
+
+/* MENU */
+.sec-jp-menu{padding:5rem 0;background:#fff}
+.jp-menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
+.jp-menu-item{text-align:center;padding:2rem;border:1px solid var(--jp-border)}
+.jp-menu-num{display:block;font-family:'Noto Serif TC',serif;font-size:1.5rem;color:var(--jp-red);margin-bottom:1rem}
+.jp-menu-item h5{font-size:1.1rem;margin-bottom:.5rem}
+.jp-menu-item p{font-size:.85rem;color:var(--jp-muted)}
+.jp-menu-note{text-align:center;font-size:.9rem;color:var(--jp-red);margin-top:1rem}
+@media(max-width:768px){.jp-menu-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* SPACE */
+.sec-jp-space{padding:0}
+.jp-space-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:300px 300px;gap:.5rem}
+.jp-space-item{background-size:cover;background-position:center}
+.jp-space-item.tall{grid-row:1/3}
+@media(max-width:768px){.jp-space-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}.jp-space-item.tall{grid-row:auto}}
+
+/* CTA */
+.sec-jp-cta{padding:6rem 0;background:var(--jp-black);color:#fff}
+.sec-jp-cta .jp-heading{color:#fff}
+.sec-jp-cta .jp-text{color:rgba(255,255,255,.5)}
+
+/* FOOTER */
+.ft-jp{padding:3rem 0 1.5rem;background:var(--jp-black);color:rgba(255,255,255,.4)}
+.ft-jp h5,.ft-jp h6{color:#fff;margin-bottom:1rem;font-size:.9rem;letter-spacing:.1em}
+.ft-jp p{font-size:.85rem}
+.ft-jp hr{border-color:rgba(255,255,255,.1)}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .nav-jp {
+  background: rgba(245,240,232,.95) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .nav-jp-logo { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-jp-menu a { color: #2d2d2d !important; }
+body:not(.page-home) .nav-jp .navbar-toggler,
+body:not(.page-home) .nav-jp .nav-toggle { color: #2d2d2d !important; }

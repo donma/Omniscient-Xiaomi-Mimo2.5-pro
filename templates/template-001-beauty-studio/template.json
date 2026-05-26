@@ -1,0 +1,48 @@
+﻿{
+    "id": "T001",
+    "name": "Beauty Studio",
+    "nameTW": "璀璨美學",
+    "category": "美容美學",
+    "description": "優雅女性風格的美容院網站模板，適合美容護膚、美甲美睫等服務業使用。",
+    "version": "1.0.0",
+    "author": "Omniscient Template Gallery",
+    "tags": ["beauty", "salon", "美容", "美甲", "美睫", "spa", "護膚", "女性"],
+    "colors": {
+        "primary": "#d4a574",
+        "secondary": "#f5e6d3",
+        "accent": "#f8c8dc",
+        "text": "#333333",
+        "background": "#ffffff"
+    },
+    "fonts": {
+        "heading": "Playfair Display",
+        "body": "Noto Sans TC"
+    },
+    "features": [
+        "Bootstrap 5",
+        "響應式設計",
+        "SEO優化",
+        "Schema標記",
+        "表單驗證",
+        "圖片延遲載入",
+        "平滑滾動",
+        "返回頂部按鈕"
+    ],
+    "pages": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "service-detail.html",
+        "portfolio.html",
+        "reviews.html",
+        "faq.html",
+        "booking.html",
+        "process.html",
+        "blog.html",
+        "blog-detail.html",
+        "contact.html"
+    ],
+    "hasZip": false,
+    "demoUrl": "#",
+    "lastUpdated": "2025-05-25"
+}

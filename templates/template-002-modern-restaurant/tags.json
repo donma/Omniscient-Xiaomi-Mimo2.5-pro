@@ -1,0 +1,11 @@
+{
+    "templateId": "T002",
+    "tags": {
+        "industry": ["restaurant", "food", "餐廳", "美食", "料理", "餐飲"],
+        "style": ["warm", "appetizing", "bold", "溫暖", "食慾"],
+        "features": ["responsive", "seo", "parallax", "forms"],
+        "layout": ["left-nav", "full-hero", "grid", "dark-theme"],
+        "colors": ["red", "dark", "gold", "warm"]
+    },
+    "hasZip": false
+}

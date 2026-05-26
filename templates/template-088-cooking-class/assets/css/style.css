@@ -1,0 +1,49 @@
+/* 食光烹飪 - 溫暖食物風 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+:root{--cook-brown:#d4a373;--cook-cream:#fdf6ec;--cook-dark:#2a1f14;--cook-text:#333;--cook-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--cook-text);background:var(--cook-cream)}
+h1,h2,h3,h4,h5{font-family:'Playfair Display','Noto Sans TC',serif}
+.nav-cook{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 0;transition:.3s}
+.nav-cook.scrolled{background:rgba(253,246,236,.95);backdrop-filter:blur(10px)}
+.nav-cook-logo{color:#fff;text-decoration:none;font-weight:600;font-size:1.3rem}
+.nav-cook-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-cook-menu a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.8;transition:.2s}
+.nav-cook-menu a:hover,.nav-cook-menu a.active{opacity:1}
+.nav-cook-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-cook-toggle{display:block;margin-left:auto}.nav-cook-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cook-cream);flex-direction:column;padding:1rem;gap:1rem}.nav-cook.scrolled .nav-cook-logo,.nav-cook.scrolled .nav-cook-menu a{color:var(--cook-text)}.nav-cook.open .nav-cook-menu{display:flex}}
+.hero-cook{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;text-align:center}
+.hero-cook-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-cook-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,31,20,.5),rgba(212,163,115,.6))}
+.hero-cook-content{position:relative;color:#fff;max-width:600px;margin:0 auto;padding:0 2rem}
+.hero-cook h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-cook h1 span{font-style:italic;color:var(--cook-brown)}
+.hero-cook-content p{font-size:1rem;opacity:.9;margin-bottom:2rem}
+.btn-cook{display:inline-block;background:var(--cook-brown);color:#fff;padding:.8rem 2.5rem;border-radius:25px;text-decoration:none;font-weight:500;transition:.3s}
+.btn-cook:hover{background:#c49463;color:#fff}
+.sec-cook-classes{padding:5rem 0}
+.cook-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.cook-class{overflow:hidden;border-radius:16px;background:#fff}
+.cook-class img{width:100%;height:200px;object-fit:cover}
+.cook-class h5{font-size:1.1rem;padding:1rem 1rem 0}
+.cook-class p{padding:0 1rem 1rem;color:var(--cook-brown);font-weight:500}
+.sec-cook-chef{padding:5rem 0;background:#fff}
+.cook-chef-img{width:100%;height:400px;object-fit:cover;border-radius:16px}
+.sec-cook-chef p{font-size:.95rem;color:var(--cook-muted);line-height:2;margin-bottom:1rem}
+.sec-cook-cta{padding:5rem 0;background:var(--cook-brown);color:#fff;text-align:center;border-radius:16px;margin:2rem}
+.sec-cook-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-cook-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-cook{padding:2rem 0;background:var(--cook-dark);color:rgba(255,255,255,.5)}
+.ft-cook h5{color:#fff}
+.ft-cook hr{border-color:rgba(255,255,255,.1)}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .nav-cook {
+  background: rgba(253,246,236,.95) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .nav-cook-logo { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-cook-menu a { color: #2d2d2d !important; }
+body:not(.page-home) .nav-cook .navbar-toggler,
+body:not(.page-home) .nav-cook .nav-toggle { color: #2d2d2d !important; }

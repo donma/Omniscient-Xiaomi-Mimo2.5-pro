@@ -1,0 +1,41 @@
+/* 綠色森林 - 自然園藝風 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+:root{--gn-green:#2d5016;--gn-light:#e8f5e9;--gn-cream:#f5f0e8;--gn-text:#2c3a2c;--gn-muted:#6b7b6b;--gn-border:#c8e6c9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--gn-text);background:#fff}
+h1,h2,h3,h4,h5{font-family:'Noto Serif TC',serif}
+.nav-gn{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--gn-border);padding:.8rem 0}
+.nav-gn-logo{color:var(--gn-green);text-decoration:none;font-weight:600;font-size:1.3rem}
+.nav-gn-logo i{margin-right:.5rem}
+.nav-gn-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-gn-menu a{color:var(--gn-muted);text-decoration:none;font-size:.9rem;transition:.2s}
+.nav-gn-menu a:hover{color:var(--gn-green)}
+.nav-gn-menu a.active{color:var(--gn-green)}
+.nav-gn-toggle{display:none;background:none;border:none;color:var(--gn-green);font-size:1.5rem}
+@media(max-width:991px){.nav-gn-toggle{display:block;margin-left:auto}.nav-gn-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:1rem;gap:1rem;border-bottom:1px solid var(--gn-border)}.nav-gn-menu.open{display:flex}}
+.hero-gn{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;text-align:center}
+.hero-gn-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-gn-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(45,80,22,.6),rgba(45,80,22,.4))}
+.hero-gn-content{position:relative;color:#fff;max-width:600px;margin:0 auto;padding:0 2rem}
+.hero-gn h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-gn-content p{font-size:1rem;opacity:.8;margin-bottom:2rem}
+.btn-gn{display:inline-block;background:var(--gn-green);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.9rem;transition:.3s}
+.btn-gn:hover{background:#1e4a1a;color:#fff}
+.sec-gn-categories{padding:5rem 0}
+.gn-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.gn-cat{height:300px;background-size:cover;background-position:center;display:flex;align-items:flex-end;border-radius:8px;overflow:hidden;position:relative}
+.gn-cat::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.5))}
+.gn-cat span{position:relative;color:#fff;font-size:1.1rem;padding:1.5rem;z-index:1}
+.sec-gn-care{padding:5rem 0;background:var(--gn-light)}
+.gn-care-card{text-align:center;padding:2rem;background:#fff;border-radius:8px;height:100%}
+.gn-care-card i{font-size:2.5rem;color:var(--gn-green);margin-bottom:1rem}
+.gn-care-card h5{font-size:1.1rem;margin-bottom:.8rem}
+.gn-care-card p{font-size:.85rem;color:var(--gn-muted)}
+.sec-gn-cta{padding:5rem 0;background:var(--gn-green);color:#fff;text-align:center}
+.sec-gn-cta h2{font-size:2rem;margin-bottom:1rem}
+.sec-gn-cta p{opacity:.8;margin-bottom:2rem}
+.ft-gn{padding:3rem 0 1.5rem;background:var(--gn-green);color:rgba(255,255,255,.5)}
+.ft-gn h5,.ft-gn h6{color:#fff;margin-bottom:1rem}
+.ft-gn a{color:rgba(255,255,255,.4);text-decoration:none}
+.ft-gn a:hover{color:#fff}
+.ft-gn hr{border-color:rgba(255,255,255,.1)}

@@ -1,0 +1,11 @@
+{
+    "templateId": "T022",
+    "tags": {
+        "industry": ["tea", "茶飲", "茶葉", "禪意", "東方"],
+        "style": ["zen", "minimalist", "cultural", "東方禪意"],
+        "features": ["responsive", "seo", "tea-collection"],
+        "layout": ["full-hero", "minimal-nav", "zen-style"],
+        "colors": ["green", "rice-white", "golden"]
+    },
+    "hasZip": false
+}

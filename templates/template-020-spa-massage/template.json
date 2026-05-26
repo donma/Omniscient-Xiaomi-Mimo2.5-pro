@@ -1,0 +1,46 @@
+﻿{
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "author": "Omniscient Gallery",
+  "updated": "2026-05-25",
+  "name": "spa-massage",
+  "framework": "Bootstrap 5",
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "colors": {
+    "accent": "#d4c5a9",
+    "primary": "#2d5016",
+    "secondary": "#f5f0e8",
+    "dark": "#8b7355"
+  },
+  "created": "2026-05-25",
+  "name_zh": "SPA按摩",
+  "description_zh": "專業SPA按摩網站模板",
+  "version": "1.0.0",
+  "description": "Professional spa-massage website template",
+  "id": "T020",
+  "features": [
+    "Responsive Design",
+    "Schema Markup",
+    "Booking",
+    "FAQ Accordion",
+    "Mobile Menu"
+  ],
+  "category": "wellness",
+  "fonts": [
+    "Cormorant",
+    "Noto Sans TC"
+  ],
+  "hasZip": false
+}

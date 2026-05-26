@@ -1,0 +1,50 @@
+/* 嵐之湯 - 禪意溫泉風 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+:root{--onsen-green:#2d5016;--onsen-cream:#f5f0e8;--onsen-text:#2c3a2c;--onsen-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--onsen-text);background:var(--onsen-cream)}
+h1,h2,h3,h4,h5{font-family:'Noto Serif TC',serif}
+.nav-onsen{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 0;transition:.3s}
+.nav-onsen.scrolled{background:rgba(245,240,232,.95);backdrop-filter:blur(10px)}
+.nav-onsen-logo{font-family:'Noto Serif TC',serif;font-size:1.8rem;color:#fff;text-decoration:none;font-weight:700}
+.nav-onsen-menu{list-style:none;display:flex;gap:2rem;margin:0;padding:0}
+.nav-onsen-menu a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.7;transition:.2s}
+.nav-onsen-menu a:hover,.nav-onsen-menu a.active{opacity:1}
+.nav-onsen-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-onsen-toggle{display:block;margin-left:auto}.nav-onsen-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--onsen-cream);flex-direction:column;padding:1.5rem;gap:1rem}.nav-onsen.scrolled .nav-onsen-logo,.nav-onsen.scrolled .nav-onsen-menu a{color:var(--onsen-text)}.nav-onsen.open .nav-onsen-menu{display:flex}}
+.hero-onsen{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;text-align:center}
+.hero-onsen-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-onsen-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(45,80,22,.5),rgba(45,80,22,.7))}
+.hero-onsen-content{position:relative;color:#fff;max-width:600px;margin:0 auto;padding:0 2rem}
+.hero-onsen h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-onsen h1 span{font-style:italic}
+.hero-onsen-content p{font-size:1rem;opacity:.8;margin-bottom:2rem}
+.btn-onsen{display:inline-block;background:var(--onsen-green);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.9rem;transition:.3s}
+.btn-onsen:hover{background:#1e4a1a;color:#fff}
+.sec-onsen-types{padding:5rem 0}
+.onsen-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.onsen-type{text-align:center;padding:2rem;background:#fff;border:1px solid rgba(45,80,22,.1);border-radius:4px}
+.onsen-type h5{font-size:1.1rem;margin-bottom:.8rem}
+.onsen-type p{font-size:.85rem;color:var(--onsen-muted)}
+.sec-onsen-rooms{padding:5rem 0;background:#fff}
+.onsen-room{overflow:hidden;border-radius:4px}
+.onsen-room img{width:100%;height:250px;object-fit:cover}
+.onsen-room h5{font-size:1.1rem;margin:1rem 0 .3rem}
+.onsen-room p{color:var(--onsen-green);font-weight:500}
+.sec-onsen-cta{padding:5rem 0;background:var(--onsen-green);color:#fff;text-align:center;border-radius:4px;margin:2rem}
+.sec-onsen-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-onsen-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-onsen{padding:2rem 0;background:var(--onsen-green);color:rgba(255,255,255,.5)}
+.ft-onsen h5{color:#fff}
+.ft-onsen hr{border-color:rgba(255,255,255,.1)}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .nav-onsen {
+  background: rgba(245,240,232,.95) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .nav-onsen-logo { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-onsen-menu a { color: #2d2d2d !important; }
+body:not(.page-home) .nav-onsen .navbar-toggler,
+body:not(.page-home) .nav-onsen .nav-toggle { color: #2d2d2d !important; }

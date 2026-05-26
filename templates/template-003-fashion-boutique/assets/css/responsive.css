@@ -1,0 +1,96 @@
+/* Responsive CSS for Fashion Boutique */
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: var(--white);
+        padding: 20px;
+        margin-top: 15px;
+    }
+    
+    .navbar-nav {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .hero-section {
+        min-height: auto;
+    }
+    
+    .hero-image {
+        height: 50vh;
+    }
+    
+    .hero-content {
+        padding: 50px 30px;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .lookbook-full {
+        height: 50vh;
+    }
+    
+    .lookbook-overlay h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .product-image img {
+        height: 250px;
+    }
+    
+    .brand-image img {
+        height: 300px;
+    }
+    
+    .ig-item img {
+        height: 150px;
+    }
+    
+    .page-header h1 {
+        font-size: 36px;
+    }
+    
+    .lookbook-overlay h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .hero-content {
+        padding: 30px 20px;
+    }
+    
+    .btn-dark,
+    .btn-light {
+        padding: 12px 30px;
+        font-size: 11px;
+    }
+}

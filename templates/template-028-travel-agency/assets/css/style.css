@@ -1,0 +1,60 @@
+/* 探索旅行社 - 探險風格 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+:root{--travel-blue:#00bcd4;--travel-orange:#ff9800;--travel-dark:#1a2e3e;--travel-text:#333;--travel-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins','Noto Sans TC',sans-serif;color:var(--travel-text);background:#fff}
+h1,h2,h3,h4,h5{font-weight:600}
+.nav-travel{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,46,62,.95);backdrop-filter:blur(10px);padding:.8rem 0}
+.nav-travel-logo{color:#fff;text-decoration:none;font-weight:700;font-size:1.2rem}
+.nav-travel-logo i{margin-right:.5rem;color:var(--travel-blue)}
+.nav-travel-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-travel-menu a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:.2s}
+.nav-travel-menu a:hover,.nav-travel-menu a.active{color:#fff}
+.nav-travel-cta{background:var(--travel-orange)!important;color:#fff!important;padding:.5rem 1.5rem;border-radius:20px;font-weight:600}
+.nav-travel-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-travel-toggle{display:block;margin-left:auto}.nav-travel-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--travel-dark);flex-direction:column;padding:1rem;gap:1rem}.nav-travel.open .nav-travel-menu{display:flex}}
+.hero-travel{position:relative;height:100vh;min-height:600px;display:flex;align-items:center}
+.hero-travel-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-travel-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,46,62,.7),rgba(0,188,212,.3))}
+.hero-travel-content{position:relative;color:#fff;padding:0 4rem;max-width:600px}
+.hero-travel-tag{font-size:.8rem;letter-spacing:.3em;opacity:.7;margin-bottom:1.5rem;display:block}
+.hero-travel h1{font-size:3.5rem;line-height:1.2;margin-bottom:1.5rem}
+.hero-travel h1 span{color:var(--travel-blue)}
+.hero-travel-content>p{font-size:1.1rem;opacity:.8;margin-bottom:2rem}
+.hero-travel-btns{display:flex;gap:1rem;margin-bottom:3rem}
+.btn-travel{display:inline-block;background:var(--travel-blue);color:#fff;padding:.8rem 2rem;border-radius:25px;text-decoration:none;font-weight:600;transition:.3s}
+.btn-travel:hover{background:#00a5bb;color:#fff}
+.btn-travel-outline{display:inline-block;border:2px solid rgba(255,255,255,.4);color:#fff;padding:.8rem 2rem;border-radius:25px;text-decoration:none;font-weight:600;transition:.3s}
+.btn-travel-outline:hover{background:rgba(255,255,255,.1);color:#fff}
+.hero-travel-stats{display:flex;gap:3rem}
+.hero-travel-stats span{display:block;font-size:2rem;font-weight:700}
+.hero-travel-stats p{font-size:.85rem;opacity:.7}
+.sec-travel-destinations{padding:5rem 0}
+.travel-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.travel-destination{height:300px;background-size:cover;background-position:center;border-radius:12px;position:relative;overflow:hidden;transition:.3s}
+.travel-destination:hover{transform:scale(1.02)}
+.travel-destination-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(26,46,62,.8));display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;color:#fff}
+.travel-destination-overlay h5{font-size:1.3rem;margin-bottom:.3rem}
+.travel-destination-overlay p{font-size:.9rem;opacity:.8}
+.sec-travel-packages{padding:5rem 0;background:#f8fafb}
+.travel-package{border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.travel-package-img{width:100%;height:200px;object-fit:cover}
+.travel-package-body{padding:1.5rem}
+.travel-package-tag{display:inline-block;background:var(--travel-orange);color:#fff;padding:2px 10px;border-radius:12px;font-size:.75rem;margin-bottom:.5rem}
+.travel-package-body h5{font-size:1.1rem;margin-bottom:.5rem}
+.travel-package-body p{font-size:.85rem;color:var(--travel-muted);margin-bottom:.8rem}
+.travel-package-price{font-size:1.3rem;font-weight:700;color:var(--travel-blue)}
+.travel-package-price small{font-size:.8rem;color:var(--travel-muted);font-weight:400}
+.sec-travel-testimonials{padding:5rem 0}
+.travel-testimonial{padding:2rem;background:#f8fafb;border-radius:12px;text-align:center}
+.travel-testimonial-stars{color:#ffc107;font-size:1.2rem;margin-bottom:1rem}
+.travel-testimonial p{font-style:italic;margin-bottom:1rem;line-height:1.6}
+.travel-testimonial-author{font-size:.85rem;color:var(--travel-muted);font-weight:600}
+.sec-travel-cta{padding:5rem 0;background:linear-gradient(135deg,var(--travel-dark),var(--travel-blue));color:#fff;text-align:center;border-radius:12px;margin:2rem}
+.sec-travel-cta h2{font-size:2rem;margin-bottom:1rem}
+.sec-travel-cta p{opacity:.8;margin-bottom:2rem}
+.ft-travel{padding:3rem 0 1.5rem;background:var(--travel-dark);color:rgba(255,255,255,.5)}
+.ft-travel h5,.ft-travel h6{color:#fff;margin-bottom:1rem}
+.ft-travel a{color:rgba(255,255,255,.4);text-decoration:none}
+.ft-travel a:hover{color:var(--travel-blue)}
+.ft-travel hr{border-color:rgba(255,255,255,.1)}

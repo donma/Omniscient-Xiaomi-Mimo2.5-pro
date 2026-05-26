@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課程詳情 - 響應式網頁設計完全指南 | SkillUp</title>
+  <meta name="description" content="學習 HTML、CSS、JavaScript，打造專業響應式網站。32 小時完整課程，由業界專家授課。">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-mortarboard-fill me-2"></i>SkillUp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="bi bi-list fs-4"></i></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link active" href="courses.html">課程</a></li>
+          <li class="nav-item"><a class="nav-link" href="instructors.html">講師</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">價格</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">部落格</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我們</a></li>
+        </ul>
+        <a href="enroll.html" class="btn btn-primary-custom">開始學習</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>響應式網頁設計完全指南</h1>
+      <nav aria-label="breadcrumb"><ol class="breadcrumb justify-content-center"><li class="breadcrumb-item"><a href="index.html">首頁</a></li><li class="breadcrumb-item"><a href="courses.html">課程</a></li><li class="breadcrumb-item active">課程詳情</li></ol></nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 fade-in">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900" alt="課程封面" class="img-fluid rounded-4 mb-4">
+          <h2>課程介紹</h2>
+          <p class="lead">這門課程將帶您從零開始，學習如何打造專業的響應式網站。無論您是完全的初學者，還是想鞏固基礎的開發者，這門課程都能幫助您掌握網頁設計的核心技能。</p>
+          <h3 class="mt-4 mb-3">課程大綱</h3>
+          <div class="accordion" id="courseAccordion">
+            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#module1">模組 1：HTML 基礎</button></h2><div id="module1" class="accordion-collapse collapse show" data-bs-parent="#courseAccordion"><div class="accordion-body"><ul class="list-unstyled"><li><i class="bi bi-play-circle me-2"></i>HTML 文件結構</li><li><i class="bi bi-play-circle me-2"></i>常用標籤與屬性</li><li><i class="bi bi-play-circle me-2"></i>表單與表格</li><li><i class="bi bi-play-circle me-2"></i>語意化標籤</li></ul></div></div></div>
+            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#module2">模組 2：CSS 樣式</button></h2><div id="module2" class="accordion-collapse collapse" data-bs-parent="#courseAccordion"><div class="accordion-body"><ul class="list-unstyled"><li><i class="bi bi-play-circle me-2"></i>選擇器與盒模型</li><li><i class="bi bi-play-circle me-2"></i>Flexbox 與 Grid</li><li><i class="bi bi-play-circle me-2"></i>動畫與過渡效果</li><li><i class="bi bi-play-circle me-2"></i>CSS 變數與預處理器</li></ul></div></div></div>
+            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#module3">模組 3：JavaScript 互動</button></h2><div id="module3" class="accordion-collapse collapse" data-bs-parent="#courseAccordion"><div class="accordion-body"><ul class="list-unstyled"><li><i class="bi bi-play-circle me-2"></i>變數與資料型別</li><li><i class="bi bi-play-circle me-2"></i>DOM 操作</li><li><i class="bi bi-play-circle me-2"></i>事件處理</li><li><i class="bi bi-play-circle me-2"></i>非同步程式設計</li></ul></div></div></div>
+          </div>
+          <h3 class="mt-4 mb-3">學生評價</h3>
+          <div class="testimonial-card mb-3"><div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p>「課程內容非常扎實，講師講解清晰。學完後我成功接了第一個案子！」</p><div class="author"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="學生"><div class="author-info"><h5>林小明</h5><span>前端工程師</span></div></div></div>
+        </div>
+        <div class="col-lg-4 fade-in">
+          <div class="card border-0 shadow sticky-top" style="top:100px;">
+            <div class="card-body p-4">
+              <h3 class="text-primary mb-3">NT$2,990</h3>
+              <a href="enroll.html" class="btn btn-primary-custom w-100 mb-3">立即報名</a>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="bi bi-clock me-2"></i>32 小時課程</li>
+                <li class="mb-2"><i class="bi bi-play-circle me-2"></i>120 個單元</li>
+                <li class="mb-2"><i class="bi bi-file-earmark me-2"></i>15 個實作專案</li>
+                <li class="mb-2"><i class="bi bi-infinity me-2"></i>永久存取</li>
+                <li class="mb-2"><i class="bi bi-award me-2"></i>完課證書</li>
+                <li><i class="bi bi-phone me-2"></i>手機/平板支援</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom"><p class="mb-0">&copy; 2026 SkillUp. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <button class="scroll-top"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

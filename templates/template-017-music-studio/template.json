@@ -1,0 +1,46 @@
+﻿{
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "author": "Omniscient Gallery",
+  "updated": "2026-05-25",
+  "name": "music-studio",
+  "framework": "Bootstrap 5",
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "colors": {
+    "accent": "#b3b3b3",
+    "primary": "#1db954",
+    "secondary": "#191414",
+    "dark": "#0a0a0a"
+  },
+  "created": "2026-05-25",
+  "name_zh": "音樂教室",
+  "description_zh": "專業音樂教室網站模板",
+  "version": "1.0.0",
+  "description": "Professional music-studio website template",
+  "id": "T017",
+  "features": [
+    "Responsive Design",
+    "Schema Markup",
+    "Booking",
+    "FAQ Accordion",
+    "Mobile Menu"
+  ],
+  "category": "education",
+  "fonts": [
+    "Bebas Neue",
+    "Roboto"
+  ],
+  "hasZip": false
+}

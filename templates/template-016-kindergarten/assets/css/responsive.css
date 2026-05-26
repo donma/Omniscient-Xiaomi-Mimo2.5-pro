@@ -1,0 +1,1 @@
+/* T016 Responsive */@media(max-width:991.98px){.hero-kg{padding:4rem 0 3rem}.hero-kg .course-cards{grid-template-columns:1fr 1fr}.section-kg{padding:3.5rem 0}}@media(max-width:767.98px){.hero-kg h1{font-size:2rem}.hero-kg .course-cards{grid-template-columns:1fr}.footer-kg{text-align:center}}@media(max-width:575.98px){.btn-kg,.btn-kg-outline{width:100%;justify-content:center}}

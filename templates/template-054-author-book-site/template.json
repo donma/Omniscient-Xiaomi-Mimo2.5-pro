@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Lora",
+    "Noto Serif TC"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "books.html",
+    "book-detail.html",
+    "press.html",
+    "events.html",
+    "blog.html",
+    "newsletter.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "gallery.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Author Book Site",
+  "hasZip": false,
+  "id": "T054",
+  "category": "Literary",
+  "colors": {
+    "accent": "#2d2d2d",
+    "light": "#faf5ee",
+    "dark": "#1a1a1a",
+    "primary": "#6f4e37",
+    "secondary": "#f4e9d9"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Warm paper-toned author and book website"
+}

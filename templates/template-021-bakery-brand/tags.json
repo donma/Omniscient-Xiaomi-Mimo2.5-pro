@@ -1,0 +1,11 @@
+{
+    "templateId": "T021",
+    "tags": {
+        "industry": ["bakery", "甜點", "麵包", "烘焙", "手作"],
+        "style": ["artisanal", "handcrafted", "warm", "溫暖"],
+        "features": ["responsive", "seo", "product-grid", "booking"],
+        "layout": ["full-hero", "product-grid", "warm-nav"],
+        "colors": ["cream", "caramel", "chocolate"]
+    },
+    "hasZip": false
+}

@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Inter",
+    "Noto Sans TC"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "success-stories.html",
+    "methodology.html",
+    "resources.html",
+    "blog.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "consultation.html",
+    "coaching.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Career Coach",
+  "hasZip": false,
+  "id": "T052",
+  "category": "Professional",
+  "colors": {
+    "accent": "#2d3748",
+    "light": "#f7fafc",
+    "dark": "#1a202c",
+    "primary": "#4299e1",
+    "secondary": "#f0f4f8"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Professional career coaching with approachable design"
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>輪動｜單車店</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav-bike">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="nav-bike-logo">🚴 輪動</a>
+    <button class="nav-bike-toggle" onclick="document.querySelector('.nav-bike-menu').classList.toggle('open')"><i class="bi bi-list"></i></button>
+    <ul class="nav-bike-menu">
+      <li><a href="index.html" class="active">首頁</a></li>
+      <li><a href="services.html">車款</a></li>
+      <li><a href="portfolio.html">活動</a></li>
+      <li><a href="contact.html">聯絡</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero-bike">
+  <div class="hero-bike-bg" style="background-image:url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=1600&h=900&fit=crop')"></div>
+  <div class="hero-bike-overlay"></div>
+  <div class="hero-bike-content">
+    <h1>騎出<br>你的<span>速度</span></h1>
+    <p>專業單車銷售、維修、保養，讓你安心上路。</p>
+    <a href="services.html" class="btn-bike">瀏覽車款</a>
+  </div>
+</header>
+
+<section class="sec-bike-categories">
+  <div class="container">
+    <h2 class="bike-title">車款分類</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="bike-cat">
+          <i class="bi bi-speedometer"></i>
+          <h5>公路車</h5>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bike-cat">
+          <i class="bi bi-mountain"></i>
+          <h5>登山車</h5>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bike-cat">
+          <i class="bi bi-bicycle"></i>
+          <h5>城市車</h5>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bike-cat">
+          <i class="bi bi-lightning"></i>
+          <h5>電動車</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-bike-services">
+  <div class="container">
+    <h2 class="bike-title">服務項目</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="bike-service">
+          <h5>單車銷售</h5>
+          <p>國內外品牌齊全，專業諮詢。</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bike-service">
+          <h5>維修保養</h5>
+          <p>專業技師，快速維修。</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bike-service">
+          <h5>單車活動</h5>
+          <p>定期舉辦單車活動。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-bike-cta">
+  <div class="container text-center">
+    <h2>找到你的命定單車</h2>
+    <p>歡迎到店試騎</p>
+    <a href="contact.html" class="btn-bike">聯絡我們</a>
+  </div>
+</section>
+
+<footer class="ft-bike">
+  <div class="container text-center">
+    <h5>🚴 輪動</h5>
+    <p>專業單車服務。</p>
+    <p><i class="bi bi-geo-alt"></i> 台北市信義區 ・ <i class="bi bi-telephone"></i> (02) 2345-6789</p>
+    <hr><p class="small mb-0">&copy; 2026 輪動</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

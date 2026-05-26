@@ -1,0 +1,25 @@
+{
+  "template_id": "T012",
+  "tags": [
+    "pet",
+    "grooming",
+    "pet-grooming",
+    "dog",
+    "cat",
+    "animal",
+    "pets",
+    "groomer",
+    "booking",
+    "playful",
+    "warm",
+    "bootstrap5",
+    "responsive",
+    "chinese",
+    "traditional-chinese",
+    "local-business"
+  ],
+  "category": "pets",
+  "industry": ["pet-services", "grooming", "animal-care"],
+  "style": ["warm", "playful", "friendly", "cute"],
+  "hasZip": false
+}

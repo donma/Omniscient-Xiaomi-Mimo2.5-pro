@@ -1,0 +1,70 @@
+/* 晨光早午餐 Sunshine Brunch - Responsive */
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary, .btn-outline-primary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .page-header {
+        padding: 6rem 0 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-control, .form-select {
+        font-size: 16px;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .accordion-button {
+        font-size: 0.95rem;
+    }
+
+    .review-card {
+        padding: 1.5rem !important;
+    }
+}

@@ -1,0 +1,46 @@
+﻿{
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "author": "Omniscient Gallery",
+  "updated": "2026-05-25",
+  "name": "language-school",
+  "framework": "Bootstrap 5",
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "colors": {
+    "accent": "#ffffff",
+    "primary": "#4ecdc4",
+    "secondary": "#ffe66d",
+    "dark": "#2d3436"
+  },
+  "created": "2026-05-25",
+  "name_zh": "語言教育",
+  "description_zh": "專業語言教育網站模板",
+  "version": "1.0.0",
+  "description": "Professional language-school website template",
+  "id": "T015",
+  "features": [
+    "Responsive Design",
+    "Schema Markup",
+    "Booking",
+    "FAQ Accordion",
+    "Mobile Menu"
+  ],
+  "category": "education",
+  "fonts": [
+    "Poppins",
+    "Noto Sans TC"
+  ],
+  "hasZip": false
+}

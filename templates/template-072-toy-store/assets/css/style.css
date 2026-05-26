@@ -1,0 +1,34 @@
+/* 玩具王國 - 高彩童趣風 */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+:root{--toy-red:#ff4757;--toy-yellow:#ffd93d;--toy-green:#2ed573;--toy-blue:#4d96ff;--toy-bg:#fff9f0;--toy-text:#333}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--toy-text);background:var(--toy-bg)}
+h1,h2,h3,h4,h5{font-family:'Fredoka','Noto Sans TC',sans-serif}
+.nav-toy{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,249,240,.95);backdrop-filter:blur(10px);padding:.8rem 0}
+.nav-toy-logo{color:var(--toy-red);text-decoration:none;font-weight:700;font-size:1.3rem}
+.nav-toy-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-toy-menu a{color:var(--toy-text);text-decoration:none;font-size:.9rem;font-weight:500}
+.nav-toy-menu a:hover,.nav-toy-menu a.active{color:var(--toy-red)}
+.nav-toy-toggle{display:none;background:none;border:none;color:var(--toy-red);font-size:1.5rem}
+@media(max-width:991px){.nav-toy-toggle{display:block;margin-left:auto}.nav-toy-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--toy-bg);flex-direction:column;padding:1rem;gap:1rem}.nav-toy-menu.open{display:flex}}
+.hero-toy{padding:7rem 0 3rem;text-align:center;background:linear-gradient(135deg,var(--toy-yellow),var(--toy-red));color:#fff}
+.hero-toy h1{font-size:3.5rem;font-weight:700;line-height:1.2;margin-bottom:1rem}
+.hero-toy>p{font-size:1.1rem;opacity:.8;margin-bottom:2rem}
+.btn-toy{display:inline-block;background:#fff;color:var(--toy-red);padding:.8rem 2.5rem;border-radius:25px;text-decoration:none;font-weight:700;transition:.3s}
+.btn-toy:hover{background:var(--toy-yellow);color:var(--toy-text)}
+.sec-toy-age{padding:4rem 0}
+.toy-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.toy-age{display:block;padding:2rem;border-radius:16px;text-align:center;text-decoration:none;color:#fff;transition:.3s}
+.toy-age:hover{transform:scale(1.05);color:#fff}
+.toy-age span{display:block;font-size:1.5rem;font-weight:700}
+.toy-age p{margin:.5rem 0 0;opacity:.8}
+.sec-toy-products{padding:4rem 0;background:#fff}
+.toy-product{text-align:center}
+.toy-product img{width:100%;height:220px;object-fit:cover;border-radius:16px;margin-bottom:1rem}
+.toy-product h5{font-size:1rem;margin-bottom:.3rem}
+.toy-product span{font-weight:700;color:var(--toy-red);font-size:1.1rem}
+.sec-toy-cta{padding:4rem 0;background:linear-gradient(135deg,var(--toy-blue),var(--toy-green));color:#fff;text-align:center;border-radius:20px;margin:2rem}
+.sec-toy-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-toy-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-toy{padding:2rem 0;background:#fff}
+.ft-toy hr{border-color:#eee}

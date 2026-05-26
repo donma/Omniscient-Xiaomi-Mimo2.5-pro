@@ -1,0 +1,33 @@
+/* 小星球 - 柔和親子風 */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+:root{--pp-pink:#ff6b9d;--pp-blue:#45b7d1;--pp-green:#96ceb4;--pp-bg:#fff5f7;--pp-text:#444;--pp-muted:#999}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--pp-text);background:var(--pp-bg)}
+h1,h2,h3,h4,h5{font-family:'Nunito','Noto Sans TC',sans-serif;font-weight:700}
+.nav-pp{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);padding:.8rem 0}
+.nav-pp-logo{color:var(--pp-pink);text-decoration:none;font-weight:800;font-size:1.3rem}
+.nav-pp-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-pp-menu a{color:var(--pp-text);text-decoration:none;font-size:.9rem;font-weight:600}
+.nav-pp-menu a:hover,.nav-pp-menu a.active{color:var(--pp-pink)}
+.nav-pp-toggle{display:none;background:none;border:none;color:var(--pp-pink);font-size:1.5rem}
+@media(max-width:991px){.nav-pp-toggle{display:block;margin-left:auto}.nav-pp-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:1rem;gap:1rem}.nav-pp-menu.open{display:flex}}
+.hero-pp{padding:7rem 0 3rem;text-align:center}
+.hero-pp h1{font-size:3rem;font-weight:800;line-height:1.3;margin-bottom:1rem}
+.hero-pp h1 span{color:var(--pp-pink)}
+.hero-pp>p{font-size:1.1rem;color:var(--pp-muted);margin-bottom:2rem}
+.btn-pp{display:inline-block;background:var(--pp-pink);color:#fff;padding:.8rem 2.5rem;border-radius:25px;text-decoration:none;font-weight:700;transition:.3s}
+.btn-pp:hover{background:#e55c8a;color:#fff}
+.hero-pp-img{width:100%;max-width:800px;margin-top:2rem;border-radius:20px}
+.sec-pp-programs{padding:4rem 0}
+.pp-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.pp-program{text-align:center;padding:2rem;background:#fff;border-radius:16px;border:3px solid;height:100%}
+.pp-program i{font-size:2.5rem;margin-bottom:1rem}
+.pp-program h5{font-size:1.1rem;margin-bottom:.5rem}
+.pp-program p{font-size:.85rem;color:var(--pp-muted)}
+.sec-pp-space{padding:4rem 0;background:#fff}
+.pp-space-img{width:100%;height:300px;object-fit:cover;border-radius:16px}
+.sec-pp-cta{padding:4rem 0;background:linear-gradient(135deg,var(--pp-pink),var(--pp-blue));color:#fff;text-align:center;border-radius:20px;margin:2rem}
+.sec-pp-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-pp-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-pp{padding:2rem 0;background:#fff}
+.ft-pp hr{border-color:#eee}

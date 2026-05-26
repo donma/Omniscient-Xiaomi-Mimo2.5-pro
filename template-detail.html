@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>樣板詳情｜全職設計視角</title>
+  <meta name="description" content="全職設計視角 樣板詳情頁">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/gallery.css" rel="stylesheet">
+  <style>
+    /* Detail page light-theme override — isolates from gallery.css dark theme */
+    body { background: #f0f2f5 !important; color: #212529 !important; }
+    .detail-hero { background: #fff; border-bottom: 1px solid #e0e3e8; padding: 2rem 0; }
+    .detail-preview { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,.12); max-height: 500px; }
+    .detail-preview img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .detail-meta .badge { font-size: .75rem; margin: 2px; }
+    .detail-section { background: #fff; border-radius: 12px; padding: 1.5rem; box-shadow: 0 1px 8px rgba(0,0,0,.08); margin-bottom: 1.5rem; }
+    .detail-section h5 { font-weight: 700; margin-bottom: 1rem; color: #212529 !important; }
+    .page-list { list-style: none; padding: 0; }
+    .page-list li { padding: 8px 0; border-bottom: 1px solid #e9ecef; font-size: .9rem; color: #212529; }
+    .page-list li:last-child { border-bottom: none; }
+    .page-list li i { color: #6c7ee1; margin-right: 8px; }
+    .tag-badge { display: inline-block; background: #e9ecef; color: #495057; padding: 3px 10px; border-radius: 20px; font-size: .78rem; margin: 2px; }
+    .gallery-header { background: #1a1a2e; border-bottom: 1px solid #2a2a40; }
+    .gallery-footer { background: #1a1a2e; border-top: 1px solid #2a2a40; color: #8888a0; }
+    .gallery-footer .text-muted { color: #8888a0 !important; }
+    #detailDesc { color: #6c757d !important; }
+  </style>
+</head>
+<body>
+  <header class="gallery-header">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between py-3">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"><i class="bi bi-grid-3x3-gap-fill"></i></span>
+          <span class="logo-text">全職設計視角</span>
+        </a>
+        <a href="index.html" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left"></i> 返回列表</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="detail-hero">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-lg-7 mb-3 mb-lg-0">
+            <div class="detail-preview">
+              <img id="previewImg" src="" alt="樣板預覽">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h1 id="detailName" class="h3 fw-bold mb-2"></h1>
+            <p id="detailDesc" class="text-muted mb-3"></p>
+            <div id="detailMeta" class="detail-meta mb-3"></div>
+            <div id="detailTags" class="mb-3"></div>
+            <div class="d-flex gap-2 flex-wrap">
+              <a id="btnPreview" href="#" target="_blank" class="btn btn-primary"><i class="bi bi-eye"></i> 預覽網站</a>
+              <a id="btnPrompt" href="#" target="_blank" class="btn btn-outline-purple" style="border-color:#6f42c1;color:#6f42c1"><i class="bi bi-file-text"></i> 下載 Prompt</a>
+              <a id="btnZip" href="#" class="btn btn-success"><i class="bi bi-download"></i> 下載 ZIP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="detail-section">
+            <h5><i class="bi bi-grid"></i> 頁面清單（12 頁）</h5>
+            <ul id="pageList" class="page-list"></ul>
+          </div>
+          <div class="detail-section">
+            <h5><i class="bi bi-search"></i> SEO 結構</h5>
+            <ul class="page-list">
+              <li><i class="bi bi-check-circle"></i> 語意化 HTML5（header, main, section, footer）</li>
+              <li><i class="bi bi-check-circle"></i> 每頁 title + meta description</li>
+              <li><i class="bi bi-check-circle"></i> Open Graph 標籤</li>
+              <li><i class="bi bi-check-circle"></i> LocalBusiness Schema placeholder</li>
+              <li><i class="bi bi-check-circle"></i> 圖片 alt 屬性</li>
+              <li><i class="bi bi-check-circle"></i> h1 唯一、section h2 標題</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="detail-section">
+            <h5><i class="bi bi-info-circle"></i> 樣板資訊</h5>
+            <div id="detailInfo"></div>
+          </div>
+          <div class="detail-section">
+            <h5><i class="bi bi-phone"></i> RWD 支援</h5>
+            <ul class="page-list">
+              <li><i class="bi bi-check-circle"></i> 桌機版</li>
+              <li><i class="bi bi-check-circle"></i> 平板版</li>
+              <li><i class="bi bi-check-circle"></i> 手機版（漢堡選單）</li>
+            </ul>
+          </div>
+          <div class="detail-section">
+            <h5><i class="bi bi-image"></i> 圖片策略</h5>
+            <p id="imagePolicy" class="small text-muted"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="gallery-footer text-center py-4">
+    <p class="mb-0 text-muted">&copy; 2026 全職設計視角. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script>
+  (async function() {
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id');
+    if (!id) { document.querySelector('main').innerHTML = '<div class="container py-5 text-center"><h3>未指定樣板</h3></div>'; return; }
+
+    let templates = [];
+    try {
+      const r = await fetch('data/templates.json');
+      if (r.ok) templates = await r.json();
+    } catch(e) {}
+    if (!templates.length && typeof TEMPLATES_DATA !== 'undefined') templates = TEMPLATES_DATA;
+
+    const t = templates.find(x => x.id === id);
+    if (!t) { document.querySelector('main').innerHTML = '<div class="container py-5 text-center"><h3>找不到樣板</h3></div>'; return; }
+
+    document.title = t.name + '｜Omniscient 樣板詳情';
+    document.getElementById('previewImg').src = t.previewImage;
+    document.getElementById('previewImg').alt = t.name + ' 預覽';
+    document.getElementById('detailName').textContent = t.name;
+    document.getElementById('detailDesc').textContent = t.description || '';
+    document.getElementById('btnPreview').href = t.demoUrl;
+    document.getElementById('btnPrompt').href = t.promptUrl;
+
+    const btnZip = document.getElementById('btnZip');
+    if (t.hasZip) {
+      btnZip.href = t.zipUrl;
+    } else {
+      btnZip.classList.remove('btn-success');
+      btnZip.classList.add('btn-secondary');
+      btnZip.removeAttribute('href');
+      btnZip.innerHTML = '<i class="bi bi-archive"></i> ZIP 待打包';
+      btnZip.disabled = true;
+    }
+
+    document.getElementById('detailMeta').innerHTML = `
+      <span class="badge bg-dark">${t.industryCategory || t.industry}</span>
+      <span class="badge bg-secondary">${t.colorTheme}</span>
+      ${t.layoutType ? '<span class="badge bg-info">' + t.layoutType + '</span>' : ''}
+      ${t.imageRich ? '<span class="badge bg-warning text-dark">圖片豐富</span>' : ''}
+    `;
+
+    document.getElementById('detailTags').innerHTML = (t.tags || []).map(tag => '<span class="tag-badge">' + tag + '</span>').join('');
+
+    const pageNames = {
+      'index.html': '首頁', 'about.html': '關於我們', 'services.html': '服務總覽',
+      'service-detail.html': '服務詳情', 'portfolio.html': '作品案例', 'reviews.html': '顧客好評',
+      'faq.html': '常見問題', 'booking.html': '預約須知', 'process.html': '流程介紹',
+      'blog.html': '部落格列表', 'blog-detail.html': '文章內頁', 'contact.html': '聯絡我們'
+    };
+    const pages = t.pages || [];
+    const pageCount = pages.length || t.pageCount || 12;
+    document.querySelector('.detail-section h5 i.bi-grid').parentElement.innerHTML =
+      '<i class="bi bi-grid"></i> 頁面清單（' + pageCount + ' 頁）';
+    document.getElementById('pageList').innerHTML = pages.length
+      ? pages.map(p => '<li><i class="bi bi-file-earmark-code"></i> ' + p + ' <span class="text-muted">— ' + (pageNames[p] || '') + '</span></li>').join('')
+      : Array.from({length: pageCount}, (_, i) => Object.keys(pageNames)[i]).filter(Boolean).map(p =>
+          '<li><i class="bi bi-file-earmark-code"></i> ' + p + ' <span class="text-muted">— ' + pageNames[p] + '</span></li>'
+        ).join('');
+
+    document.getElementById('detailInfo').innerHTML = `
+      <div class="mb-2"><strong>產業：</strong>${t.industry}</div>
+      <div class="mb-2"><strong>色系：</strong>${t.colorTheme}</div>
+      <div class="mb-2"><strong>頁數：</strong>${t.pageCount || 12}</div>
+      <div class="mb-2"><strong>版型：</strong>${t.layoutType || 'Landing Page'}</div>
+      <div class="mb-2"><strong>ZIP：</strong>${t.hasZip ? '可下載' : '待打包'}</div>
+      <div class="mb-2"><strong>Prompt：</strong>可下載</div>
+    `;
+
+    document.getElementById('imagePolicy').textContent = t.imagePolicy || '本樣板圖片僅作為設計示意，正式交付前請替換為客戶自有或授權圖片。';
+  })();
+  </script>
+</body>
+</html>

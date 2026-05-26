@@ -1,0 +1,20 @@
+﻿{
+  "id": "T048",
+  "name": "Pilates Studio",
+  "category": "Health & Fitness",
+  "description": "Premium boutique Pilates studio with elegant beige design, class scheduling, and membership options.",
+  "version": "1.0.0",
+  "author": "Omniscient Gallery",
+  "createdAt": "2026-05-25",
+  "hasZip": false,
+  "colors": {
+    "primary": "#d4a574",
+    "secondary": "#f5f0e8",
+    "accent": "#4a4a4a",
+    "dark": "#2d2d2d",
+    "light": "#faf8f5"
+  },
+  "fonts": ["Playfair Display", "Inter"],
+  "pages": ["index.html","about.html","classes.html","instructors.html","schedule.html","equipment.html","membership.html","blog.html","testimonials.html","faq.html","contact.html","trial.html"],
+  "features": ["Class scheduling","Instructor profiles","Equipment showcase","Membership plans","Testimonials","FAQ accordion","Contact form"]
+}

@@ -1,0 +1,49 @@
+/* 拾物 - 雜誌式選物風 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+:root{--hd-dark:#3d3d3d;--hd-gold:#b8860b;--hd-cream:#faf8f5;--hd-text:#333;--hd-muted:#999;--hd-border:#e8e4de}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--hd-text);background:var(--hd-cream)}
+h1,h2,h3,h4,h5{font-family:'Playfair Display','Noto Sans TC',serif}
+.nav-hd{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,248,245,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--hd-border);padding:1rem 0}
+.nav-hd-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center}
+.nav-hd-logo{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--hd-dark);text-decoration:none;font-weight:600}
+.nav-hd-menu{list-style:none;display:flex;gap:2rem;margin:0;padding:0;margin-left:auto}
+.nav-hd-menu a{color:var(--hd-muted);text-decoration:none;font-size:.9rem;transition:.2s}
+.nav-hd-menu a:hover{color:var(--hd-dark)}
+.nav-hd-menu a.active{color:var(--hd-dark)}
+.nav-hd-toggle{display:none;background:none;border:none;color:var(--hd-dark);font-size:1.5rem;margin-left:auto}
+@media(max-width:991px){.nav-hd-toggle{display:block}.nav-hd-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--hd-cream);flex-direction:column;padding:1.5rem;gap:1rem}.nav-hd.open .nav-hd-menu{display:flex}}
+.hero-hd{padding:8rem 0 4rem}
+.hero-hd-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:1rem}
+.hero-hd-text{display:flex;flex-direction:column;justify-content:center;padding:2rem 0}
+.hero-hd-tag{font-size:.75rem;letter-spacing:.3em;color:var(--hd-gold);margin-bottom:1.5rem}
+.hero-hd h1{font-size:3rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-hd h1 span{font-style:italic;color:var(--hd-gold)}
+.hero-hd-text p{font-size:1rem;color:var(--hd-muted);margin-bottom:2rem}
+.btn-hd{display:inline-block;background:var(--hd-dark);color:#fff;padding:.8rem 2rem;text-decoration:none;font-size:.85rem;transition:.3s}
+.btn-hd:hover{background:#555;color:#fff}
+.hero-hd-img1{grid-row:1/3;background-size:cover;background-position:center;border-radius:4px}
+.hero-hd-img2,.hero-hd-img3{background-size:cover;background-position:center;border-radius:4px;height:200px}
+@media(max-width:768px){.hero-hd-grid{grid-template-columns:1fr}.hero-hd-img1{height:300px}}
+.sec-hd-picks{padding:5rem 0;background:#fff}
+.hd-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.hd-product{text-align:center}
+.hd-product img{width:100%;height:250px;object-fit:cover;border-radius:4px;margin-bottom:1rem}
+.hd-product h5{font-size:1rem;margin-bottom:.3rem}
+.hd-product span{font-size:.9rem;color:var(--hd-gold);font-weight:500}
+.sec-hd-journal{padding:5rem 0}
+.hd-journal-card{overflow:hidden;border-radius:4px}
+.hd-journal-card img{width:100%;height:250px;object-fit:cover;margin-bottom:1rem}
+.hd-journal-card h5{font-size:1.1rem;margin-bottom:.5rem}
+.hd-journal-card p{font-size:.85rem;color:var(--hd-muted)}
+.sec-hd-cta{padding:5rem 0;background:var(--hd-dark);color:#fff;text-align:center}
+.sec-hd-cta h2{font-size:2rem;margin-bottom:1rem}
+.sec-hd-cta p{color:rgba(255,255,255,.5);margin-bottom:2rem}
+.hd-newsletter{display:flex;max-width:400px;margin:0 auto;gap:0}
+.hd-newsletter input{flex:1;padding:.8rem 1rem;border:none;font-size:.9rem}
+.hd-newsletter button{background:var(--hd-gold);color:#fff;border:none;padding:.8rem 1.5rem;font-size:.85rem;cursor:pointer}
+.ft-hd{padding:3rem 0 1.5rem;background:var(--hd-dark);color:rgba(255,255,255,.5)}
+.ft-hd h5,.ft-hd h6{color:#fff;margin-bottom:1rem}
+.ft-hd a{color:rgba(255,255,255,.4);text-decoration:none}
+.ft-hd a:hover{color:#fff}
+.ft-hd hr{border-color:rgba(255,255,255,.1)}

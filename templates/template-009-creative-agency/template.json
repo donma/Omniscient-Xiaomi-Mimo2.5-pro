@@ -1,0 +1,15 @@
+﻿{
+    "id": "T009",
+    "name": "Creative Agency",
+    "nameTW": "FLUX Creative",
+    "category": "設計公司",
+    "description": "創意、大膽、現代風格的設計公司網站模板，適合品牌設計、網頁開發、數位行銷公司使用。",
+    "version": "1.0.0",
+    "author": "Omniscient Template Gallery",
+    "tags": ["creative", "agency", "設計", "品牌", "網頁"],
+    "colors": { "primary": "#6c5ce7", "dark": "#2d3436", "teal": "#00cec9" },
+    "fonts": { "heading": "Space Grotesk", "body": "Inter" },
+    "features": ["Bootstrap 5", "響應式設計", "SEO優化"],
+    "pages": ["index.html", "about.html", "services.html", "service-detail.html", "portfolio.html", "reviews.html", "faq.html", "booking.html", "process.html", "blog.html", "blog-detail.html", "contact.html"],
+    "hasZip": false
+}

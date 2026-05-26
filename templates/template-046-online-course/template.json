@@ -1,0 +1,41 @@
+﻿{
+  "id": "T046",
+  "name": "Online Course Platform",
+  "category": "Education",
+  "description": "Modern e-learning platform with purple gradient design, course catalog, instructor profiles, and pricing plans.",
+  "version": "1.0.0",
+  "author": "Omniscient Gallery",
+  "createdAt": "2026-05-25",
+  "hasZip": false,
+  "colors": {
+    "primary": "#667eea",
+    "secondary": "#764ba2",
+    "accent": "#f093fb",
+    "dark": "#2d1b69",
+    "light": "#f8f9ff"
+  },
+  "fonts": ["Poppins"],
+  "pages": [
+    "index.html",
+    "about.html",
+    "courses.html",
+    "course-detail.html",
+    "instructors.html",
+    "pricing.html",
+    "blog.html",
+    "blog-post.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "enroll.html"
+  ],
+  "features": [
+    "Course catalog",
+    "Instructor profiles",
+    "Pricing plans",
+    "Student reviews",
+    "Learning path",
+    "FAQ accordion",
+    "Contact form"
+  ]
+}

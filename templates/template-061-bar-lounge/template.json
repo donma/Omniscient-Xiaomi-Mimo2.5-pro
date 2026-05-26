@@ -1,0 +1,70 @@
+﻿{
+    "id": "template-061-bar-lounge",
+    "name": "夜幕酒廊 Nightfall Lounge",
+    "category": "酒吧",
+    "description": "高級調酒與現場音樂酒吧模板，採用深色系設計搭配金色點綴，營造奢華夜晚氛圍。",
+    "version": "1.0.0",
+    "author": "Omniscient",
+    "hasZip": false,
+    "colors": {
+        "primary": "#0a0a0a",
+        "secondary": "#d4af37",
+        "accent": "#b8960f",
+        "background": "#0a0a0a",
+        "text": "#ffffff"
+    },
+    "fonts": {
+        "heading": "Playfair Display",
+        "body": "Playfair Display"
+    },
+    "features": [
+        "響應式設計",
+        "Bootstrap 5",
+        "Google Fonts",
+        "Bootstrap Icons",
+        "Unsplash圖片",
+        "SEO優化",
+        "OG標籤",
+        "Schema標記",
+        "FAQ手風琴",
+        "表單驗證",
+        "手機漢堡選單"
+    ],
+    "pages": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "service-detail.html",
+        "portfolio.html",
+        "reviews.html",
+        "faq.html",
+        "booking.html",
+        "process.html",
+        "blog.html",
+        "blog-detail.html",
+        "contact.html"
+    ],
+    "files": [
+        "assets/css/style.css",
+        "assets/css/responsive.css",
+        "assets/js/main.js",
+        "template.json",
+        "tags.json",
+        "prompt.md",
+        "README.md",
+        "assets/img/image-sources.md"
+    ],
+    "tags": [
+        "酒吧",
+        "調酒",
+        "夜生活",
+        "現場音樂",
+        "威士忌",
+        "雞尾酒",
+        "奢華",
+        "都會"
+    ],
+    "demo_url": "#",
+    "created_at": "2024-12-01",
+    "updated_at": "2024-12-01"
+}

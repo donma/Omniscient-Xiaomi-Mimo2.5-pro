@@ -1,0 +1,41 @@
+/* 毛孩樂園 - 活潑可愛風 */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+:root{--pet-orange:#ff6b35;--pet-teal:#4ecdc4;--pet-bg:#fff5f0;--pet-text:#333;--pet-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--pet-text);background:var(--pet-bg)}
+h1,h2,h3,h4,h5{font-family:'Nunito','Noto Sans TC',sans-serif;font-weight:700}
+.nav-pet{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);padding:.8rem 0;border-bottom:2px solid var(--pet-orange)}
+.nav-pet-logo{color:var(--pet-orange);text-decoration:none;font-weight:800;font-size:1.3rem}
+.nav-pet-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-pet-menu a{color:var(--pet-text);text-decoration:none;font-size:.9rem;font-weight:600;transition:.2s}
+.nav-pet-menu a:hover{color:var(--pet-orange)}
+.nav-pet-menu a.active{color:var(--pet-orange)}
+.nav-pet-toggle{display:none;background:none;border:none;color:var(--pet-orange);font-size:1.5rem}
+@media(max-width:991px){.nav-pet-toggle{display:block;margin-left:auto}.nav-pet-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:1rem;gap:1rem}.nav-pet-menu.open{display:flex}}
+.hero-pet{padding:7rem 0 3rem}
+.hero-pet-badge{display:inline-block;background:var(--pet-orange);color:#fff;padding:.4rem 1.2rem;border-radius:20px;font-size:.85rem;font-weight:700;margin-bottom:1.5rem}
+.hero-pet h1{font-size:3rem;font-weight:800;line-height:1.2;margin-bottom:1.5rem}
+.hero-pet h1 span{color:var(--pet-teal)}
+.hero-pet>p{font-size:1.05rem;color:var(--pet-muted);margin-bottom:2rem}
+.btn-pet{display:inline-block;background:var(--pet-orange);color:#fff;padding:.8rem 2.5rem;border-radius:25px;text-decoration:none;font-weight:700;transition:.3s}
+.btn-pet:hover{background:#e55c00;color:#fff}
+.hero-pet-img{width:100%;border-radius:20px}
+.sec-pet-categories{padding:3rem 0}
+.pet-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.pet-cat{display:flex;flex-direction:column;align-items:center;gap:.5rem;padding:2rem;background:#fff;border-radius:16px;text-decoration:none;color:var(--pet-text);transition:.3s;border:2px solid transparent}
+.pet-cat:hover{border-color:var(--pet-orange);color:var(--pet-orange);transform:translateY(-3px)}
+.pet-cat i{font-size:2rem;color:var(--pet-orange)}
+.pet-cat span{font-weight:600}
+.sec-pet-products{padding:3rem 0;background:#fff}
+.pet-product{text-align:center}
+.pet-product img{width:100%;height:220px;object-fit:cover;border-radius:16px;margin-bottom:1rem}
+.pet-product h5{font-size:1rem;margin-bottom:.3rem}
+.pet-product span{font-weight:700;color:var(--pet-orange);font-size:1.1rem}
+.sec-pet-cta{padding:4rem 0;background:var(--pet-orange);color:#fff;text-align:center;border-radius:20px;margin:2rem}
+.sec-pet-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-pet-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-pet{padding:3rem 0 1.5rem;background:#fff}
+.ft-pet h5,.ft-pet h6{color:var(--pet-text);margin-bottom:1rem}
+.ft-pet a{color:var(--pet-muted);text-decoration:none}
+.ft-pet a:hover{color:var(--pet-orange)}
+.ft-pet hr{border-color:#eee}

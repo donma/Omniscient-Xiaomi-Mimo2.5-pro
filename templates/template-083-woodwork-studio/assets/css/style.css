@@ -1,0 +1,51 @@
+/* 木匠師 - 木質職人風 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&family=Barlow:wght@400;500;600;700&display=swap');
+:root{--wood-brown:#6d4c41;--wood-cream:#efebe9;--wood-dark:#1a1608;--wood-text:#333;--wood-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Barlow','Noto Sans TC',sans-serif;color:var(--wood-text);background:var(--wood-cream)}
+h1,h2,h3,h4,h5{font-family:'Noto Serif TC',serif}
+.nav-wood{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 0;transition:.3s}
+.nav-wood.scrolled{background:rgba(239,235,233,.95);backdrop-filter:blur(10px)}
+.nav-wood-logo{font-family:'Noto Serif TC',serif;font-size:1.8rem;color:#fff;text-decoration:none;font-weight:700}
+.nav-wood-menu{list-style:none;display:flex;gap:2rem;margin:0;padding:0}
+.nav-wood-menu a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.7;transition:.2s}
+.nav-wood-menu a:hover,.nav-wood-menu a.active{opacity:1}
+.nav-wood-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-wood-toggle{display:block;margin-left:auto}.nav-wood-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--wood-cream);flex-direction:column;padding:1.5rem;gap:1rem}.nav-wood-menu a{color:var(--wood-text)}.nav-wood.scrolled .nav-wood-logo,.nav-wood.scrolled .nav-wood-menu a{color:var(--wood-text)}.nav-wood-menu.open{display:flex}}
+body.subpage .nav-wood{background:rgba(239,235,233,.95);backdrop-filter:blur(10px);padding:1rem 0}
+body.subpage .nav-wood-logo,body.subpage .nav-wood-menu a,body.subpage .nav-wood-toggle{color:var(--wood-text)}
+.hero-wood{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;text-align:center}
+.hero-wood-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-wood-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,22,8,.5),rgba(109,76,65,.7))}
+.hero-wood-content{position:relative;color:#fff;max-width:600px;margin:0 auto;padding:0 2rem}
+.hero-wood h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-wood h1 span{font-style:italic;color:#d4a373}
+.hero-wood-content p{font-size:1rem;opacity:.8;margin-bottom:2rem}
+.btn-wood{display:inline-block;background:var(--wood-brown);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.9rem;transition:.3s}
+.btn-wood:hover{background:#5d4037;color:#fff}
+.sec-wood-classes{padding:5rem 0}
+.wood-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.wood-class{padding:2rem;background:#fff;border:1px solid rgba(109,76,65,.2);height:100%}
+.wood-class.featured{border-color:var(--wood-brown);border-width:2px}
+.wood-class h5{font-size:1.2rem;margin-bottom:.5rem}
+.wood-class p{color:var(--wood-brown);font-weight:600;font-size:1.1rem;margin-bottom:1rem}
+.wood-class ul{list-style:none;padding:0}
+.wood-class ul li{padding:.4rem 0;font-size:.9rem;color:var(--wood-muted)}
+.wood-class ul li::before{content:'✓';color:var(--wood-brown);margin-right:.5rem}
+.sec-wood-gallery{padding:5rem 0;background:#fff}
+.wood-gallery-img{width:100%;height:250px;object-fit:cover;border-radius:4px}
+.sec-wood-cta{padding:5rem 0;background:var(--wood-dark);color:#fff;text-align:center;border-radius:4px;margin:2rem}
+.sec-wood-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-wood-cta p{opacity:.7;margin-bottom:1.5rem}
+.ft-wood{padding:2rem 0;background:var(--wood-dark);color:rgba(255,255,255,.5)}
+.ft-wood h5{color:#fff}
+.ft-wood hr{border-color:rgba(255,255,255,.1)}
+.page-wood-hero{padding:8rem 0 3rem;text-align:center;background:#e5d8d0}
+.page-wood-hero p{max-width:640px;margin:1rem auto 0;color:var(--wood-muted);line-height:1.8}
+.wood-process{padding:1.75rem;background:#fff;border:1px solid rgba(109,76,65,.18);height:100%}
+.wood-process h5{font-size:1.1rem;margin-bottom:.75rem}
+.wood-process p{margin:0;color:var(--wood-muted);font-size:.95rem;line-height:1.7}
+.wood-project{background:#fff;border:1px solid rgba(109,76,65,.18);padding:1rem;height:100%}
+.wood-project img{width:100%;height:260px;object-fit:cover;border-radius:4px;margin-bottom:1rem}
+.wood-project h5{font-size:1.2rem;margin-bottom:.5rem}
+.wood-project p{margin:0;color:var(--wood-muted);line-height:1.7}

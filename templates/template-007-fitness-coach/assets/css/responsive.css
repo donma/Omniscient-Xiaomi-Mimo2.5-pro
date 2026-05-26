@@ -1,0 +1,106 @@
+/* Responsive CSS for Fitness Coach */
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(10, 10, 10, 0.98);
+        padding: 20px;
+        border: 1px solid var(--gray);
+        margin-top: 15px;
+    }
+    
+    .navbar-nav {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 450px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-neon {
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+    
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .transform-images {
+        flex-direction: column;
+    }
+    
+    .coach-image img {
+        height: 250px;
+    }
+    
+    .price {
+        font-size: 36px;
+    }
+    
+    .page-header {
+        padding: 120px 0 40px;
+    }
+    
+    .page-header h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .course-card {
+        padding: 20px;
+    }
+    
+    .pricing-card {
+        padding: 30px 20px;
+    }
+}

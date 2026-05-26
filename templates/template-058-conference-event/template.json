@@ -1,0 +1,40 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Space Grotesk"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "schedule.html",
+    "speakers.html",
+    "venue.html",
+    "sponsors.html",
+    "tickets.html",
+    "blog.html",
+    "faq.html",
+    "contact.html",
+    "register.html",
+    "map.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Conference Event",
+  "hasZip": false,
+  "id": "T058",
+  "category": "Events",
+  "colors": {
+    "accent": "#667eea",
+    "light": "#1a1a3e",
+    "dark": "#0f0c29",
+    "primary": "#667eea",
+    "secondary": "#302b63"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Tech-dark conference event website"
+}

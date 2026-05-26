@@ -1,0 +1,11 @@
+{
+    "templateId": "T007",
+    "tags": {
+        "industry": ["fitness", "gym", "健身", "教練", "運動"],
+        "style": ["bold", "energetic", "motivational", "高能量"],
+        "features": ["responsive", "seo", "pricing-table"],
+        "layout": ["full-hero", "grid", "dark-theme", "sharp-cards"],
+        "colors": ["dark-navy", "red", "neon"]
+    },
+    "hasZip": false
+}

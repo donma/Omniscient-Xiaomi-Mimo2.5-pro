@@ -1,0 +1,46 @@
+﻿{
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "author": "Omniscient Gallery",
+  "updated": "2026-05-25",
+  "name": "kindergarten",
+  "framework": "Bootstrap 5",
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "colors": {
+    "accent": "#ff8b94",
+    "primary": "#a8e6cf",
+    "secondary": "#ffd3b6",
+    "dark": "#4a4a4a"
+  },
+  "created": "2026-05-25",
+  "name_zh": "幼兒教育",
+  "description_zh": "專業幼兒教育網站模板",
+  "version": "1.0.0",
+  "description": "Professional kindergarten website template",
+  "id": "T016",
+  "features": [
+    "Responsive Design",
+    "Schema Markup",
+    "Booking",
+    "FAQ Accordion",
+    "Mobile Menu"
+  ],
+  "category": "education",
+  "fonts": [
+    "Nunito",
+    "Noto Sans TC"
+  ],
+  "hasZip": false
+}

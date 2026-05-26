@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Oswald",
+    "Inter"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "topics.html",
+    "events.html",
+    "gallery.html",
+    "testimonials.html",
+    "booking.html",
+    "blog.html",
+    "faq.html",
+    "contact.html",
+    "press.html",
+    "media.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Personal Speaker",
+  "hasZip": false,
+  "id": "T051",
+  "category": "Professional",
+  "colors": {
+    "accent": "#e94560",
+    "light": "#2a2a3e",
+    "dark": "#0f0f1a",
+    "primary": "#ffd700",
+    "secondary": "#1a1a2e"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Bold dark speaker portfolio with stage presence"
+}

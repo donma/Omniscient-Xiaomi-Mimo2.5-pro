@@ -1,0 +1,97 @@
+/* Responsive CSS for Coffee Shop */
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(62, 39, 35, 0.98);
+        padding: 20px;
+        border-radius: 16px;
+        margin-top: 15px;
+    }
+    
+    .navbar-nav {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-daily {
+        margin-top: 30px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .location-info {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 450px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+    
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .daily-card {
+        padding: 20px;
+    }
+    
+    .space-thumb img {
+        height: 150px;
+    }
+    
+    .barista-image img {
+        height: 300px;
+    }
+    
+    .page-header {
+        padding: 120px 0 40px;
+    }
+    
+    .page-header h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .menu-category-card {
+        padding: 30px 20px;
+    }
+}

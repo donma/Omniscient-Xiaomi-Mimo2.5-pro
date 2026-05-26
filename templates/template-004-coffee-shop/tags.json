@@ -1,0 +1,11 @@
+{
+    "templateId": "T004",
+    "tags": {
+        "industry": ["coffee", "cafe", "咖啡", "甜點", "咖啡廳"],
+        "style": ["warm", "artisanal", "cozy", "溫暖", "手工"],
+        "features": ["responsive", "seo", "menu-grid"],
+        "layout": ["left-nav", "full-hero", "grid"],
+        "colors": ["brown", "cream", "warm"]
+    },
+    "hasZip": false
+}

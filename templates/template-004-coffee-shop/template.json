@@ -1,0 +1,15 @@
+﻿{
+    "id": "T004",
+    "name": "Coffee Shop",
+    "nameTW": "拾光咖啡",
+    "category": "咖啡甜點",
+    "description": "溫暖手工風格的咖啡店網站模板，適合精品咖啡、甜點店、複合式空間使用。",
+    "version": "1.0.0",
+    "author": "Omniscient Template Gallery",
+    "tags": ["coffee", "cafe", "咖啡", "甜點", "咖啡廳"],
+    "colors": { "primary": "#6f4e37", "secondary": "#f4e9d9", "dark": "#2d2d2d" },
+    "fonts": { "heading": "Lora", "body": "Noto Sans TC" },
+    "features": ["Bootstrap 5", "響應式設計", "SEO優化"],
+    "pages": ["index.html", "about.html", "services.html", "service-detail.html", "portfolio.html", "reviews.html", "faq.html", "booking.html", "process.html", "blog.html", "blog-detail.html", "contact.html"],
+    "hasZip": false
+}

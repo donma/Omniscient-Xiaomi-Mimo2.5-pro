@@ -1,0 +1,27 @@
+/* T047 Yoga Studio - Responsive Styles */
+@media (max-width:991.98px) {
+  .navbar-collapse { background:var(--white); padding:1.5rem; border-radius:var(--radius); box-shadow:var(--shadow); margin-top:1rem; }
+  .navbar-collapse .nav-link { color:var(--dark) !important; padding:0.75rem 0; }
+  .hero { min-height:auto; padding:120px 0 80px; }
+  .schedule-table { font-size:0.85rem; }
+  .schedule-table th, .schedule-table td { padding:0.5rem; }
+}
+@media (max-width:767.98px) {
+  .section { padding:50px 0; }
+  .section-title { margin-bottom:40px; }
+  .section-title h2 { font-size:1.75rem; }
+  .hero h1 { font-size:2rem; }
+  .page-header { padding:120px 0 60px; }
+  .page-header h1 { font-size:2rem; }
+  .instructor-card img { width:140px; height:140px; }
+  .testimonial-card { padding:1.5rem; }
+  .contact-info-card { margin-bottom:2rem; }
+  .footer { padding:50px 0 20px; }
+}
+@media (max-width:575.98px) {
+  .hero { padding:100px 0 60px; }
+  .hero h1 { font-size:1.75rem; }
+  .schedule-table { font-size:0.75rem; }
+  .schedule-table th, .schedule-table td { padding:0.35rem; }
+  .class-card img { height:200px; }
+}

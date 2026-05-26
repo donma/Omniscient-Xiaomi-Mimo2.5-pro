@@ -1,0 +1,50 @@
+/* 革職皮件 - 精品皮革風 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap');
+:root{--leather-brown:#3e2723;--leather-gold:#8b6914;--leather-cream:#efebe9;--leather-text:#2c2c2c;--leather-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter','Noto Sans TC',sans-serif;color:var(--leather-text);background:var(--leather-cream)}
+h1,h2,h3,h4,h5{font-family:'Playfair Display',serif}
+.nav-leather{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 0;transition:.3s}
+.nav-leather.scrolled{background:rgba(239,235,233,.95);backdrop-filter:blur(10px)}
+.nav-leather-logo{font-family:'Playfair Display',serif;font-size:1.8rem;color:#fff;text-decoration:none;font-weight:600}
+.nav-leather-menu{list-style:none;display:flex;gap:2rem;margin:0;padding:0}
+.nav-leather-menu a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.7;transition:.2s}
+.nav-leather-menu a:hover,.nav-leather-menu a.active{opacity:1}
+.nav-leather-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-leather-toggle{display:block;margin-left:auto}.nav-leather-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--leather-cream);flex-direction:column;padding:1.5rem;gap:1rem}.nav-leather.scrolled .nav-leather-logo,.nav-leather.scrolled .nav-leather-menu a{color:var(--leather-text)}.nav-leather.open .nav-leather-menu{display:flex}}
+.hero-leather{position:relative;height:100vh;min-height:600px;display:flex;align-items:center}
+.hero-leather-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-leather-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(62,39,35,.7),rgba(62,39,35,.5))}
+.hero-leather-content{position:relative;color:#fff;max-width:500px;padding:0 4rem}
+.hero-leather-en{font-size:.8rem;letter-spacing:.3em;opacity:.5;margin-bottom:2rem}
+.hero-leather h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-leather h1 span{font-style:italic;color:var(--leather-gold)}
+.hero-leather-content p{font-size:1rem;opacity:.8;margin-bottom:2rem}
+.btn-leather{display:inline-block;background:var(--leather-brown);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.9rem;transition:.3s}
+.btn-leather:hover;background:#5d4037;color:#fff}
+.sec-leather-products{padding:5rem 0}
+.leather-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.leather-product{text-align:center}
+.leather-product img{width:100%;height:250px;object-fit:cover;border-radius:4px;margin-bottom:1rem}
+.leather-product h5{font-size:1rem;margin-bottom:.3rem}
+.leather-product span{font-weight:600;color:var(--leather-gold)}
+.sec-leather-craft{padding:5rem 0;background:#fff}
+.leather-craft-img{width:100%;height:400px;object-fit:cover;border-radius:4px}
+.sec-leather-craft p{font-size:.95rem;color:var(--leather-muted);line-height:2;margin-bottom:1rem}
+.sec-leather-cta{padding:5rem 0;background:var(--leather-brown);color:#fff;text-align:center;border-radius:4px;margin:2rem}
+.sec-leather-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-leather-cta p{opacity:.7;margin-bottom:1.5rem}
+.ft-leather{padding:2rem 0;background:var(--leather-brown);color:rgba(255,255,255,.5)}
+.ft-leather h5{color:#fff}
+.ft-leather hr{border-color:rgba(255,255,255,.1)}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .nav-leather {
+  background: rgba(239,235,233,.95) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .nav-leather-logo { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-leather-menu a { color: #2d2d2d !important; }
+body:not(.page-home) .nav-leather .navbar-toggler,
+body:not(.page-home) .nav-leather .nav-toggle { color: #2d2d2d !important; }

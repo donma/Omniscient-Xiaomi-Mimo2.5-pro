@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Cormorant",
+    "Inter"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "gallery.html",
+    "exhibitions.html",
+    "statement.html",
+    "press.html",
+    "blog.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "inquiry.html",
+    "cv.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Artist Portfolio",
+  "hasZip": false,
+  "id": "T056",
+  "category": "Creative",
+  "colors": {
+    "accent": "#f0f0f0",
+    "light": "#fafafa",
+    "dark": "#111",
+    "primary": "#333",
+    "secondary": "#fff"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Gallery-white artist portfolio"
+}

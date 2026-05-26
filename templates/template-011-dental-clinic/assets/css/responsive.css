@@ -1,0 +1,108 @@
+/* T011 Dental Clinic - Responsive */
+
+@media (max-width: 991.98px) {
+  .hero-dental {
+    padding: 3rem 0;
+  }
+  .hero-dental .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-dental .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-dental .hero-image {
+    height: 300px;
+  }
+  .hero-dental .hero-image-wrapper {
+    order: -1;
+  }
+  .trust-badges {
+    justify-content: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .section-dental,
+  .section-dental-gray,
+  .section-dental-primary {
+    padding: 3.5rem 0;
+  }
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  .nav-dental .navbar-collapse {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-dental h1 {
+    font-size: 2rem;
+  }
+  .hero-dental .hero-image {
+    height: 250px;
+  }
+  .trust-badges {
+    gap: 1.5rem;
+  }
+  .trust-badge .number {
+    font-size: 1.5rem;
+  }
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  .ba-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-timeline {
+    padding-left: 2.5rem;
+  }
+  .page-header-dental h1 {
+    font-size: 1.8rem;
+  }
+  .cta-dental h2 {
+    font-size: 1.5rem;
+  }
+  .footer-dental {
+    text-align: center;
+  }
+  .footer-social {
+    justify-content: center;
+  }
+  .footer-dental .footer-contact li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-dental {
+    padding: 2.5rem 0;
+  }
+  .hero-dental h1 {
+    font-size: 1.7rem;
+  }
+  .btn-primary-dental,
+  .btn-outline-dental {
+    width: 100%;
+    justify-content: center;
+  }
+  .section-dental,
+  .section-dental-gray {
+    padding: 2.5rem 0;
+  }
+  .card-dental {
+    padding: 1.5rem;
+  }
+  .page-header-dental {
+    padding: 3rem 0 2rem;
+  }
+  .page-header-dental h1 {
+    font-size: 1.5rem;
+  }
+}

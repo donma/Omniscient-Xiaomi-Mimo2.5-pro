@@ -1,0 +1,15 @@
+﻿{
+    "id": "T007",
+    "name": "Fitness Coach",
+    "nameTW": "APEX Fitness",
+    "category": "健身教練",
+    "description": "高能量、大膽風格的健身教練網站模板，適合個人教練、健身房、運動中心使用。",
+    "version": "1.0.0",
+    "author": "Omniscient Template Gallery",
+    "tags": ["fitness", "gym", "健身", "教練", "運動"],
+    "colors": { "primary": "#e94560", "dark": "#1a1a2e", "darker": "#16213e" },
+    "fonts": { "heading": "Oswald", "body": "Roboto" },
+    "features": ["Bootstrap 5", "響應式設計", "SEO優化"],
+    "pages": ["index.html", "about.html", "services.html", "service-detail.html", "portfolio.html", "reviews.html", "faq.html", "booking.html", "process.html", "blog.html", "blog-detail.html", "contact.html"],
+    "hasZip": false
+}

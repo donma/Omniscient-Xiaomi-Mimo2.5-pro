@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Nunito",
+    "Noto Sans TC"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "portfolio.html",
+    "style-guide.html",
+    "clients.html",
+    "shop.html",
+    "blog.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "commission.html",
+    "gallery.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Illustrator Portfolio",
+  "hasZip": false,
+  "id": "T057",
+  "category": "Creative",
+  "colors": {
+    "accent": "#ffe66d",
+    "light": "#fff",
+    "dark": "#2d3436",
+    "primary": "#ff6b6b",
+    "secondary": "#4ecdc4"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Colorful playful illustrator portfolio"
+}

@@ -1,0 +1,36 @@
+﻿{
+  "description": "甜點工作室模板，採用粉色系夢幻設計",
+  "name": "甜蜜工坊",
+  "features": [
+    "響應式設計",
+    "Bootstrap 5",
+    "Google Fonts",
+    "Bootstrap Icons",
+    "SEO優化",
+    "OG標籤",
+    "Schema標記",
+    "FAQ手風琴",
+    "表單驗證",
+    "手機漢堡選單"
+  ],
+  "created_at": "2024-12-01",
+  "id": "template-065-dessert-studio",
+  "version": "1.0.0",
+  "hasZip": false,
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "author": "Omniscient",
+  "category": "甜點"
+}

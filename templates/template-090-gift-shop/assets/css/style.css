@@ -1,0 +1,48 @@
+/* 禮遇禮品 - 優雅禮品風 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+:root{--gift-pink:#db2777;--gift-cream:#fdf2f8;--gift-dark:#1a0a12;--gift-text:#333;--gift-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--gift-text);background:var(--gift-cream)}
+h1,h2,h3,h4,h5{font-family:'Playfair Display','Noto Sans TC',serif}
+.nav-gift{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 0;transition:.3s}
+.nav-gift.scrolled{background:rgba(253,242,248,.95);backdrop-filter:blur(10px)}
+.nav-gift-logo{color:#fff;text-decoration:none;font-weight:600;font-size:1.3rem}
+.nav-gift-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-gift-menu a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.8;transition:.2s}
+.nav-gift-menu a:hover,.nav-gift-menu a.active{opacity:1}
+.nav-gift-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-gift-toggle{display:block;margin-left:auto}.nav-gift-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--gift-cream);flex-direction:column;padding:1rem;gap:1rem}.nav-gift-menu a{color:var(--gift-text)}.nav-gift.scrolled .nav-gift-logo,.nav-gift.scrolled .nav-gift-menu a{color:var(--gift-text)}.nav-gift-menu.open{display:flex}}
+body.subpage .nav-gift{background:rgba(253,242,248,.95);backdrop-filter:blur(10px)}
+body.subpage .nav-gift-logo,body.subpage .nav-gift-menu a,body.subpage .nav-gift-toggle{color:var(--gift-text)}
+.hero-gift{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;text-align:center}
+.hero-gift-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-gift-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(219,39,119,.5),rgba(219,39,119,.7))}
+.hero-gift-content{position:relative;color:#fff;max-width:600px;margin:0 auto;padding:0 2rem}
+.hero-gift h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-gift h1 span{font-style:italic}
+.hero-gift-content p{font-size:1rem;opacity:.9;margin-bottom:2rem}
+.btn-gift{display:inline-block;background:var(--gift-pink);color:#fff;padding:.8rem 2.5rem;border-radius:25px;text-decoration:none;font-weight:500;transition:.3s}
+.btn-gift:hover{background:#be185d;color:#fff}
+.sec-gift-categories{padding:5rem 0}
+.gift-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.gift-cat{text-align:center;padding:2rem;background:#fff;border-radius:16px;border:2px solid rgba(219,39,119,.2)}
+.gift-cat i{font-size:2rem;color:var(--gift-pink);margin-bottom:1rem}
+.gift-cat h5{font-size:1rem}
+.gift-cat p{margin:.75rem 0 0;color:var(--gift-muted);font-size:.9rem;line-height:1.7}
+.sec-gift-products{padding:5rem 0;background:#fff}
+.gift-product{text-align:center}
+.gift-product img{width:100%;height:250px;object-fit:cover;border-radius:16px;margin-bottom:1rem}
+.gift-product h5{font-size:1rem;margin-bottom:.3rem}
+.gift-product span{font-weight:600;color:var(--gift-pink)}
+.sec-gift-cta{padding:5rem 0;background:var(--gift-pink);color:#fff;text-align:center;border-radius:16px;margin:2rem}
+.sec-gift-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-gift-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-gift{padding:2rem 0;background:var(--gift-dark);color:rgba(255,255,255,.5)}
+.ft-gift h5{color:#fff}
+.ft-gift hr{border-color:rgba(255,255,255,.1)}
+.page-gift-hero{padding:8rem 0 3rem;text-align:center;background:#fff}
+.page-gift-hero p{max-width:640px;margin:1rem auto 0;color:var(--gift-muted);line-height:1.8}
+.gift-story-card{background:#fff;border:1px solid rgba(219,39,119,.16);border-radius:16px;padding:1rem;height:100%}
+.gift-story-card img{width:100%;height:260px;object-fit:cover;border-radius:12px;margin-bottom:1rem}
+.gift-story-card h5{font-size:1.15rem;margin-bottom:.5rem}
+.gift-story-card p{margin:0;color:var(--gift-muted);line-height:1.7}

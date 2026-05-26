@@ -1,0 +1,11 @@
+{
+    "templateId": "T009",
+    "tags": {
+        "industry": ["creative", "agency", "設計", "品牌", "網頁"],
+        "style": ["creative", "bold", "modern", "創意", "大膽"],
+        "features": ["responsive", "seo", "animation"],
+        "layout": ["geometric-hero", "asymmetric-grid", "dark-theme"],
+        "colors": ["purple", "dark", "teal"]
+    },
+    "hasZip": false
+}

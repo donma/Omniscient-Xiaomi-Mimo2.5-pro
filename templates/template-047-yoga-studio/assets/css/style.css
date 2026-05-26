@@ -1,0 +1,88 @@
+/* ZenFlow 禪意瑜珈 - 禪意雜誌風 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+:root{--yg-green:#4a7c59;--yg-cream:#f5f0e8;--yg-dark:#1a2e22;--yg-text:#2d3a2e;--yg-muted:#6b7b6c;--yg-gold:#c9a96e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--yg-text);background:var(--yg-cream);line-height:1.8}
+h1,h2,h3,h4,h5{font-family:'Cormorant Garamond','Noto Sans TC',serif;font-weight:400}
+
+/* NAV: 極簡透明 */
+.nav-yg{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 0;transition:.3s}
+.nav-yg.scrolled{background:rgba(245,240,232,.95);backdrop-filter:blur(10px);padding:1rem 0}
+.nav-yg-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:between}
+.nav-yg-logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--yg-dark);text-decoration:none;font-weight:600;letter-spacing:.1em}
+.nav-yg-menu{list-style:none;display:flex;align-items:center;gap:2rem;margin:0;padding:0;margin-left:auto}
+.nav-yg-menu a{color:var(--yg-dark);text-decoration:none;font-size:.9rem;letter-spacing:.05em;transition:.2s}
+.nav-yg-menu a:hover{color:var(--yg-green)}
+.nav-yg-cta{background:var(--yg-green)!important;color:#fff!important;padding:.6rem 1.5rem;border-radius:2px;font-size:.85rem!important;letter-spacing:.1em!important;text-transform:uppercase}
+.nav-yg-toggle{display:none;background:none;border:none;color:var(--yg-dark);font-size:1.5rem}
+@media(max-width:991px){.nav-yg-toggle{display:block;margin-left:auto}.nav-yg-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--yg-cream);flex-direction:column;padding:2rem;gap:1.5rem}.nav-yg.open .nav-yg-menu{display:flex}}
+
+/* HERO: 全螢幕圖片 */
+.hero-yg{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;justify-content:center}
+.hero-yg-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-yg-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,46,34,.3),rgba(26,46,34,.6))}
+.hero-yg-content{position:relative;text-align:center;color:#fff;max-width:600px;padding:0 2rem}
+.hero-yg-tag{font-family:'Cormorant Garamond',serif;font-size:.9rem;letter-spacing:.3em;margin-bottom:2rem;opacity:.8}
+.hero-yg h1{font-size:4rem;font-weight:300;line-height:1.2;margin-bottom:1.5rem}
+.hero-yg h1 span{font-style:italic;font-weight:400}
+.hero-yg-sub{font-size:1.1rem;opacity:.8;margin-bottom:2.5rem}
+.btn-yg{display:inline-block;background:var(--yg-green);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;transition:.3s}
+.btn-yg:hover{background:#3d6b4a;color:#fff}
+.hero-yg-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.5);animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
+
+/* LABELS & HEADINGS */
+.yg-label{display:block;font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--yg-green);margin-bottom:.5rem}
+.yg-heading{font-size:2.5rem;font-weight:300;margin-bottom:2rem;color:var(--yg-dark)}
+.yg-text{font-size:1rem;color:var(--yg-muted);line-height:2;margin-bottom:1.5rem}
+.btn-yg-outline{display:inline-block;border:1px solid var(--yg-green);color:var(--yg-green);padding:.7rem 2rem;text-decoration:none;font-size:.85rem;letter-spacing:.1em;transition:.3s}
+.btn-yg-outline:hover{background:var(--yg-green);color:#fff}
+
+/* PHILOSOPHY */
+.sec-yg-philosophy{padding:8rem 0}
+.yg-philosophy-img{width:100%;height:500px;object-fit:cover}
+
+/* CLASSES: 水平滾動 */
+.sec-yg-classes{padding:5rem 0;background:#fff}
+.yg-class-scroll{display:flex;gap:1.5rem;overflow-x:auto;padding-bottom:1rem;scroll-snap-type:x mandatory}
+.yg-class-card{min-width:280px;padding:2.5rem 2rem;background:var(--yg-cream);scroll-snap-align:start;flex-shrink:0}
+.yg-class-icon{font-size:2rem;color:var(--yg-green);margin-bottom:1.5rem}
+.yg-class-card h5{font-size:1.3rem;margin-bottom:1rem}
+.yg-class-card p{font-size:.9rem;color:var(--yg-muted);margin-bottom:1rem}
+.yg-class-level{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--yg-gold)}
+
+/* SPACE: 圖片網格 */
+.sec-yg-space{padding:0}
+.yg-space-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:300px 300px;gap:.5rem}
+.yg-space-item{background-size:cover;background-position:center}
+.yg-space-item.large{grid-row:1/3}
+@media(max-width:768px){.yg-space-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}.yg-space-item.large{grid-row:auto}}
+
+/* TEACHERS */
+.sec-yg-teachers{padding:5rem 0}
+.yg-teacher{text-align:center}
+.yg-teacher img{width:100%;height:400px;object-fit:cover;margin-bottom:1.5rem}
+.yg-teacher h5{font-size:1.3rem;margin-bottom:.5rem}
+.yg-teacher p{font-size:.9rem;color:var(--yg-muted)}
+
+/* CTA */
+.sec-yg-cta{padding:6rem 0;background:var(--yg-dark);color:#fff;text-align:center}
+.sec-yg-cta h2{font-size:2.5rem;font-weight:300;margin-bottom:2rem;line-height:1.4}
+
+/* FOOTER */
+.ft-yg{padding:3rem 0 1.5rem;background:var(--yg-dark);color:rgba(255,255,255,.6);border-top:1px solid rgba(255,255,255,.1)}
+.ft-yg h5,.ft-yg h6{color:#fff;margin-bottom:1rem;font-size:1rem}
+.ft-yg a{color:rgba(255,255,255,.4);text-decoration:none;font-size:.9rem}
+.ft-yg a:hover{color:#fff}
+.ft-yg hr{border-color:rgba(255,255,255,.1)}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .nav-yg {
+  background: rgba(245,240,232,.95) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .nav-yg-logo { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-yg-menu a { color: #2d2d2d !important; }
+body:not(.page-home) .nav-yg .navbar-toggler,
+body:not(.page-home) .nav-yg .nav-toggle { color: #2d2d2d !important; }

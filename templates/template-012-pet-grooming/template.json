@@ -1,0 +1,47 @@
+﻿{
+  "id": "T012",
+  "name": "Pet Grooming",
+  "name_zh": "寵物美容",
+  "category": "pets",
+  "version": "1.0.0",
+  "author": "Omniscient Gallery",
+  "description": "Warm and playful pet grooming website template with cute design elements, service booking, and pet care tips.",
+  "description_zh": "溫馨可愛的寵物美容網站模板，具有俏皮設計元素、服務預約和寵物護理知識。",
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "demo_url": "https://demo.omniscient.gallery/t012-pet-grooming",
+  "colors": {
+    "primary": "#ff9a9e",
+    "secondary": "#ffecd2",
+    "accent": "#fcb69f",
+    "dark": "#4a4a4a",
+    "white": "#ffffff"
+  },
+  "fonts": ["Quicksand", "Noto Sans TC"],
+  "framework": "Bootstrap 5",
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "features": [
+    "Responsive Design",
+    "LocalBusiness Schema",
+    "Service Booking",
+    "FAQ Accordion",
+    "Pet Gallery",
+    "Pricing Packages",
+    "Mobile Hamburger Menu"
+  ],
+  "hasZip": false,
+  "created": "2026-05-25",
+  "updated": "2026-05-25"
+}

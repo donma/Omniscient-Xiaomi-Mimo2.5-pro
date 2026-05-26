@@ -1,0 +1,11 @@
+{
+    "templateId": "T003",
+    "tags": {
+        "industry": ["fashion", "boutique", "時尚", "服飾", "精品"],
+        "style": ["minimalist", "luxury", "editorial", "極簡", "奢華"],
+        "features": ["responsive", "seo", "product-grid"],
+        "layout": ["split-hero", "grid", "minimal-nav"],
+        "colors": ["black", "white", "gold"]
+    },
+    "hasZip": false
+}

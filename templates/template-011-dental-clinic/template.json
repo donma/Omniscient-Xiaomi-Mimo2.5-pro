@@ -1,0 +1,48 @@
+﻿{
+  "id": "T011",
+  "name": "Dental Clinic",
+  "name_zh": "牙醫診所",
+  "category": "healthcare",
+  "version": "1.0.0",
+  "author": "Omniscient Gallery",
+  "description": "Professional dental clinic website template with clean medical design, trust-building elements, and appointment booking functionality.",
+  "description_zh": "專業牙醫診所網站模板，採用潔淨醫療設計、建立信任元素及預約功能。",
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "demo_url": "https://demo.omniscient.gallery/t011-dental-clinic",
+  "colors": {
+    "primary": "#2196F3",
+    "secondary": "#4caf50",
+    "light": "#e8f4fd",
+    "dark": "#333333",
+    "white": "#ffffff"
+  },
+  "fonts": ["Inter", "Noto Sans TC"],
+  "framework": "Bootstrap 5",
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "features": [
+    "Responsive Design",
+    "LocalBusiness Schema",
+    "Appointment Booking",
+    "FAQ Accordion",
+    "Before/After Gallery",
+    "Insurance Information",
+    "Doctor Profiles",
+    "Mobile Hamburger Menu"
+  ],
+  "hasZip": false,
+  "created": "2026-05-25",
+  "updated": "2026-05-25"
+}

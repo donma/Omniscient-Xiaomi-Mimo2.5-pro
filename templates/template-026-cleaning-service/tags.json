@@ -1,0 +1,22 @@
+{
+  "templateId": "T026",
+  "tags": {
+    "layout": [
+      "full-hero"
+    ],
+    "colors": [
+      "#1565c0",
+      "#e3f2fd"
+    ],
+    "industry": null,
+    "features": [
+      "responsive",
+      "seo"
+    ],
+    "style": [
+      "professional",
+      "clean"
+    ]
+  },
+  "hasZip": false
+}

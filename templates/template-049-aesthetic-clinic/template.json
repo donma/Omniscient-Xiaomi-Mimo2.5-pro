@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Montserrat",
+    "Noto Sans TC"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "treatments.html",
+    "before-after.html",
+    "doctors.html",
+    "technology.html",
+    "pricing.html",
+    "blog.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "consultation.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Aesthetic Clinic",
+  "hasZip": false,
+  "id": "T049",
+  "category": "Medical",
+  "colors": {
+    "accent": "#333",
+    "light": "#fff",
+    "dark": "#1a1a1a",
+    "primary": "#d4af37",
+    "secondary": "#f8f9fa"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Premium aesthetic clinic with white-gold design"
+}

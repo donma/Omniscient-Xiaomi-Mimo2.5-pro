@@ -1,0 +1,32 @@
+/* ============================================
+   T022 Tea Brand - Responsive Styles
+   ============================================ */
+
+@media (max-width: 991.98px) {
+  .hero-tea { min-height: auto; padding: 6rem 0 4rem; }
+  .hero-tea h1 { font-size: 2.5rem; }
+  .hero-vertical-text { display: none; }
+  .hero-image-area { margin-top: 2rem; }
+  .about-image::after { display: none; }
+  .navbar-collapse { background: var(--white); padding: 1rem; margin-top: 0.5rem; }
+}
+
+@media (max-width: 767.98px) {
+  .hero-tea h1 { font-size: 2rem; }
+  .section-title h2 { font-size: 1.6rem; }
+  .hero-categories { justify-content: center; }
+  .booking-form { padding: 2rem 1.5rem; }
+  .contact-info-card { padding: 2rem; }
+  .contact-form-wrapper { padding: 2rem 1.5rem; }
+  .breadcrumb-section h1 { font-size: 1.8rem; }
+  .breadcrumb-section { padding: 7rem 0 2rem; }
+}
+
+@media (max-width: 575.98px) {
+  .hero-tea h1 { font-size: 1.6rem; }
+  .btn-tea, .btn-tea-outline { padding: 0.6rem 1.5rem; font-size: 0.85rem; }
+  .tea-card img { height: 220px; }
+  .portfolio-item img { height: 220px; }
+  .blog-card img { height: 180px; }
+  .service-card { padding: 2rem 1.5rem; }
+}

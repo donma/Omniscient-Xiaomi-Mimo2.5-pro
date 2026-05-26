@@ -1,0 +1,72 @@
+/* 張大偉企業講師 - 深色舞台風 */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+:root{--sp-red:#e63946;--sp-dark:#0a0a0a;--sp-gold:#ffd700;--sp-text:#e0e0e0;--sp-muted:#888;--sp-border:#222}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:var(--sp-text);background:var(--sp-dark)}
+h1,h2,h3,h4,h5{font-family:'Oswald',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+
+/* NAV */
+.nav-sp{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,.95);backdrop-filter:blur(10px);padding:1rem 0;border-bottom:2px solid var(--sp-red)}
+.nav-sp-logo{font-family:'Oswald',sans-serif;font-size:1.5rem;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.1em}
+.nav-sp-menu{list-style:none;display:flex;align-items:center;gap:2rem;margin:0;padding:0}
+.nav-sp-menu a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.85rem;font-family:'Oswald',sans-serif;letter-spacing:.05em;transition:.2s}
+.nav-sp-menu a:hover{color:#fff}
+.nav-sp-cta{background:var(--sp-red)!important;color:#fff!important;padding:.5rem 1.5rem;font-size:.8rem!important}
+.nav-sp-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-sp-toggle{display:block;margin-left:auto}.nav-sp-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--sp-dark);flex-direction:column;padding:1.5rem;gap:1rem;border-bottom:2px solid var(--sp-red)}.nav-sp.open .nav-sp-menu{display:flex}}
+
+/* HERO */
+.hero-sp{position:relative;height:100vh;min-height:600px;display:flex;align-items:center}
+.hero-sp-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-sp-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.5),rgba(10,10,10,.8))}
+.hero-sp-content{position:relative;color:#fff;padding:0 4rem;max-width:700px}
+.hero-sp-name{display:inline-block;font-family:'Oswald',sans-serif;font-size:.9rem;letter-spacing:.3em;color:var(--sp-red);margin-bottom:1.5rem;text-transform:uppercase}
+.hero-sp h1{font-size:5rem;font-weight:700;line-height:1;margin-bottom:1.5rem}
+.hero-sp-content>p{font-size:1.1rem;color:rgba(255,255,255,.6);margin-bottom:2rem;letter-spacing:.1em}
+.hero-sp-stats{display:flex;gap:3rem;margin-bottom:2.5rem}
+.hero-sp-stats span{display:block;font-family:'Oswald',sans-serif;font-size:2.5rem;font-weight:700;color:var(--sp-red)}
+.hero-sp-stats p{font-size:.8rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.1em}
+.btn-sp{display:inline-block;background:var(--sp-red);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-family:'Oswald',sans-serif;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;transition:.3s}
+.btn-sp:hover{background:#c53030;color:#fff}
+
+/* TOPICS */
+.sec-sp-topics{padding:5rem 0}
+.sp-title{text-align:center;font-size:2.5rem;margin-bottom:3rem}
+.sp-topic{padding:2.5rem;background:rgba(255,255,255,.03);border:1px solid var(--sp-border);height:100%}
+.sp-topic-num{display:block;font-family:'Oswald',sans-serif;font-size:3rem;font-weight:700;color:var(--sp-red);margin-bottom:1rem}
+.sp-topic h5{font-size:1.3rem;margin-bottom:1rem}
+.sp-topic p{font-size:.9rem;color:var(--sp-muted);margin-bottom:1rem}
+.sp-topic ul{list-style:none;padding:0}
+.sp-topic ul li{padding:.3rem 0;font-size:.85rem;color:var(--sp-muted)}
+.sp-topic ul li::before{content:'→';color:var(--sp-red);margin-right:.5rem}
+
+/* EVENTS */
+.sec-sp-events{padding:5rem 0;background:rgba(255,255,255,.02)}
+.sp-event{display:flex;align-items:center;gap:2rem;padding:1.5rem 0;border-bottom:1px solid var(--sp-border)}
+.sp-event-date{text-align:center;min-width:80px}
+.sp-event-date span{display:block;font-family:'Oswald',sans-serif}
+.sp-event-date span:first-child{font-size:1.5rem;color:var(--sp-red)}
+.sp-event-date span:last-child{font-size:1rem;color:var(--sp-muted)}
+.sp-event-info h5{font-size:1.1rem;margin-bottom:.3rem;text-transform:none}
+.sp-event-info p{font-size:.85rem;color:var(--sp-muted)}
+.sp-event-status{margin-left:auto;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sp-muted);border:1px solid var(--sp-border);padding:.3rem 1rem}
+.sp-event-status.done{color:var(--sp-red);border-color:var(--sp-red)}
+
+/* BOOKS */
+.sec-sp-books{padding:5rem 0}
+.sp-book{text-align:center}
+.sp-book img{width:100%;height:300px;object-fit:cover;margin-bottom:1rem}
+.sp-book h5{font-size:1rem;margin-bottom:.5rem;text-transform:none}
+.sp-book p{font-size:.85rem;color:var(--sp-red)}
+
+/* CTA */
+.sec-sp-cta{padding:5rem 0;background:var(--sp-red);color:#fff;text-align:center}
+.sec-sp-cta h2{font-size:2.5rem;margin-bottom:1rem}
+.sec-sp-cta p{color:rgba(255,255,255,.8);margin-bottom:2rem}
+
+/* FOOTER */
+.ft-sp{padding:3rem 0 1.5rem;background:var(--sp-dark);color:rgba(255,255,255,.4);border-top:1px solid var(--sp-border)}
+.ft-sp h5,.ft-sp h6{color:#fff;margin-bottom:1rem}
+.ft-sp a{color:rgba(255,255,255,.3);text-decoration:none}
+.ft-sp a:hover{color:var(--sp-red)}
+.ft-sp hr{border-color:rgba(255,255,255,.1)}

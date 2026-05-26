@@ -1,0 +1,75 @@
+/* NOIR 香氛 - 超極簡奢華風 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap');
+:root{--fr-black:#1a1a1a;--fr-gold:#c9a96e;--fr-cream:#faf8f5;--fr-text:#2c2c2c;--fr-muted:#999;--fr-border:#e8e4de}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:var(--fr-text);background:var(--fr-cream)}
+h1,h2,h3,h4,h5{font-family:'Cormorant Garamond',serif;font-weight:300}
+
+/* NAV */
+.nav-fr{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 0;transition:.3s}
+.nav-fr.scrolled{background:rgba(250,248,245,.95);backdrop-filter:blur(10px)}
+.nav-fr-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:between}
+.nav-fr-logo{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fr-black);text-decoration:none;font-weight:600;letter-spacing:.2em}
+.nav-fr-menu{list-style:none;display:flex;gap:2.5rem;margin:0;padding:0;margin-left:auto}
+.nav-fr-menu a{color:var(--fr-black);text-decoration:none;font-size:.85rem;letter-spacing:.1em;opacity:.5;transition:.2s}
+.nav-fr-menu a:hover{opacity:1}
+.nav-fr-menu a.active{opacity:1}
+.nav-fr-cta{background:var(--fr-black)!important;color:#fff!important;padding:.5rem 1.5rem;font-size:.8rem!important;opacity:1!important}
+.nav-fr-toggle{display:none;background:none;border:none;color:var(--fr-black);font-size:1.5rem}
+@media(max-width:991px){.nav-fr-toggle{display:block;margin-left:auto}.nav-fr-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--fr-cream);flex-direction:column;padding:2rem;gap:1.5rem}.nav-fr.open .nav-fr-menu{display:flex}}
+
+/* HERO */
+.hero-fr{position:relative;height:100vh;min-height:600px;display:flex;align-items:center}
+.hero-fr-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-fr-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.5),rgba(0,0,0,.3))}
+.hero-fr-content{position:relative;color:#fff;max-width:500px;padding:0 4rem}
+.hero-fr-en{font-size:.8rem;letter-spacing:.3em;opacity:.5;margin-bottom:2rem}
+.hero-fr h1{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;line-height:1.2;margin-bottom:1.5rem}
+.hero-fr h1 span{font-style:italic;color:var(--fr-gold)}
+.hero-fr-content p{font-size:1rem;opacity:.7;margin-bottom:2rem}
+.btn-fr{display:inline-block;background:var(--fr-black);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.85rem;letter-spacing:.1em;transition:.3s}
+.btn-fr:hover{background:#333;color:#fff}
+.btn-fr-outline{display:inline-block;border:1px solid var(--fr-black);color:var(--fr-black);padding:.8rem 2.5rem;text-decoration:none;font-size:.85rem;letter-spacing:.1em;transition:.3s}
+.btn-fr-outline:hover{background:var(--fr-black);color:#fff}
+
+/* COLLECTIONS */
+.sec-fr-collections{padding:5rem 0}
+.fr-title{text-align:center;font-size:2.5rem;margin-bottom:3rem}
+.fr-collection{overflow:hidden}
+.fr-collection-img{height:350px;background-size:cover;background-position:center;transition:.5s}
+.fr-collection:hover .fr-collection-img{transform:scale(1.05)}
+.fr-collection-body{padding:1.5rem}
+.fr-collection-body h5{font-size:1.3rem;margin-bottom:.5rem}
+.fr-collection-body p{font-size:.85rem;color:var(--fr-muted);margin-bottom:1rem}
+.fr-link{color:var(--fr-black);text-decoration:none;font-size:.85rem;font-weight:500;letter-spacing:.05em}
+.fr-link:hover{color:var(--fr-gold)}
+
+/* STORY */
+.sec-fr-story{padding:5rem 0;background:#fff}
+.fr-label{font-size:.75rem;letter-spacing:.3em;color:var(--fr-gold);margin-bottom:.5rem;display:block}
+.fr-heading{font-size:2.5rem;margin-bottom:2rem}
+.sec-fr-story p{font-size:.95rem;color:var(--fr-muted);line-height:2;margin-bottom:1.5rem}
+.fr-story-img{width:100%;height:450px;object-fit:cover}
+
+/* CTA */
+.sec-fr-cta{padding:5rem 0;background:var(--fr-black);color:#fff;text-align:center}
+.sec-fr-cta h2{font-size:2.5rem;margin-bottom:1rem}
+.sec-fr-cta p{color:rgba(255,255,255,.5);margin-bottom:2rem}
+
+/* FOOTER */
+.ft-fr{padding:3rem 0 1.5rem;background:var(--fr-black);color:rgba(255,255,255,.4)}
+.ft-fr h5,.ft-fr h6{color:#fff;margin-bottom:1rem;font-size:.9rem;letter-spacing:.1em}
+.ft-fr a{color:rgba(255,255,255,.3);text-decoration:none}
+.ft-fr a:hover{color:var(--fr-gold)}
+.ft-fr hr{border-color:rgba(255,255,255,.1)}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .nav-fr {
+  background: rgba(250,248,245,.95) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .nav-fr-logo { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-fr-menu a { color: #2d2d2d !important; }
+body:not(.page-home) .nav-fr .navbar-toggler,
+body:not(.page-home) .nav-fr .nav-toggle { color: #2d2d2d !important; }

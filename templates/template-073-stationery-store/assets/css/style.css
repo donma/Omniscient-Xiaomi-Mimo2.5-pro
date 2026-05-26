@@ -1,0 +1,40 @@
+/* 墨色文具 - 紙感文青風 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+:root{--st-dark:#4a4a4a;--st-green:#6b8e7b;--st-cream:#faf8f5;--st-text:#333;--st-muted:#999;--st-border:#e0dcd4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter','Noto Sans TC',sans-serif;color:var(--st-text);background:var(--st-cream)}
+h1,h2,h3,h4,h5{font-family:'Noto Serif TC',serif}
+.nav-st{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,248,245,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--st-border);padding:1rem 0}
+.nav-st-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center}
+.nav-st-logo{font-family:'Noto Serif TC',serif;font-size:1.5rem;color:var(--st-dark);text-decoration:none}
+.nav-st-menu{list-style:none;display:flex;gap:2rem;margin:0;padding:0;margin-left:auto}
+.nav-st-menu a{color:var(--st-muted);text-decoration:none;font-size:.9rem;transition:.2s}
+.nav-st-menu a:hover{color:var(--st-dark)}
+.nav-st-menu a.active{color:var(--st-dark)}
+.nav-st-toggle{display:none;background:none;border:none;color:var(--st-dark);font-size:1.5rem;margin-left:auto}
+@media(max-width:991px){.nav-st-toggle{display:block}.nav-st-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--st-cream);flex-direction:column;padding:1.5rem;gap:1rem}.nav-st.open .nav-st-menu{display:flex}}
+.hero-st{padding:8rem 0 4rem}
+.hero-st-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.hero-st h1{font-size:3rem;font-weight:400;line-height:1.3;margin-bottom:1.5rem}
+.hero-st h1 span{color:var(--st-green)}
+.hero-st-text p{font-size:1rem;color:var(--st-muted);margin-bottom:2rem}
+.btn-st{display:inline-block;background:var(--st-dark);color:#fff;padding:.8rem 2rem;text-decoration:none;font-size:.85rem;transition:.3s}
+.btn-st:hover{background:#666;color:#fff}
+.hero-st-img{height:500px;background-size:cover;background-position:center;border-radius:4px}
+@media(max-width:768px){.hero-st-grid{grid-template-columns:1fr}.hero-st-img{height:300px}}
+.sec-st-categories{padding:4rem 0;background:#fff}
+.st-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.st-cat{text-align:center;padding:2rem;background:var(--st-cream);border-radius:8px}
+.st-cat i{font-size:2rem;color:var(--st-green);margin-bottom:1rem}
+.st-cat h5{font-size:1rem}
+.sec-st-products{padding:4rem 0}
+.st-product{text-align:center}
+.st-product img{width:100%;height:250px;object-fit:cover;border-radius:4px;margin-bottom:1rem}
+.st-product h5{font-size:1rem;margin-bottom:.3rem}
+.st-product span{font-weight:600;color:var(--st-green)}
+.sec-st-cta{padding:4rem 0;background:var(--st-dark);color:#fff;text-align:center;border-radius:8px;margin:2rem}
+.sec-st-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-st-cta p{opacity:.6;margin-bottom:1.5rem}
+.ft-st{padding:2rem 0;background:var(--st-dark);color:rgba(255,255,255,.5)}
+.ft-st h5{color:#fff}
+.ft-st hr{border-color:rgba(255,255,255,.1)}

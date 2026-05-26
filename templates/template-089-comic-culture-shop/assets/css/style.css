@@ -1,0 +1,33 @@
+/* 漫次元 - 潮流動漫風 */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+:root{--comic-red:#ff6b6b;--comic-yellow:#ffd93d;--comic-blue:#4d96ff;--comic-bg:#1a1200;--comic-text:#333;--comic-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--comic-text);background:#fff}
+h1,h2,h3,h4,h5{font-family:'Fredoka','Noto Sans TC',sans-serif}
+.nav-comic{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);padding:.8rem 0;border-bottom:3px solid var(--comic-red)}
+.nav-comic-logo{color:var(--comic-red);text-decoration:none;font-weight:700;font-size:1.3rem}
+.nav-comic-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-comic-menu a{color:var(--comic-text);text-decoration:none;font-size:.9rem;font-weight:500}
+.nav-comic-menu a:hover,.nav-comic-menu a.active{color:var(--comic-red)}
+.nav-comic-toggle{display:none;background:none;border:none;color:var(--comic-red);font-size:1.5rem}
+@media(max-width:991px){.nav-comic-toggle{display:block;margin-left:auto}.nav-comic-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:1rem;gap:1rem;border-bottom:3px solid var(--comic-red)}.nav-comic-menu.open{display:flex}}
+.hero-comic{padding:7rem 0 3rem;text-align:center;background:linear-gradient(135deg,var(--comic-yellow),var(--comic-red));color:#fff}
+.hero-comic h1{font-size:3.5rem;font-weight:700;line-height:1.2;margin-bottom:1rem}
+.hero-comic>p{font-size:1.1rem;opacity:.8;margin-bottom:2rem}
+.btn-comic{display:inline-block;background:#fff;color:var(--comic-red);padding:.8rem 2.5rem;border-radius:25px;text-decoration:none;font-weight:700;transition:.3s}
+.btn-comic:hover{background:var(--comic-yellow);color:var(--comic-text)}
+.sec-comic-categories{padding:4rem 0}
+.comic-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.comic-cat{display:flex;align-items:center;justify-content:center;height:120px;border-radius:16px;text-decoration:none;color:#fff;font-family:'Fredoka',sans-serif;font-size:1.3rem;font-weight:700;transition:.3s}
+.comic-cat:hover{transform:scale(1.05);color:#fff}
+.sec-comic-events{padding:4rem 0;background:#f5f5f5}
+.comic-event{padding:2rem;background:#fff;border-radius:16px;border-left:4px solid var(--comic-red)}
+.comic-event h5{font-size:1.2rem;margin-bottom:.5rem}
+.comic-event p{font-size:.9rem;color:var(--comic-muted);margin-bottom:.5rem}
+.comic-event span{font-size:.85rem;color:var(--comic-red);font-weight:600}
+.sec-comic-cta{padding:4rem 0;background:linear-gradient(135deg,var(--comic-blue),var(--comic-red));color:#fff;text-align:center;border-radius:16px;margin:2rem}
+.sec-comic-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-comic-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-comic{padding:2rem 0;background:var(--comic-bg);color:rgba(255,255,255,.5)}
+.ft-comic h5{color:#fff}
+.ft-comic hr{border-color:rgba(255,255,255,.1)}

@@ -1,0 +1,46 @@
+﻿{
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "author": "Omniscient Gallery",
+  "updated": "2026-05-25",
+  "name": "accounting-office",
+  "framework": "Bootstrap 5",
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "colors": {
+    "accent": "#e0e0e0",
+    "primary": "#0066cc",
+    "secondary": "#f0f9ff",
+    "dark": "#333333"
+  },
+  "created": "2026-05-25",
+  "name_zh": "會計記帳",
+  "description_zh": "專業會計記帳網站模板",
+  "version": "1.0.0",
+  "description": "Professional accounting-office website template",
+  "id": "T014",
+  "features": [
+    "Responsive Design",
+    "Schema Markup",
+    "Booking",
+    "FAQ Accordion",
+    "Mobile Menu"
+  ],
+  "category": "professional-services",
+  "fonts": [
+    "IBM Plex Sans",
+    "Noto Sans TC"
+  ],
+  "hasZip": false
+}

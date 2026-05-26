@@ -1,0 +1,11 @@
+{
+    "templateId": "T005",
+    "tags": {
+        "industry": ["interior", "design", "室內設計", "建築"],
+        "style": ["architectural", "clean", "minimal", "建築感"],
+        "features": ["responsive", "seo", "portfolio"],
+        "layout": ["full-hero", "grid", "sharp-cards"],
+        "colors": ["charcoal", "white", "warm-accent"]
+    },
+    "hasZip": false
+}

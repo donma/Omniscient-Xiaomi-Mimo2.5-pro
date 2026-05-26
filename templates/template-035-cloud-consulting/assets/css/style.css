@@ -1,0 +1,122 @@
+/* T035 Cloud Consulting - Inter Blue Clean */
+:root{--primary:#1976d2;--primary-dark:#1565c0;--primary-light:#e3f2fd;--accent:#42a5f5;--bg:#ffffff;--bg-alt:#f5f9ff;--dark:#0d1b2a;--text:#1e293b;--text-muted:#64748b;--border:#e0e8f0;--shadow:0 4px 20px rgba(25,118,210,0.08);--radius:16px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter','Noto Sans TC',sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+
+/* Nav - Light gray bg, centered logo */
+.navbar{background:#f8fafc;padding:.6rem 0;border-bottom:1px solid var(--border);transition:all .3s}
+.navbar.scrolled{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,0.06)}
+.navbar-brand{font-weight:700;color:var(--primary)!important;font-size:1.5rem;letter-spacing:-.5px}
+.nav-link{color:var(--text)!important;font-weight:500;padding:.6rem 1.2rem!important;border-radius:8px;transition:all .2s}
+.nav-link:hover,.nav-link.active{color:var(--primary)!important;background:var(--primary-light)}
+.navbar-toggler{border:none}
+
+/* Buttons */
+.btn-primary{background:var(--primary);color:#fff;border:none;border-radius:10px;padding:.75rem 2rem;font-weight:600;transition:all .3s}
+.btn-primary:hover{background:var(--primary-dark);color:#fff;transform:translateY(-2px);box-shadow:0 8px 25px rgba(25,118,210,0.3)}
+.btn-outline-primary{border:2px solid var(--primary);color:var(--primary);border-radius:10px;padding:.75rem 2rem;font-weight:600;background:transparent;transition:all .3s}
+.btn-outline-primary:hover{background:var(--primary);color:#fff}
+
+/* Sections */
+.section-padding{padding:6rem 0}
+.section-tag{display:inline-block;background:var(--primary-light);color:var(--primary);padding:.4rem 1.2rem;border-radius:50px;font-size:.85rem;font-weight:600}
+.section-title{font-size:2.8rem;font-weight:700;color:var(--dark);line-height:1.2;letter-spacing:-.5px}
+.section-subtitle{color:var(--text-muted);font-size:1.1rem;max-width:600px}
+.bg-alt{background:var(--bg-alt)}
+
+/* Hero - Centered with cloud architecture bg */
+.hero-centered{padding:10rem 0 6rem;text-align:center;background:linear-gradient(180deg,#e3f2fd 0%,#fff 100%);position:relative;overflow:hidden}
+.hero-centered::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"><circle cx="400" cy="200" r="150" fill="none" stroke="%231976d2" stroke-width="0.5" opacity="0.2"/><circle cx="400" cy="200" r="100" fill="none" stroke="%231976d2" stroke-width="0.5" opacity="0.15"/><circle cx="400" cy="200" r="50" fill="none" stroke="%231976d2" stroke-width="0.5" opacity="0.1"/></svg>') center/contain no-repeat;opacity:.5}
+.hero-centered h1{font-size:3.5rem;font-weight:700;color:var(--dark);line-height:1.15;margin-bottom:1.5rem;position:relative}
+.hero-centered p{font-size:1.2rem;color:var(--text-muted);max-width:600px;margin:0 auto 2.5rem;position:relative}
+.hero-cloud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:400px;margin:0 auto 2.5rem;position:relative}
+.hero-cloud-item{background:#fff;border-radius:12px;padding:1rem;box-shadow:var(--shadow);text-align:center}
+.hero-cloud-item i{font-size:1.5rem;color:var(--primary);margin-bottom:.3rem}
+
+/* Platform Icons */
+.platform-icon{text-align:center;padding:2rem;background:#fff;border-radius:var(--radius);border:1px solid var(--border);transition:all .3s}
+.platform-icon:hover{border-color:var(--primary);box-shadow:var(--shadow);transform:translateY(-3px)}
+.platform-icon i{font-size:2.5rem;color:var(--primary);margin-bottom:.8rem}
+.platform-icon h6{font-weight:600;color:var(--dark);margin:0}
+
+/* Migration Steps */
+.migration-step{display:flex;align-items:flex-start;gap:1.5rem;margin-bottom:2.5rem;position:relative}
+.migration-step::after{content:'';position:absolute;left:27px;top:60px;bottom:-2.5rem;width:2px;background:var(--primary-light)}
+.migration-step:last-child::after{display:none}
+.step-icon{width:56px;height:56px;background:var(--primary);color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700;flex-shrink:0}
+.step-content h5{font-weight:600;color:var(--dark);margin-bottom:.3rem}
+.step-content p{color:var(--text-muted);font-size:.95rem}
+
+/* Cards - Light blue bg, rounded 16px */
+.card-custom{background:var(--primary-light);border-radius:var(--radius);padding:2rem;height:100%;transition:all .3s}
+.card-custom:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.card-custom i.card-icon{font-size:2.2rem;color:var(--primary);margin-bottom:1rem}
+.card-custom h5{font-weight:600;color:var(--dark);margin-bottom:.5rem}
+.card-white{background:#fff;border-radius:var(--radius);padding:2rem;border:1px solid var(--border);height:100%;transition:all .3s}
+.card-white:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+
+/* Testimonials */
+.testimonial-card{background:#fff;border-radius:var(--radius);padding:2.5rem;border:1px solid var(--border);position:relative}
+.testimonial-card::before{content:'\u201C';position:absolute;top:1rem;left:1.5rem;font-size:4rem;color:var(--primary);opacity:.2;font-family:serif}
+.testimonial-stars{color:#f59e0b;margin-bottom:1rem}
+
+/* Team */
+.team-card{text-align:center;background:#fff;border-radius:var(--radius);padding:2rem;border:1px solid var(--border)}
+.team-card img{width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--primary-light);margin-bottom:1rem}
+
+/* Blog */
+.blog-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);transition:all .3s}
+.blog-card:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+.blog-card img{width:100%;height:200px;object-fit:cover}
+.blog-card-body{padding:1.5rem}
+.blog-tag{background:var(--primary-light);color:var(--primary);padding:.25rem .8rem;border-radius:50px;font-size:.8rem;font-weight:600}
+
+/* Portfolio */
+.portfolio-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);transition:all .3s}
+.portfolio-card:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+.portfolio-card img{width:100%;height:200px;object-fit:cover}
+
+/* Process */
+.process-step{text-align:center;padding:2rem;background:#fff;border-radius:var(--radius);border:1px solid var(--border)}
+.process-num{width:50px;height:50px;background:var(--primary);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;margin:0 auto 1rem}
+
+/* FAQ */
+.accordion-item{border:1px solid var(--border);margin-bottom:.75rem;border-radius:var(--radius)!important;overflow:hidden}
+.accordion-button{font-weight:600;color:var(--dark);padding:1.2rem 1.5rem}
+.accordion-button:not(.collapsed){color:var(--primary);background:var(--primary-light)}
+.accordion-button:focus{box-shadow:none}
+
+/* Forms */
+.form-control,.form-select{border-radius:10px;border:2px solid var(--border);padding:.8rem 1rem;transition:all .2s}
+.form-control:focus,.form-select:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(25,118,210,0.1)}
+
+/* About Hero */
+.about-hero{padding:8rem 0 3rem;background:var(--bg-alt);text-align:center}
+
+/* Footer */
+.footer{background:var(--dark);color:#fff;padding:4rem 0 2rem}
+.footer-brand{font-size:1.4rem;font-weight:700;color:var(--accent);margin-bottom:1rem}
+.footer h5{color:var(--accent);font-size:1rem;margin-bottom:1.2rem;font-weight:600}
+.footer-links{list-style:none;padding:0}
+.footer-links li{margin-bottom:.6rem}
+.footer-links a{color:#94a3b8;text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--accent)}
+.footer-bottom{text-align:center;color:#64748b;font-size:.9rem;margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
+
+/* Thank You */
+.thank-you-msg{display:none;text-align:center;padding:3rem}
+.thank-you-msg.show{display:block}
+.thank-you-msg i{font-size:4rem;color:var(--primary)}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .navbar {
+  background: #fff !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .navbar-brand { color: var(--dark,#1976d2) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-link { color: #2d2d2d !important; }
+body:not(.page-home) .navbar .navbar-toggler,
+body:not(.page-home) .navbar .nav-toggle { color: #2d2d2d !important; }

@@ -1,0 +1,36 @@
+﻿{
+  "description": "文具店模板，採用紙質感的優雅設計",
+  "name": "文具工房",
+  "features": [
+    "響應式設計",
+    "Bootstrap 5",
+    "Google Fonts",
+    "Bootstrap Icons",
+    "SEO優化",
+    "OG標籤",
+    "Schema標記",
+    "FAQ手風琴",
+    "表單驗證",
+    "手機漢堡選單"
+  ],
+  "created_at": "2024-12-01",
+  "id": "template-073-stationery-store",
+  "version": "1.0.0",
+  "hasZip": false,
+  "pages": [
+    "index.html",
+    "about.html",
+    "services.html",
+    "service-detail.html",
+    "portfolio.html",
+    "reviews.html",
+    "faq.html",
+    "booking.html",
+    "process.html",
+    "blog.html",
+    "blog-detail.html",
+    "contact.html"
+  ],
+  "author": "Omniscient",
+  "category": "文具"
+}

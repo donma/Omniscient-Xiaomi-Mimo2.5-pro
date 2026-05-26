@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield | 資訊安全防護</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet"><link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top terminal-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="prompt">$</span> CyberShield</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">~/首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">~/關於</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">~/服務</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">~/案例</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">~/FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">~/部落格</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">~/聯絡</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section" id="matrix-hero">
+        <div class="matrix-bg" id="matrixCanvas"></div>
+        <div class="hero-content container">
+            <div class="terminal-window">
+                <div class="terminal-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="terminal-title">cybershield@security:~</span></div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">$</span> ./scan --target=enterprise --mode=deep</p>
+                    <p class="terminal-line output">[*] 掃描中...</p>
+                    <p class="terminal-line output success">[+] 偵測到 47 個潛在威脅</p>
+                    <p class="terminal-line output">[+] 已建立安全防護網</p>
+                    <h1 class="hero-title mt-3">守護您的<br><span class="green-text">數位資產</span></h1>
+                    <p class="hero-desc">全方位資安解決方案，從滲透測試到 SOC 監控，為企業建立銅牆鐵壁。</p>
+                    <a href="booking.html" class="btn btn-green btn-lg me-3">免費安全評估</a>
+                    <a href="services.html" class="btn btn-outline-green btn-lg">查看服務</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="threats-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">// THREATS</span>
+                <h2 class="section-title">即時威脅態勢</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="threat-card">
+                        <div class="threat-num" data-target="12847">0</div>
+                        <div class="threat-label">本月偵測攻擊</div>
+                        <div class="threat-bar"><div class="threat-fill" style="width:85%"></div></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="threat-card">
+                        <div class="threat-num" data-target="99.7">0</div>
+                        <div class="threat-label">攔截率 (%)</div>
+                        <div class="threat-bar"><div class="threat-fill" style="width:99%"></div></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="threat-card">
+                        <div class="threat-num" data-target="3200">0</div>
+                        <div class="threat-label">保護企業客戶</div>
+                        <div class="threat-bar"><div class="threat-fill" style="width:72%"></div></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="threat-card">
+                        <div class="threat-num" data-target="0.3">0</div>
+                        <div class="threat-label">平均回應時間 (秒)</div>
+                        <div class="threat-bar"><div class="threat-fill" style="width:95%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions-section section-padding bg-dark-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">// SOLUTIONS</span>
+                <h2 class="section-title">安全解決方案</h2>
+            </div>
+            <ul class="nav nav-pills solution-tabs justify-content-center mb-4" id="solutionTab">
+                <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab1">滲透測試</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab2">SOC 監控</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab3">合規諮詢</button></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1">
+                    <div class="row align-items-center"><div class="col-lg-6"><h3>企業級滲透測試</h3><p style="color:var(--text-muted)">模擬真實攻擊場景，全面檢測 Web、Mobile、Network、IoT 等環境的安全漏洞。</p><ul style="color:var(--text-muted);list-style:none;padding:0"><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>OWASP Top 10 完整覆蓋</li><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>社會工程學測試</li><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>詳細修復建議報告</li></ul></div><div class="col-lg-6 text-center"><i class="bi bi-bug" style="font-size:8rem;color:var(--green)"></i></div></div>
+                </div>
+                <div class="tab-pane fade" id="tab2">
+                    <div class="row align-items-center"><div class="col-lg-6"><h3>24/7 SOC 安全監控</h3><p style="color:var(--text-muted)">全天候安全運營中心，即時偵測、分析、回應各種資安事件。</p><ul style="color:var(--text-muted);list-style:none;padding:0"><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>SIEM 日誌分析</li><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>異常行為偵測</li><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>自動化事件回應</li></ul></div><div class="col-lg-6 text-center"><i class="bi bi-shield-check" style="font-size:8rem;color:var(--green)"></i></div></div>
+                </div>
+                <div class="tab-pane fade" id="tab3">
+                    <div class="row align-items-center"><div class="col-lg-6"><h3>資安合規諮詢</h3><p style="color:var(--text-muted)">協助企業符合 ISO 27001、GDPR、個資法等法規要求。</p><ul style="color:var(--text-muted);list-style:none;padding:0"><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>差距分析與改善計畫</li><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>文件撰寫輔導</li><li class="mb-2"><i class="bi bi-check2-circle text-green me-2"></i>認證陪同</li></ul></div><div class="col-lg-6 text-center"><i class="bi bi-file-earmark-check" style="font-size:8rem;color:var(--green)"></i></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">您的企業安全嗎？</h2>
+            <p style="color:var(--text-muted);margin-bottom:2rem">免費安全評估，找出潛在風險</p>
+            <a href="booking.html" class="btn btn-green btn-lg">立即評估</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4"><div class="footer-brand"><span class="prompt">$</span> CyberShield</div><p>全方位資訊安全防護</p></div>
+                <div class="col-lg-2"><h5>服務</h5><ul class="footer-links"><li><a href="services.html">解決方案</a></li><li><a href="portfolio.html">案例</a></li></ul></div>
+                <div class="col-lg-2"><h5>公司</h5><ul class="footer-links"><li><a href="about.html">關於</a></li><li><a href="contact.html">聯絡</a></li></ul></div>
+                <div class="col-lg-4"><h5>緊急通報</h5><p style="color:var(--green);font-size:1.2rem;font-weight:700"><i class="bi bi-telephone-fill me-2"></i>0800-777-888</p><p style="color:var(--text-muted)">24 小時資安事件熱線</p></div>
+            </div>
+            <hr><div class="footer-bottom"><p>&copy; 2024 CyberShield. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script src="assets/js/main.js"></script>
+</body></html>

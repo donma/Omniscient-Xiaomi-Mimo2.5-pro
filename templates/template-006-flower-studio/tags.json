@@ -1,0 +1,11 @@
+{
+    "templateId": "T006",
+    "tags": {
+        "industry": ["flower", "floral", "花藝", "花束", "婚禮"],
+        "style": ["natural", "botanical", "feminine", "自然", "手工"],
+        "features": ["responsive", "seo", "masonry"],
+        "layout": ["full-hero", "masonry", "rounded-cards"],
+        "colors": ["sage-green", "cream", "warm"]
+    },
+    "hasZip": false
+}

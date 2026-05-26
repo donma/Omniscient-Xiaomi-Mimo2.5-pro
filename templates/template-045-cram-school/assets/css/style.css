@@ -1,0 +1,87 @@
+/* T045 Cram School - Poppins+Noto Sans TC Blue+Yellow */
+:root{--primary:#2196f3;--primary-dark:#1976d2;--primary-light:#e3f2fd;--accent:#ffc107;--accent-dark:#f9a825;--accent-light:#fff8e1;--bg:#ffffff;--bg-alt:#f8f9ff;--dark:#1a237e;--text:#333333;--text-muted:#666666;--border:#e8ecf5;--shadow:0 4px 20px rgba(33,150,243,0.12);--radius:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins','Noto Sans TC',sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+a{text-decoration:none;color:inherit}img{max-width:100%}
+.navbar{background:#fff;padding:.8rem 0;border-bottom:2px solid var(--accent);transition:all .3s}
+.navbar.scrolled{box-shadow:0 2px 20px rgba(0,0,0,0.08)}
+.navbar-brand{font-weight:700;color:var(--primary)!important;font-size:1.5rem}
+.nav-link{color:var(--text)!important;font-weight:500;padding:.6rem 1rem!important;border-radius:12px;transition:all .2s}
+.nav-link:hover,.nav-link.active{color:var(--primary)!important;background:var(--primary-light)}
+.btn-primary{background:var(--accent);color:var(--dark);border:none;border-radius:50px;padding:.7rem 2rem;font-weight:700;transition:all .3s}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,193,7,0.3)}
+.btn-outline-primary{border:2px solid var(--primary);color:var(--primary);border-radius:50px;padding:.7rem 2rem;font-weight:600;background:transparent}
+.btn-outline-primary:hover{background:var(--primary);color:#fff}
+.section-padding{padding:6rem 0}
+.section-tag{display:inline-block;background:var(--accent-light);color:var(--accent-dark);padding:.4rem 1.2rem;border-radius:50px;font-size:.85rem;font-weight:600}
+.section-title{font-size:2.8rem;font-weight:700;color:var(--dark);line-height:1.2}
+.bg-alt{background:var(--bg-alt)}
+.hero-cram{padding:10rem 0 6rem;background:linear-gradient(135deg,var(--primary-light) 0%,var(--accent-light) 100%);position:relative;overflow:hidden}
+.hero-cram::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:var(--accent);border-radius:50%;opacity:0.1}
+.hero-cram h1{font-size:3.2rem;font-weight:700;color:var(--dark);line-height:1.15;margin-bottom:1.5rem}
+.hero-cram h1 span{color:var(--primary)}
+.hero-cram p{font-size:1.15rem;color:var(--text-muted);max-width:550px;margin-bottom:2.5rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:#fff;padding:.5rem 1.5rem;border-radius:50px;box-shadow:var(--shadow);font-weight:600;color:var(--primary);margin-bottom:1.5rem}
+.subject-card{border-radius:var(--radius);padding:2rem;height:100%;transition:all .3s;position:relative;overflow:hidden}
+.subject-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.subject-card.blue{background:var(--primary);color:#fff}
+.subject-card.yellow{background:var(--accent);color:var(--dark)}
+.subject-card.green{background:#4caf50;color:#fff}
+.subject-card.purple{background:#9c27b0;color:#fff}
+.subject-card.red{background:#f44336;color:#fff}
+.subject-card.orange{background:#ff9800;color:#fff}
+.subject-card h4{font-weight:700;margin-bottom:.5rem}
+.subject-card p{font-size:.9rem;opacity:0.9}
+.card-custom{background:#fff;border-radius:var(--radius);padding:2rem;border:1px solid var(--border);height:100%;transition:all .3s}
+.card-custom:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+.infographic{background:#fff;border-radius:var(--radius);padding:3rem;border:1px solid var(--border)}
+.infographic-step{display:flex;align-items:center;gap:1.5rem;margin-bottom:2rem}
+.infographic-num{width:50px;height:50px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;flex-shrink:0}
+.team-card{text-align:center;background:#fff;border-radius:var(--radius);padding:2rem;border:1px solid var(--border)}
+.team-card img{width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem}
+.result-card{background:#fff;border-radius:var(--radius);padding:2rem;border:1px solid var(--border);display:flex;align-items:center;gap:1.5rem}
+.result-before{background:var(--primary-light);border-radius:12px;padding:1rem;text-align:center;flex-shrink:0}
+.result-before h3{color:var(--primary);font-weight:700;margin:0}
+.result-after{background:var(--accent-light);border-radius:12px;padding:1rem;text-align:center;flex-shrink:0}
+.result-after h3{color:var(--accent-dark);font-weight:700;margin:0}
+.schedule-table{width:100%;border-collapse:collapse;border-radius:var(--radius);overflow:hidden}
+.schedule-table th{background:var(--primary);color:#fff;padding:1rem;font-weight:600}
+.schedule-table td{padding:.8rem 1rem;border:1px solid var(--border);text-align:center}
+.schedule-table tr:nth-child(even){background:var(--primary-light)}
+.accordion-item{border:1px solid var(--border);margin-bottom:.5rem;border-radius:var(--radius)!important}
+.accordion-button{font-weight:600;color:var(--dark);padding:1.2rem 1.5rem;border-radius:var(--radius)!important}
+.accordion-button:not(.collapsed){color:var(--primary);background:var(--primary-light)}
+.accordion-button:focus{box-shadow:none}
+.form-control,.form-select{border-radius:12px;border:2px solid var(--border);padding:.8rem 1rem}
+.form-control:focus,.form-select:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(33,150,243,0.1)}
+.about-hero{padding:8rem 0 3rem;background:linear-gradient(135deg,var(--primary-light),var(--accent-light))}
+.footer{background:var(--dark);color:#fff;padding:4rem 0 2rem}
+.footer-brand{font-size:1.4rem;font-weight:700;color:var(--accent);margin-bottom:1rem}
+.footer h5{color:var(--accent);font-size:1rem;margin-bottom:1.2rem}
+.footer-links{list-style:none;padding:0}
+.footer-links li{margin-bottom:.6rem}
+.footer-links a{color:#94a3b8;text-decoration:none}
+.footer-links a:hover{color:var(--accent)}
+.footer-bottom{text-align:center;color:#64748b;font-size:.9rem;margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
+.thank-you-msg{display:none;text-align:center;padding:3rem}
+.thank-you-msg.show{display:block}
+.thank-you-msg i{font-size:4rem;color:var(--accent)}
+.review-card{background:#fff;border-radius:var(--radius);padding:2rem;border:1px solid var(--border)}
+.review-stars{color:var(--accent);margin-bottom:1rem}
+.blog-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
+.blog-card img{width:100%;height:200px;object-fit:cover}
+.blog-card-body{padding:1.5rem}
+.blog-tag{background:var(--accent-light);color:var(--accent-dark);padding:.2rem .8rem;border-radius:50px;font-size:.8rem}
+.process-step{text-align:center;padding:2rem;background:#fff;border-radius:var(--radius);border:1px solid var(--border)}
+.process-num{width:50px;height:50px;background:var(--accent);color:var(--dark);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;margin:0 auto 1rem}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .navbar {
+  background: rgba(255,255,255,0.97) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .navbar-brand { color: var(--dark,#2196f3) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-link { color: #2d2d2d !important; }
+body:not(.page-home) .navbar .navbar-toggler,
+body:not(.page-home) .navbar .nav-toggle { color: #2d2d2d !important; }

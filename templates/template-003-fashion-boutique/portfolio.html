@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>系列形象｜NOIR</title>
+    <meta name="description" content="NOIR 本季形象企劃與 Lookbook — 都會極簡美學">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <style>
+        .portfolio-hero {
+            height: 70vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .portfolio-hero img {
+            width: 100%; height: 100%; object-fit: cover;
+        }
+        .portfolio-hero-overlay {
+            position: absolute; inset: 0;
+            background: rgba(0,0,0,0.35);
+            display: flex; align-items: flex-end; padding: 60px;
+        }
+        .portfolio-hero-overlay h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 72px; font-weight: 300;
+            color: #fff; line-height: 1;
+        }
+        .portfolio-hero-overlay .label {
+            font-size: 11px; letter-spacing: 5px;
+            text-transform: uppercase; color: rgba(255,255,255,0.7);
+            display: block; margin-bottom: 16px;
+        }
+        .lookbook-grid-img {
+            width: 100%; object-fit: cover;
+            display: block;
+        }
+        .tall { height: 580px; }
+        .short { height: 280px; }
+        .mid { height: 420px; }
+        .lookbook-caption {
+            padding: 24px 0 40px;
+        }
+        .lookbook-caption .season {
+            font-size: 11px; letter-spacing: 4px;
+            text-transform: uppercase; color: #999;
+        }
+        .lookbook-caption h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px; font-weight: 400; margin: 8px 0 6px;
+        }
+        .lookbook-caption p { font-size: 13px; color: #666; }
+        .divider-label {
+            display: flex; align-items: center; gap: 20px;
+            margin: 60px 0 40px;
+        }
+        .divider-label span {
+            font-size: 11px; letter-spacing: 5px;
+            text-transform: uppercase; color: #999; white-space: nowrap;
+        }
+        .divider-label hr { flex: 1; border-color: #ddd; margin: 0; }
+        .film-strip {
+            display: flex; gap: 4px; overflow: hidden;
+        }
+        .film-strip img {
+            flex: 1; height: 340px; object-fit: cover;
+            min-width: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top scrolled">
+        <div class="container-fluid px-5">
+            <ul class="navbar-nav d-none d-lg-flex flex-row gap-4">
+                <li class="nav-item"><a class="nav-link" href="services.html">新品</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">系列</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">品牌</a></li>
+            </ul>
+            <a class="navbar-brand mx-auto" href="index.html">NOIR</a>
+            <ul class="navbar-nav d-none d-lg-flex flex-row gap-4">
+                <li class="nav-item"><a class="nav-link" href="blog.html">日誌</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">聯絡</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html"><i class="bi bi-bag"></i></a></li>
+            </ul>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">品牌故事</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">新品系列</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">系列形象</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">日誌</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">聯絡</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Lookbook Banner -->
+        <div class="portfolio-hero">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1600&fit=crop" alt="NOIR SS26 Lookbook">
+            <div class="portfolio-hero-overlay">
+                <div>
+                    <span class="label">Lookbook / SS 2026</span>
+                    <h1>Still<br>Waters</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- SS26 Collection -->
+        <div class="container" style="padding-top:72px; padding-bottom:40px">
+            <div class="divider-label">
+                <span>SS 2026 — Still Waters</span><hr>
+            </div>
+
+            <!-- Row 1: tall left + 2 stacked right -->
+            <div class="row g-2 mb-2">
+                <div class="col-lg-7">
+                    <img src="https://images.unsplash.com/photo-1558618666-0c19ca3e8e5b?w=900&fit=crop" class="lookbook-grid-img tall" alt="SS26 Look 01">
+                </div>
+                <div class="col-lg-5 d-flex flex-column gap-2">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700&fit=crop" class="lookbook-grid-img short" alt="SS26 Look 02">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=700&fit=crop" class="lookbook-grid-img short" alt="SS26 Look 03">
+                </div>
+            </div>
+
+            <!-- Row 2: 3 equal columns -->
+            <div class="row g-2 mb-2">
+                <div class="col-4">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&fit=crop" class="lookbook-grid-img mid" alt="SS26 Look 04">
+                </div>
+                <div class="col-4">
+                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600&fit=crop" class="lookbook-grid-img mid" alt="SS26 Look 05">
+                </div>
+                <div class="col-4">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&fit=crop" class="lookbook-grid-img mid" alt="SS26 Look 06">
+                </div>
+            </div>
+
+            <div class="lookbook-caption">
+                <span class="season">SS 2026 Collection</span>
+                <h3>Still Waters — 靜水深流</h3>
+                <p>以煙灰、霧白與水洗深藍為主調，用寬鬆拖曳的輪廓呼應水面的靜謐張力。</p>
+            </div>
+        </div>
+
+        <!-- Film Strip Divider -->
+        <div class="film-strip">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&fit=crop" alt="">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&fit=crop" alt="">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500&fit=crop" alt="">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=500&fit=crop" alt="">
+        </div>
+
+        <!-- AW25 Archive -->
+        <div class="container" style="padding-top:72px; padding-bottom:72px">
+            <div class="divider-label">
+                <span>AW 2025 — Archive</span><hr>
+            </div>
+
+            <!-- Full-width lookbook banner -->
+            <div class="lookbook-full mb-4">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1400&fit=crop" alt="AW25 Campaign">
+                <div class="lookbook-overlay">
+                    <span class="lookbook-tag">AW 2025</span>
+                    <h2>Smoke<br>Signal</h2>
+                    <a href="services.html" class="btn btn-light btn-sm">瀏覽系列</a>
+                </div>
+            </div>
+
+            <!-- Row: 2 wide + narrow detail -->
+            <div class="row g-2">
+                <div class="col-md-5">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=700&fit=crop" class="lookbook-grid-img tall" alt="AW25 Look 01">
+                    <div class="lookbook-caption">
+                        <span class="season">Look 01</span>
+                        <h3>Oversize Wool Coat</h3>
+                        <p>羊毛混紡長版寬肩外套，以厚實量感建立冬日主視覺。</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1551489186-cf8726f514f8?w=600&fit=crop" class="lookbook-grid-img tall" alt="AW25 Look 02">
+                    <div class="lookbook-caption">
+                        <span class="season">Look 02</span>
+                        <h3>Draped Midi Skirt</h3>
+                        <p>斜裁垂墜中長裙，在步伐中創造流動感。</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=500&fit=crop" class="lookbook-grid-img" style="height:240px;object-fit:cover" alt="AW25 Detail">
+                    <div class="lookbook-caption">
+                        <span class="season">Detail</span>
+                        <h3>Accessories</h3>
+                        <p>極簡金屬配件收尾。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Strip -->
+        <section class="py-5" style="background:#111; text-align:center;">
+            <div class="container py-3">
+                <span style="font-size:12px; letter-spacing:5px; color:#888; text-transform:uppercase; display:block; margin-bottom:16px;">New Arrivals Now</span>
+                <h2 style="font-family:'Cormorant Garamond',serif; font-size:52px; font-weight:300; color:#fff; margin-bottom:32px;">本季新品已上架</h2>
+                <a href="services.html" class="btn btn-light">立即選購</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>NOIR</h4>
+                    <p>Minimalist fashion for modern elegance.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">新品系列</a></li>
+                        <li><a href="portfolio.html">系列形象</a></li>
+                        <li><a href="about.html">品牌故事</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">© 2026 NOIR Fashion. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

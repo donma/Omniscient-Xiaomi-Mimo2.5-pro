@@ -1,0 +1,16 @@
+/* T035 Responsive */
+@media(max-width:991.98px){
+  .hero-centered h1{font-size:2.5rem}
+  .section-title{font-size:2.2rem}
+  .hero-cloud-grid{grid-template-columns:repeat(3,1fr)}
+  .migration-step{flex-direction:column}
+  .migration-step::after{display:none}
+}
+@media(max-width:767.98px){
+  .hero-centered h1{font-size:2rem}
+  .section-title{font-size:1.8rem}
+  .section-padding{padding:3.5rem 0}
+  .hero-centered{padding:7rem 0 3rem}
+  .navbar-nav{text-align:center;padding:1rem 0}
+  .hero-cloud-grid{grid-template-columns:repeat(2,1fr)}
+}

@@ -1,0 +1,11 @@
+{
+    "templateId": "T008",
+    "tags": {
+        "industry": ["clinic", "health", "診所", "醫療", "健康"],
+        "style": ["clean", "professional", "trust", "乾淨", "專業"],
+        "features": ["responsive", "seo", "accordion"],
+        "layout": ["full-hero", "grid", "clean-cards"],
+        "colors": ["blue", "white", "light-gray"]
+    },
+    "hasZip": false
+}

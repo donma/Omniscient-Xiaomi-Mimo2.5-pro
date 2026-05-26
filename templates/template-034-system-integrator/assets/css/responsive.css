@@ -1,0 +1,21 @@
+﻿/* T034 Responsive */
+@media(max-width:991.98px){
+  .hero-split h1{font-size:2.4rem}
+  .section-title{font-size:2.2rem}
+  .service-vtabs{flex-direction:column}
+  .service-vtabs .nav{flex-direction:row;overflow-x:auto;min-width:100%}
+  .service-vtabs .nav-link{border-left:none;border-bottom:3px solid transparent;white-space:nowrap}
+  .service-vtabs .nav-link.active{border-bottom-color:var(--primary);border-left-color:transparent}
+  .hero-img{margin-top:2rem}
+  .timeline{padding-left:2rem}
+}
+@media(max-width:767.98px){
+  .hero-split h1{font-size:1.9rem}
+  .section-title{font-size:1.8rem}
+  .section-padding{padding:3.5rem 0}
+  .hero-split{padding:6rem 0 3rem}
+  .navbar-nav{text-align:center;padding:1rem 0}
+  .process-num{width:46px;height:46px;font-size:1.1rem}
+  .card-custom{padding:1.5rem}
+  .badge-partner{padding:1rem}
+}

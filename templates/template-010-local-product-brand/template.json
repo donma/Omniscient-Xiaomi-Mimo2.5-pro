@@ -1,0 +1,15 @@
+﻿{
+    "id": "T010",
+    "name": "Local Product Brand",
+    "nameTW": "山茶花工坊",
+    "category": "商品展示",
+    "description": "商業、產品導向風格的在地品牌網站模板，適合茶葉、食品、在地特產品牌使用。",
+    "version": "1.0.0",
+    "author": "Omniscient Template Gallery",
+    "tags": ["product", "brand", "茶葉", "食品", "在地品牌"],
+    "colors": { "primary": "#2d3436", "secondary": "#636e72", "gold": "#fdcb6e" },
+    "fonts": { "heading": "Noto Serif TC", "body": "Noto Sans TC" },
+    "features": ["Bootstrap 5", "響應式設計", "SEO優化"],
+    "pages": ["index.html", "about.html", "services.html", "service-detail.html", "portfolio.html", "reviews.html", "faq.html", "booking.html", "process.html", "blog.html", "blog-detail.html", "contact.html"],
+    "hasZip": false
+}

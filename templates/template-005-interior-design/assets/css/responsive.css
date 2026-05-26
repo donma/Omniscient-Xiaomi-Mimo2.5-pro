@@ -1,0 +1,92 @@
+/* Responsive CSS for Interior Design */
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: var(--white);
+        padding: 20px;
+        margin-top: 15px;
+    }
+    
+    .navbar-nav {
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        left: 50px;
+        bottom: 50px;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+        letter-spacing: 10px;
+    }
+    
+    .masonry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .masonry-item.large {
+        grid-column: span 1;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-content {
+        left: 30px;
+        bottom: 30px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+        letter-spacing: 5px;
+    }
+    
+    .masonry-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .masonry-item img,
+    .masonry-item.large img {
+        height: 250px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .philosophy-image img {
+        height: 300px;
+    }
+    
+    .work-info {
+        opacity: 1;
+    }
+    
+    .page-header h1 {
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .service-item {
+        padding: 30px 20px;
+    }
+}

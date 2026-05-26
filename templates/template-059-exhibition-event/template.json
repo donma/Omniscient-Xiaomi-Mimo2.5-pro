@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Cormorant",
+    "Inter"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "exhibition.html",
+    "artists.html",
+    "gallery.html",
+    "visitor-info.html",
+    "press.html",
+    "blog.html",
+    "faq.html",
+    "contact.html",
+    "tickets.html",
+    "map.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Exhibition Event",
+  "hasZip": false,
+  "id": "T059",
+  "category": "Events",
+  "colors": {
+    "accent": "#e0e0e0",
+    "light": "#f5f5f5",
+    "dark": "#111",
+    "primary": "#333",
+    "secondary": "#fff"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Gallery-white exhibition event website"
+}

@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Playfair Display",
+    "Inter"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "portfolio.html",
+    "skills.html",
+    "process.html",
+    "clients.html",
+    "blog.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "services.html",
+    "gallery.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Creator Portfolio",
+  "hasZip": false,
+  "id": "T053",
+  "category": "Creative",
+  "colors": {
+    "accent": "#999",
+    "light": "#fff",
+    "dark": "#000",
+    "primary": "#111",
+    "secondary": "#f5f5f5"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Minimalist black-white creator portfolio"
+}

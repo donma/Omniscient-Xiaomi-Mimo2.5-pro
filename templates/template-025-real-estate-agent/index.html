@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>金屋地產｜台北專業房仲</title>
+<meta name="description" content="金屋地產，台北專業房仲服務，買賣租賃一次搞定。">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- NAV: 深色地產風格 -->
+<nav class="nav-re">
+  <div class="nav-re-inner">
+    <a href="index.html" class="nav-re-logo"><i class="bi bi-building"></i> 金屋地產</a>
+    <button class="nav-re-toggle" onclick="document.querySelector('.nav-re-menu').classList.toggle('open')"><i class="bi bi-list"></i></button>
+    <ul class="nav-re-menu">
+      <li><a href="index.html" class="active">首頁</a></li>
+      <li><a href="about.html">關於我們</a></li>
+      <li><a href="services.html">服務項目</a></li>
+      <li><a href="portfolio.html">精選物件</a></li>
+      <li><a href="reviews.html">客戶見證</a></li>
+      <li><a href="contact.html">聯絡我們</a></li>
+      <li><a href="booking.html" class="nav-re-cta">免費估價</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO: 全螢幕物件搜尋 -->
+<header class="hero-re">
+  <div class="hero-re-overlay"></div>
+  <div class="hero-re-content">
+    <p class="hero-re-tag">PREMIUM REAL ESTATE</p>
+    <h1>找到您的夢想居所</h1>
+    <p class="hero-re-sub">深耕台北二十年，專業團隊為您把關每一筆交易</p>
+    <div class="hero-re-search">
+      <select><option>買房</option><option>租房</option><option>賣房</option></select>
+      <select><option>台北市</option><option>新北市</option><option>桃園市</option></select>
+      <select><option>不限房型</option><option>公寓</option><option>大樓</option><option>透天</option></select>
+      <button>搜尋物件</button>
+    </div>
+    <div class="hero-re-stats">
+      <div><span>2,500+</span><p>成交件數</p></div>
+      <div><span>98%</span><p>客戶滿意</p></div>
+      <div><span>20年</span><p>在地深耕</p></div>
+    </div>
+  </div>
+</header>
+
+<!-- 精選物件 -->
+<section class="sec-re-featured">
+  <div class="container">
+    <h2 class="sec-re-title">精選推薦物件</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="re-card">
+          <div class="re-card-img" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop')">
+            <span class="re-card-tag">獨家</span>
+            <span class="re-card-price">NT$ 3,280萬</span>
+          </div>
+          <div class="re-card-body">
+            <h5>信義區豪華三房</h5>
+            <p><i class="bi bi-geo-alt"></i> 信義區 · 近101</p>
+            <div class="re-card-meta"><span><i class="bi bi-arrows-angle-expand"></i> 42坪</span><span><i class="bi bi-door-open"></i> 3房2廳</span><span><i class="bi bi-car-front"></i> 有車位</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="re-card">
+          <div class="re-card-img" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop')">
+            <span class="re-card-tag">新上架</span>
+            <span class="re-card-price">NT$ 1,980萬</span>
+          </div>
+          <div class="re-card-body">
+            <h5>大安區文教美宅</h5>
+            <p><i class="bi bi-geo-alt"></i> 大安區 · 近台大</p>
+            <div class="re-card-meta"><span><i class="bi bi-arrows-angle-expand"></i> 28坪</span><span><i class="bi bi-door-open"></i> 2房1廳</span><span><i class="bi bi-car-front"></i> 有車位</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="re-card">
+          <div class="re-card-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop')">
+            <span class="re-card-tag">熱銷</span>
+            <span class="re-card-price">NT$ 4,580萬</span>
+          </div>
+          <div class="re-card-body">
+            <h5>中山區景觀四房</h5>
+            <p><i class="bi bi-geo-alt"></i> 中山區 · 近晴光市場</p>
+            <div class="re-card-meta"><span><i class="bi bi-arrows-angle-expand"></i> 55坪</span><span><i class="bi bi-door-open"></i> 4房2廳</span><span><i class="bi bi-car-front"></i> 有車位</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5"><a href="portfolio.html" class="btn-re-outline">瀏覽所有物件 <i class="bi bi-arrow-right"></i></a></div>
+  </div>
+</section>
+
+<!-- 服務項目 -->
+<section class="sec-re-services">
+  <div class="container">
+    <h2 class="sec-re-title">專業服務</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="re-svc"><i class="bi bi-house-door"></i><h5>買房服務</h5><p>精準配對，找到理想居所</p></div></div>
+      <div class="col-md-3"><div class="re-svc"><i class="bi bi-cash-stack"></i><h5>賣房服務</h5><p>專業估價，快速成交</p></div></div>
+      <div class="col-md-3"><div class="re-svc"><i class="bi bi-key"></i><h5>租賃服務</h5><p>物件豐富，租客優質</p></div></div>
+      <div class="col-md-3"><div class="re-svc"><i class="bi bi-calculator"></i><h5>免費估價</h5><p>行情分析，精準定價</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 團隊介紹 -->
+<section class="sec-re-team">
+  <div class="container">
+    <h2 class="sec-re-title">專業團隊</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 text-center">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop" class="re-team-img" alt="王經理">
+        <h5>王建國</h5>
+        <p class="text-muted">資深經理 · 20年經驗</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop" class="re-team-img" alt="李專員">
+        <h5>李美玲</h5>
+        <p class="text-muted">首席專員 · 15年經驗</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" class="re-team-img" alt="張顧問">
+        <h5>張志明</h5>
+        <p class="text-muted">投資顧問 · 12年經驗</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec-re-cta">
+  <div class="container text-center">
+    <h2>想知道您的房子值多少？</h2>
+    <p>免費線上估價，3分鐘立即知道行情</p>
+    <a href="booking.html" class="btn-re">立即估價 <i class="bi bi-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft-re">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4"><h5><i class="bi bi-building"></i> 金屋地產</h5><p>深耕台北二十年，專業誠信為您服務。</p></div>
+      <div class="col-lg-2"><h6>快速連結</h6><ul class="list-unstyled"><li><a href="about.html">關於</a></li><li><a href="services.html">服務</a></li><li><a href="portfolio.html">物件</a></li></ul></div>
+      <div class="col-lg-3"><h6>聯絡資訊</h6><p><i class="bi bi-telephone"></i> (02) 2345-6789</p><p><i class="bi bi-geo-alt"></i> 台北市信義區</p></div>
+      <div class="col-lg-3"><h6>追蹤我們</h6><div class="d-flex gap-3"><a href="#"><i class="bi bi-facebook fs-4"></i></a><a href="#"><i class="bi bi-line fs-4"></i></a><a href="#"><i class="bi bi-instagram fs-4"></i></a></div></div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.1)"><p class="text-center small mb-0">&copy; 2026 金屋地產</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

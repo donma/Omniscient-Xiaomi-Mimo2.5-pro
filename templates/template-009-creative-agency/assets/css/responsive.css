@@ -1,0 +1,95 @@
+/* Responsive CSS for Creative Agency */
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(10, 10, 15, 0.98);
+        padding: 20px;
+        border: 1px solid rgba(0, 255, 136, 0.1);
+        border-radius: 12px;
+        margin-top: 15px;
+    }
+    
+    .navbar-nav {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .hero-section {
+        min-height: 600px;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-desc {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .work-card img {
+        height: 200px;
+    }
+    
+    .geo {
+        display: none;
+    }
+    
+    .step-number {
+        font-size: 36px;
+    }
+    
+    .page-header {
+        padding: 120px 0 40px;
+    }
+    
+    .page-header h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+}

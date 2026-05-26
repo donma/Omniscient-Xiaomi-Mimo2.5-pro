@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();this.style.display='none';var msg=document.getElementById('successMsg')||document.getElementById('contactSuccess');if(msg){msg.style.display='block'}else{alert('感謝您的詢問')}f.reset();});});});

@@ -1,0 +1,37 @@
+/* 輪動單車 - 動感速度風 */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+:root{--bike-pink:#e91e63;--bike-dark:#1a1a1a;--bike-text:#333;--bike-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Roboto','Noto Sans TC',sans-serif;color:var(--bike-text);background:#fff}
+h1,h2,h3,h4,h5{font-family:'Oswald',sans-serif;font-weight:500;text-transform:uppercase}
+.nav-bike{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,26,26,.95);backdrop-filter:blur(10px);padding:.8rem 0}
+.nav-bike-logo{color:#fff;text-decoration:none;font-weight:700;font-size:1.3rem}
+.nav-bike-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-bike-menu a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;font-family:'Oswald',sans-serif;letter-spacing:.05em}
+.nav-bike-menu a:hover,.nav-bike-menu a.active{color:#fff}
+.nav-bike-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-bike-toggle{display:block;margin-left:auto}.nav-bike-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bike-dark);flex-direction:column;padding:1rem;gap:1rem}.nav-bike-menu.open{display:flex}}
+.hero-bike{position:relative;height:100vh;min-height:600px;display:flex;align-items:center}
+.hero-bike-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-bike-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,26,26,.7),rgba(233,30,99,.3))}
+.hero-bike-content{position:relative;color:#fff;padding:0 4rem;max-width:500px}
+.hero-bike h1{font-size:4rem;font-weight:700;line-height:1;margin-bottom:1.5rem}
+.hero-bike h1 span{color:var(--bike-pink)}
+.hero-bike-content p{font-size:1rem;opacity:.8;margin-bottom:2rem}
+.btn-bike{display:inline-block;background:var(--bike-pink);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-family:'Oswald',sans-serif;font-size:.9rem;letter-spacing:.1em;transition:.3s}
+.btn-bike:hover{background:#c51162;color:#fff}
+.sec-bike-categories{padding:5rem 0}
+.bike-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.bike-cat{text-align:center;padding:2rem;background:var(--bike-dark);color:#fff;border-radius:4px}
+.bike-cat i{font-size:2rem;color:var(--bike-pink);margin-bottom:1rem}
+.bike-cat h5{font-size:1rem}
+.sec-bike-services{padding:5rem 0;background:#f5f5f5}
+.bike-service{padding:2rem;background:#fff;border-left:4px solid var(--bike-pink);height:100%}
+.bike-service h5{font-size:1.1rem;margin-bottom:.8rem}
+.bike-service p{font-size:.9rem;color:var(--bike-muted)}
+.sec-bike-cta{padding:5rem 0;background:var(--bike-pink);color:#fff;text-align:center;border-radius:4px;margin:2rem}
+.sec-bike-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-bike-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-bike{padding:2rem 0;background:var(--bike-dark);color:rgba(255,255,255,.5)}
+.ft-bike h5{color:#fff}
+.ft-bike hr{border-color:rgba(255,255,255,.1)}

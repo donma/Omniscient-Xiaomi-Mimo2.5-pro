@@ -1,0 +1,571 @@
+:root {
+    --green: #4A7C59;
+    --green-light: #6B9E7A;
+    --green-dark: #3A6347;
+    --pink: #E8B4B8;
+    --pink-light: #F5D5D8;
+    --cream: #FFF8F0;
+    --white: #FFFFFF;
+    --text-dark: #2D3A2D;
+    --text-light: #6B7B6B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-green {
+    background: var(--green);
+}
+
+.bg-light {
+    background: var(--cream);
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(74, 124, 89, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding: 10px 0;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    font-family: 'Cormorant', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar-brand i {
+    font-size: 28px;
+    color: var(--pink);
+}
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    opacity: 1;
+    color: var(--pink);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Buttons */
+.btn-flower {
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-flower:hover {
+    background: var(--green-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-outline-flower {
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.btn-outline-flower:hover {
+    background: var(--white);
+    color: var(--green);
+}
+
+.btn-line {
+    background: #00B900;
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.btn-line:hover {
+    background: #009900;
+    color: var(--white);
+}
+
+/* Hero Section */
+.hero-section {padding-top:80px;
+    height: 100vh;
+    min-height: 600px;
+    background: url('https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=1920') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {padding-top:80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(74, 124, 89, 0.6) 0%, rgba(74, 124, 89, 0.4) 100%);
+}
+
+.hero-content {padding-top:80px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-decoration {padding-top:80px;
+    font-size: 48px;
+    color: var(--pink);
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero-title {padding-top:80px;
+    font-family: 'Cormorant', serif;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {padding-top:80px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero-btns {padding-top:80px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Section Headers */
+.section-tag {
+    display: inline-block;
+    font-family: 'Cormorant', serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--green);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: 'Cormorant', serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+/* Category Cards */
+.category-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.category-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.category-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.category-content h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.category-content p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.link-flower {
+    color: var(--green);
+    font-weight: 500;
+}
+
+.link-flower:hover {
+    color: var(--green-dark);
+}
+
+/* Course Cards */
+.course-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.course-card:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-5px);
+}
+
+.course-date {
+    display: inline-block;
+    background: var(--pink);
+    color: var(--text-dark);
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.course-date .day {
+    display: block;
+    font-family: 'Cormorant', serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.course-date .month {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.course-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.course-card p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.course-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--pink);
+}
+
+/* Portfolio */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Line CTA */
+.line-cta {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.line-cta i {
+    font-size: 48px;
+    color: #00B900;
+    margin-bottom: 20px;
+}
+
+.line-cta h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.line-cta p {
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+/* Footer */
+.footer {
+    background: var(--text-dark);
+    color: var(--white);
+    padding: 60px 0 30px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-family: 'Cormorant', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-brand i {
+    color: var(--pink);
+}
+
+.footer p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--green);
+}
+
+.footer h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--pink);
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.footer-contact i {
+    color: var(--pink);
+    margin-top: 3px;
+}
+
+.footer hr {
+    border-color: rgba(255,255,255,0.1);
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* Page Header */
+.page-header {
+    background: var(--cream);
+    padding: 150px 0 50px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-family: 'Cormorant', serif;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.breadcrumb {
+    justify-content: center;
+}
+
+.breadcrumb-item a {
+    color: var(--green);
+}
+
+.breadcrumb-item.active {
+    color: var(--text-light);
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: var(--green-dark);
+        padding: 20px;
+        border-radius: 16px;
+        margin-top: 15px;
+    }
+    
+    .navbar-nav {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .hero-title {padding-top:80px;
+        font-size: 48px;
+    }
+    
+    .hero-btns {padding-top:80px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {padding-top:80px;
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .category-image img {
+        height: 200px;
+    }
+    
+    .portfolio-item img {
+        height: 200px;
+    }
+    
+    .page-header h1 {
+        font-size: 36px;
+    }
+    
+    .line-cta {
+        padding: 40px 20px;
+    }
+}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .navbar {
+  background: rgba(255,255,255,0.97) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .navbar-brand { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-link { color: #2d2d2d !important; }
+body:not(.page-home) .navbar .navbar-toggler,
+body:not(.page-home) .navbar .nav-toggle { color: #2d2d2d !important; }

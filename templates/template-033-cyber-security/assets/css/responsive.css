@@ -1,0 +1,13 @@
+﻿/* T033 Responsive */
+@media (max-width: 991.98px) {
+    .hero-title { font-size: 2rem; }
+    .terminal-body { padding: 1.5rem; }
+    .section-title { font-size: 2rem; }
+}
+@media (max-width: 767.98px) {
+    .hero-title { font-size: 1.5rem; }
+    .threat-num { font-size: 1.8rem; }
+    .section-padding { padding: 4rem 0; }
+    .terminal-nav .navbar-nav { text-align: center; padding: 1rem 0; }
+    .solution-tabs .nav-link { margin: 0.2rem; font-size: 0.75rem; }
+}

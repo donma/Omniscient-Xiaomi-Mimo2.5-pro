@@ -1,0 +1,41 @@
+/* 山岳裝備 - 戶外大地風 */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+:root{--camp-green:#1a3c0e;--camp-light:#4a6741;--camp-gold:#d4a373;--camp-bg:#f5f0e8;--camp-text:#2c2c2c;--camp-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--camp-text);background:var(--camp-bg)}
+h1,h2,h3,h4,h5{font-family:'Oswald','Noto Sans TC',sans-serif;font-weight:500;text-transform:uppercase}
+.nav-camp{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,60,14,.95);backdrop-filter:blur(10px);padding:.8rem 0}
+.nav-camp-logo{color:#fff;text-decoration:none;font-weight:700;font-size:1.3rem}
+.nav-camp-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-camp-menu a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;font-family:'Oswald',sans-serif;letter-spacing:.05em}
+.nav-camp-menu a:hover,.nav-camp-menu a.active{color:#fff}
+.nav-camp-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-camp-toggle{display:block;margin-left:auto}.nav-camp-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--camp-green);flex-direction:column;padding:1rem;gap:1rem}.nav-camp-menu.open{display:flex}}
+.hero-camp{position:relative;height:100vh;min-height:600px;display:flex;align-items:center}
+.hero-camp-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-camp-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,60,14,.7),rgba(74,103,65,.5))}
+.hero-camp-content{position:relative;color:#fff;padding:0 4rem;max-width:500px}
+.hero-camp h1{font-size:4rem;font-weight:700;line-height:1;margin-bottom:1.5rem}
+.hero-camp-content p{font-size:1rem;opacity:.8;margin-bottom:2rem}
+.btn-camp{display:inline-block;background:var(--camp-gold);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-family:'Oswald',sans-serif;font-size:.9rem;letter-spacing:.1em;transition:.3s}
+.btn-camp:hover{background:#c49463;color:#fff}
+.sec-camp-categories{padding:5rem 0}
+.camp-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.camp-cat{text-align:center;padding:2rem;background:#fff;border:1px solid var(--camp-gold);border-radius:4px}
+.camp-cat i{font-size:2rem;color:var(--camp-green);margin-bottom:1rem}
+.camp-cat h5{font-size:1rem}
+.sec-camp-guide{padding:5rem 0;background:var(--camp-green);color:#fff}
+.sec-camp-guide .camp-title{color:#fff}
+.camp-guide{padding:2rem;border:1px solid rgba(255,255,255,.2);border-radius:4px}
+.camp-guide span{display:block;font-family:'Oswald',sans-serif;font-size:2rem;color:var(--camp-gold);margin-bottom:1rem}
+.camp-guide h5{font-size:1.1rem;margin-bottom:.5rem}
+.camp-guide p{font-size:.85rem;opacity:.7}
+.sec-camp-cta{padding:4rem 0;background:var(--camp-gold);color:#fff;text-align:center;border-radius:4px;margin:2rem}
+.sec-camp-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-camp-cta p{opacity:.8;margin-bottom:1.5rem}
+.ft-camp{padding:2rem 0;background:var(--camp-green);color:rgba(255,255,255,.5)}
+.ft-camp h5{color:#fff}
+.ft-camp hr{border-color:rgba(255,255,255,.1)}
+.page-camp-hero{padding:8rem 0 3rem;text-align:center;background:linear-gradient(180deg,rgba(26,60,14,.08),rgba(26,60,14,0))}
+.page-camp-hero p{max-width:640px;margin:1rem auto 0;color:var(--camp-muted);line-height:1.8}
+.camp-cat p{margin:.75rem 0 0;color:var(--camp-muted);font-size:.9rem;line-height:1.7}

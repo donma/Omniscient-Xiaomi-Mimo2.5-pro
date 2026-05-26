@@ -1,0 +1,71 @@
+/* SkillUp - 線上課程平台 */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+:root{--oc-purple:#7c3aed;--oc-blue:#2563eb;--oc-dark:#0f172a;--oc-text:#1e293b;--oc-muted:#64748b;--oc-bg:#f8fafc}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--oc-text);background:var(--oc-bg)}
+h1,h2,h3,h4,h5{font-family:'Space Grotesk','Noto Sans TC',sans-serif}
+
+/* NAV */
+.nav-oc{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,23,42,.95);backdrop-filter:blur(12px);padding:.8rem 0;border-bottom:1px solid rgba(124,58,237,.2)}
+.nav-oc-logo{color:#fff;text-decoration:none;font-weight:700;font-size:1.3rem;font-family:'Space Grotesk',sans-serif}
+.nav-oc-logo i{color:var(--oc-purple);margin-right:.5rem}
+.nav-oc-menu{list-style:none;display:flex;align-items:center;gap:1.5rem;margin:0;padding:0}
+.nav-oc-menu a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:.2s}
+.nav-oc-menu a:hover{color:#fff}
+.nav-oc-menu a.active{color:#fff}
+.nav-oc-btn{background:var(--oc-purple)!important;color:#fff!important;padding:.5rem 1.2rem;border-radius:8px;font-weight:600}
+.nav-oc-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-oc-toggle{display:block}.nav-oc-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--oc-dark);flex-direction:column;padding:1rem;gap:1rem}.nav-oc.open .nav-oc-menu{display:flex}}
+
+/* HERO */
+.hero-oc{padding:8rem 0 4rem;background:linear-gradient(135deg,var(--oc-dark),#1e1b4b);color:#fff;min-height:100vh;display:flex;align-items:center}
+.hero-oc-badge{display:inline-block;background:rgba(124,58,237,.2);color:var(--oc-purple);padding:.4rem 1rem;border-radius:20px;font-size:.8rem;margin-bottom:1.5rem}
+.hero-oc h1{font-size:3.5rem;font-weight:700;line-height:1.2;margin-bottom:1.5rem}
+.oc-gradient-text{background:linear-gradient(135deg,var(--oc-purple),var(--oc-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-oc p{font-size:1.1rem;color:rgba(255,255,255,.7);max-width:500px;margin-bottom:2rem}
+.hero-oc-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-oc{background:var(--oc-purple);color:#fff;padding:.8rem 2rem;border-radius:10px;text-decoration:none;font-weight:600;transition:.3s}
+.btn-oc:hover{background:#6d28d9;color:#fff;transform:translateY(-2px)}
+.btn-oc-ghost{background:transparent;color:rgba(255,255,255,.8);padding:.8rem 2rem;border-radius:10px;text-decoration:none;border:1px solid rgba(255,255,255,.2);transition:.3s}
+.btn-oc-ghost:hover{background:rgba(255,255,255,.1);color:#fff}
+.hero-oc-stats{display:flex;gap:2rem;margin-top:2.5rem}
+.hero-oc-stats strong{display:block;font-size:1.5rem;color:var(--oc-purple)}
+.hero-oc-stats span{font-size:.8rem;color:rgba(255,255,255,.5)}
+.hero-oc-visual{position:relative}
+.hero-oc-img{width:100%;border-radius:16px}
+.oc-mini-card{position:absolute;background:var(--oc-purple);padding:.5rem 1rem;border-radius:8px;font-size:.8rem;font-weight:600;color:#fff;box-shadow:0 4px 15px rgba(0,0,0,.3)}
+
+/* COURSES */
+.sec-oc-courses{padding:5rem 0}
+.oc-title{text-align:center;font-size:2rem;font-weight:700;margin-bottom:3rem}
+.oc-course{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:.3s}
+.oc-course:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.12)}
+.oc-course-img{height:160px;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#fff}
+.oc-course-body{padding:1.5rem}
+.oc-course-cat{font-size:.75rem;color:var(--oc-purple);font-weight:600;text-transform:uppercase}
+.oc-course-body h5{font-size:1.1rem;margin:.5rem 0}
+.oc-course-body p{font-size:.85rem;color:var(--oc-muted);margin-bottom:1rem}
+.oc-course-meta{display:flex;gap:1rem;font-size:.75rem;color:var(--oc-muted);margin-bottom:1rem}
+.oc-course-meta i{margin-right:.3rem}
+.oc-price-old{text-decoration:line-through;color:var(--oc-muted);font-size:.85rem;margin-right:.5rem}
+.oc-price-now{font-weight:700;color:var(--oc-purple);font-size:1.1rem}
+
+/* HOW */
+.sec-oc-how{padding:5rem 0;background:#fff}
+.oc-how-steps{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
+.oc-how-step{text-align:center;max-width:200px}
+.oc-how-step span{display:inline-flex;width:50px;height:50px;align-items:center;justify-content:center;background:var(--oc-purple);color:#fff;border-radius:50%;font-weight:700;font-size:1.2rem;margin-bottom:1rem}
+.oc-how-step h5{font-size:1rem;margin-bottom:.5rem}
+.oc-how-step p{font-size:.85rem;color:var(--oc-muted)}
+.oc-how-arrow{color:var(--oc-purple);font-size:1.5rem}
+
+/* CTA */
+.sec-oc-cta{padding:5rem 0;background:linear-gradient(135deg,var(--oc-dark),#1e1b4b);color:#fff}
+.sec-oc-cta h2{font-size:2rem;margin-bottom:1rem}
+
+/* FOOTER */
+.ft-oc{padding:3rem 0 1.5rem;background:var(--oc-dark);color:rgba(255,255,255,.7)}
+.ft-oc h5,.ft-oc h6{color:#fff;margin-bottom:1rem}
+.ft-oc a{color:rgba(255,255,255,.5);text-decoration:none}
+.ft-oc a:hover{color:#fff}
+.ft-oc hr{border-color:rgba(255,255,255,.1)}

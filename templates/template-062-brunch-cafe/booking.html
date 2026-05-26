@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂位｜晨光早午餐</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-sunrise brand-icon"></i> 晨光</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">菜單</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">空間照片</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">顧客評價</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">常見問題</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">訂位</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">部落格</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main style="padding-top:80px">
+        <section class="page-header"><div class="container text-center"><span class="section-label">BOOKING</span><h1 class="page-title">線上訂位</h1><p class="page-subtitle">BOOK A TABLE</p></div></section>
+        <section class="py-5"><div class="container"><div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2>訂位須知</h2>
+                <p class="accent-text mb-4">BOOKING INFO</p>
+                <div class="process-step mb-3"><div class="d-flex align-items-start gap-3"><span class="display-4 accent-text fw-bold">01</span><div><h4>選擇日期時間</h4><p>請選擇您希望用餐的日期與時段。</p></div></div></div>
+                <div class="process-step mb-3"><div class="d-flex align-items-start gap-3"><span class="display-4 accent-text fw-bold">02</span><div><h4>填寫資訊</h4><p>提供姓名、電話、人數等基本資訊。</p></div></div></div>
+                <div class="process-step mb-3"><div class="d-flex align-items-start gap-3"><span class="display-4 accent-text fw-bold">03</span><div><h4>確認訂位</h4><p>我們將以電話或簡訊確認您的訂位。</p></div></div></div>
+                <div class="mt-4"><h3>注意事項</h3><ul><li>訂位保留15分鐘</li><li>如需取消請提前告知</li><li>6人以上請電話訂位</li></ul></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm"><div class="card-body p-4">
+                    <h3 class="accent-text">線上訂位</h3>
+                    <form id="bookingForm">
+                        <div class="mb-3"><label class="form-label">姓名 *</label><input type="text" class="form-control" placeholder="請輸入姓名" required></div>
+                        <div class="mb-3"><label class="form-label">電話 *</label><input type="tel" class="form-control" placeholder="請輸入電話" required></div>
+                        <div class="mb-3"><label class="form-label">日期 *</label><input type="date" class="form-control" required></div>
+                        <div class="mb-3"><label class="form-label">時間 *</label><select class="form-select" required><option value="">請選擇時間</option><option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option></select></div>
+                        <div class="mb-3"><label class="form-label">人數 *</label><select class="form-select" required><option value="">請選擇人數</option><option>1人</option><option>2人</option><option>3-4人</option><option>5-6人</option></select></div>
+                        <div class="mb-3"><label class="form-label">特殊需求</label><textarea class="form-control" rows="3" placeholder="如需素食、兒童座椅等請註明"></textarea></div>
+                        <button type="submit" class="btn btn-primary w-100"><i class="bi bi-calendar-heart me-2"></i>送出訂位</button>
+                    </form>
+                    <div id="bookingSuccess" class="alert alert-success mt-3" style="display:none;"><i class="bi bi-check-circle me-2"></i>感謝您的訂位！我們將盡快確認。</div>
+                </div></div>
+            </div>
+        </div></div></section>
+    </main>
+    <footer class="py-4"><div class="container"><div class="row"><div class="col-md-4"><h5 class="accent-text">晨光早午餐</h5><p>台北市大安區永康街15號</p></div><div class="col-md-4"><h5>聯絡方式</h5><p><i class="bi bi-telephone"></i> 02-2300-0000</p></div><div class="col-md-4"><h5>快速連結</h5><ul class="list-unstyled"><li><a href="about.html">關於我們</a></li><li><a href="services.html">菜單</a></li></ul></div></div><hr><p class="text-center mb-0">&copy; 2024 晨光早午餐. All rights reserved.</p></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

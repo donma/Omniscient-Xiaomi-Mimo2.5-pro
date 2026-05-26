@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>綠野農莊｜有機農場</title>
+<meta name="description" content="綠野農莊，有機種植，從田間到餐桌的安心。">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav-farm" id="navFarm">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="nav-farm-logo"><i class="bi bi-flower1"></i> 綠野農莊</a>
+    <button class="nav-farm-toggle" onclick="document.getElementById('navFarm').classList.toggle('open')"><i class="bi bi-list"></i></button>
+    <ul class="nav-farm-menu">
+      <li><a href="index.html" class="active">首頁</a></li>
+      <li><a href="services.html">農產品</a></li>
+      <li><a href="portfolio.html">農場故事</a></li>
+      <li><a href="contact.html">聯絡</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero-farm">
+  <div class="hero-farm-bg" style="background-image:url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1600&h=900&fit=crop')"></div>
+  <div class="hero-farm-overlay"></div>
+  <div class="hero-farm-content">
+    <h1>從田間<br>到<span>餐桌</span></h1>
+    <p>有機種植，安心食用，支持在地農業。</p>
+    <a href="services.html" class="btn-farm">選購農產品</a>
+  </div>
+</header>
+
+<section class="sec-farm-products">
+  <div class="container">
+    <h2 class="farm-title">當季農產品</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="farm-product">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&h=300&fit=crop" alt="蔬菜" class="farm-product-img">
+          <h5>有機蔬菜箱</h5>
+          <span>NT$ 680</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="farm-product">
+          <img src="https://images.unsplash.com/photo-1568702846914-96b305d2f11b?w=300&h=300&fit=crop" alt="水果" class="farm-product-img">
+          <h5>當季水果箱</h5>
+          <span>NT$ 880</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="farm-product">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&h=300&fit=crop" alt="米" class="farm-product-img">
+          <h5>有機白米</h5>
+          <span>NT$ 320</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="farm-product">
+          <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&h=300&fit=crop" alt="茶" class="farm-product-img">
+          <h5>高山茶葉</h5>
+          <span>NT$ 580</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-farm-story">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&h=400&fit=crop" alt="農場" class="farm-story-img">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="farm-title" style="text-align:left">農場故事</h2>
+        <p>綠野農莊創立於 2010 年，堅持有機種植，不使用化學農藥與肥料。</p>
+        <p>我們相信，好的食物來自好的土地。每一顆果實，都是大自然的恩賜。</p>
+        <a href="about.html" class="btn-farm-outline">了解更多</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-farm-features">
+  <div class="container">
+    <h2 class="farm-title">農場特色</h2>
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <div class="farm-feature">
+          <i class="bi bi-tree"></i>
+          <h5>有機種植</h5>
+          <p>不使用化學農藥</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="farm-feature">
+          <i class="bi bi-truck"></i>
+          <h5>新鮮配送</h5>
+          <p>當日採收當日出貨</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="farm-feature">
+          <i class="bi bi-heart"></i>
+          <h5>安心食用</h5>
+          <p>通過有機認證</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-farm-cta">
+  <div class="container text-center">
+    <h2>支持在地農業</h2>
+    <p>滿 NT$ 1,000 免運費</p>
+    <a href="contact.html" class="btn-farm">聯絡我們</a>
+  </div>
+</section>
+
+<footer class="ft-farm">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4"><h5><i class="bi bi-flower1"></i> 綠野農莊</h5><p>有機種植，安心食用。</p></div>
+      <div class="col-lg-2"><h6>農產品</h6><ul class="list-unstyled"><li><a href="#">蔬菜</a></li><li><a href="#">水果</a></li><li><a href="#">米食</a></li></ul></div>
+      <div class="col-lg-3"><h6>聯絡</h6><p><i class="bi bi-telephone"></i> (03) 123-4567</p><p><i class="bi bi-geo-alt"></i> 花蓮縣壽豐鄉</p></div>
+      <div class="col-lg-3"><h6>營業時間</h6><p>週一至週六 08:00-17:00</p></div>
+    </div>
+    <hr><p class="text-center small mb-0">&copy; 2026 綠野農莊</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

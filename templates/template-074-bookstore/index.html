@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>讀冊時光｜獨立書店</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav-bk">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="nav-bk-logo">📖 讀冊時光</a>
+    <button class="nav-bk-toggle" onclick="document.querySelector('.nav-bk-menu').classList.toggle('open')"><i class="bi bi-list"></i></button>
+    <ul class="nav-bk-menu">
+      <li><a href="index.html" class="active">首頁</a></li>
+      <li><a href="services.html">書籍</a></li>
+      <li><a href="portfolio.html">活動</a></li>
+      <li><a href="contact.html">聯絡</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero-bk">
+  <div class="hero-bk-bg" style="background-image:url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600&h=900&fit=crop')"></div>
+  <div class="hero-bk-overlay"></div>
+  <div class="hero-bk-content">
+    <h1>在書頁中<br>找到<span>自己</span></h1>
+    <p>獨立書店，精選國內外好書，舉辦閱讀活動。</p>
+    <a href="services.html" class="btn-bk">瀏覽書籍</a>
+  </div>
+</header>
+
+<section class="sec-bk-picks">
+  <div class="container">
+    <h2 class="bk-title">本月推薦</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="bk-book">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=200&h=300&fit=crop" alt="書">
+          <h5>原子習慣</h5>
+          <p>詹姆斯·克利爾</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bk-book">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=200&h=300&fit=crop" alt="書">
+          <h5>被討厭的勇氣</h5>
+          <p>岸見一郎</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bk-book">
+          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=200&h=300&fit=crop" alt="書">
+          <h5>人類大歷史</h5>
+          <p>哈拉瑞</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bk-book">
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=200&h=300&fit=crop" alt="書">
+          <h5>小王子</h5>
+          <p>聖修伯里</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-bk-events">
+  <div class="container">
+    <h2 class="bk-title">近期活動</h2>
+    <div class="bk-event">
+      <div class="bk-event-date"><span>06/15</span></div>
+      <div class="bk-event-info"><h5>作家簽書會</h5><p>邀請本地作家分享創作歷程</p></div>
+    </div>
+    <div class="bk-event">
+      <div class="bk-event-date"><span>06/22</span></div>
+      <div class="bk-event-info"><h5>親子共讀</h5><p>週末親子繪本時光</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-bk-cta">
+  <div class="container text-center">
+    <h2>來書店坐坐</h2>
+    <p>週一至週日 10:00-21:00</p>
+    <a href="contact.html" class="btn-bk">聯絡我們</a>
+  </div>
+</section>
+
+<footer class="ft-bk">
+  <div class="container text-center">
+    <h5>📖 讀冊時光</h5>
+    <p>獨立書店，精選好書。</p>
+    <p><i class="bi bi-geo-alt"></i> 台北市大安區 ・ <i class="bi bi-telephone"></i> (02) 2345-6789</p>
+    <hr><p class="small mb-0">&copy; 2026 讀冊時光</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

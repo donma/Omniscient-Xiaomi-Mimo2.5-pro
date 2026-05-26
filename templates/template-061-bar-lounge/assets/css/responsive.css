@@ -1,0 +1,276 @@
+/* 夜幕酒廊 Nightfall Lounge - Responsive */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        margin-left: auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-header {
+        padding: 6rem 0 2rem;
+    }
+
+    .cocktail-img-wrapper img {
+        height: 200px;
+    }
+
+    .portfolio-item img {
+        height: 250px;
+    }
+
+    .blog-card img {
+        height: 180px;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .page-header {
+        padding: 5rem 0 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+        margin: 0.25rem 0;
+    }
+
+    .btn-gold {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .cocktail-img-wrapper img {
+        height: 180px;
+    }
+
+    .portfolio-item img {
+        height: 200px;
+    }
+
+    .blog-card img {
+        height: 160px;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .menu-card {
+        padding: 1.5rem;
+    }
+
+    .review-card {
+        padding: 1.5rem;
+    }
+
+    .process-step {
+        padding: 1.5rem;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+    }
+
+    .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .fs-4 {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+    border-color: var(--primary-gold);
+    padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23d4af37' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Mobile menu */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(10, 10, 10, 0.98);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+}
+
+/* Form responsive */
+@media (max-width: 767px) {
+    .form-control,
+    .form-select {
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+}
+
+/* Footer responsive */
+@media (max-width: 767px) {
+    footer .col-md-4 {
+        margin-bottom: 2rem;
+    }
+
+    footer .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Blog responsive */
+@media (max-width: 767px) {
+    .blog-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .blog-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Accordion responsive */
+@media (max-width: 575px) {
+    .accordion-button {
+        font-size: 0.95rem;
+        padding: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+}
+
+/* Map responsive */
+@media (max-width: 767px) {
+    .ratio-21x9 {
+        --bs-aspect-ratio: 56.25%; /* 16:9 */
+    }
+}
+
+/* Portfolio responsive */
+@media (max-width: 575px) {
+    .portfolio-overlay {
+        padding: 1rem;
+    }
+
+    .portfolio-overlay h4 {
+        font-size: 1rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Review responsive */
+@media (max-width: 575px) {
+    .review-card img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Team responsive */
+@media (max-width: 575px) {
+    .team-card img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Pagination responsive */
+@media (max-width: 575px) {
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-item {
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "templateId": "T001",
+    "tags": {
+        "industry": ["beauty", "salon", "美容", "美容院", "美甲", "美睫", "spa", "護膚"],
+        "style": ["elegant", "feminine", "優雅", "女性", "溫暖"],
+        "features": ["responsive", "seo", "forms", "accordion", "slider", "地圖"],
+        "layout": ["centered-nav", "full-hero", "grid", "cards"],
+        "colors": ["brown", "cream", "pink", "warm"]
+    },
+    "hasZip": false
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "T013",
+  "name": "Law Consulting",
+  "name_zh": "法律顧問",
+  "category": "professional-services",
+  "version": "1.0.0",
+  "author": "Omniscient Gallery",
+  "description": "Authoritative law consulting website template with prestigious design, attorney profiles, and consultation booking.",
+  "description_zh": "權威法律顧問網站模板，具有威望設計、律師介紹和諮詢預約功能。",
+  "thumbnail": "assets/img/thumbnail.jpg",
+  "colors": {"primary": "#1a365d", "secondary": "#c9a84c", "light": "#f7f7f7", "dark": "#2d3748"},
+  "fonts": ["Merriweather", "Noto Sans TC"],
+  "framework": "Bootstrap 5",
+  "pages": ["index.html", "about.html", "services.html", "service-detail.html", "portfolio.html", "reviews.html", "faq.html", "booking.html", "process.html", "blog.html", "blog-detail.html", "contact.html"],
+  "features": ["Responsive Design", "Organization Schema", "Consultation Booking", "FAQ Accordion", "Attorney Profiles", "Case Results"],
+  "hasZip": false,
+  "created": "2026-05-25",
+  "updated": "2026-05-25"
+}

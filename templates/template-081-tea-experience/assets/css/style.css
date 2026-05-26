@@ -1,0 +1,51 @@
+/* 茶敘 - 東方茶道風 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+:root{--tea-green:#1a2218;--tea-gold:#6b7f4a;--tea-cream:#f5f0e8;--tea-text:#2c3a2c;--tea-muted:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--tea-text);background:var(--tea-cream)}
+h1,h2,h3,h4,h5{font-family:'Noto Serif TC',serif}
+.nav-tea{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 0;transition:.3s}
+.nav-tea.scrolled{background:rgba(245,240,232,.95);backdrop-filter:blur(10px)}
+.nav-tea-logo{font-family:'Noto Serif TC',serif;font-size:1.8rem;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.3em}
+.nav-tea-menu{list-style:none;display:flex;gap:2rem;margin:0;padding:0}
+.nav-tea-menu a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.7;transition:.2s}
+.nav-tea-menu a:hover,.nav-tea-menu a.active{opacity:1}
+.nav-tea-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-tea-toggle{display:block;margin-left:auto}.nav-tea-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--tea-cream);flex-direction:column;padding:1.5rem;gap:1rem}.nav-tea.scrolled .nav-tea-logo,.nav-tea.scrolled .nav-tea-menu a{color:var(--tea-text)}.nav-tea.open .nav-tea-menu{display:flex}}
+.hero-tea{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;text-align:center}
+.hero-tea-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-tea-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,34,24,.6),rgba(26,34,24,.8))}
+.hero-tea-content{position:relative;color:#fff;max-width:600px;margin:0 auto;padding:0 2rem}
+.hero-tea h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-tea h1 span{font-style:italic;color:var(--tea-gold)}
+.hero-tea-content p{font-size:1rem;opacity:.8;margin-bottom:2rem}
+.btn-tea{display:inline-block;background:var(--tea-gold);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.9rem;transition:.3s}
+.btn-tea:hover{background:#5a6d3d;color:#fff}
+.sec-tea-types{padding:5rem 0}
+.tea-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.tea-type{padding:2rem;background:#fff;border:1px solid rgba(107,127,74,.2);text-align:center}
+.tea-type h5{font-size:1.1rem;margin-bottom:.8rem}
+.tea-type p{font-size:.85rem;color:var(--tea-muted);margin-bottom:.8rem}
+.tea-type span{font-weight:600;color:var(--tea-gold)}
+.sec-tea-experience{padding:5rem 0;background:#fff}
+.tea-exp-img{width:100%;height:400px;object-fit:cover}
+.tea-exp-list{list-style:none;padding:0;margin:1.5rem 0}
+.tea-exp-list li{padding:.5rem 0;font-size:.95rem}
+.tea-exp-list li::before{content:'◆';color:var(--tea-gold);margin-right:.5rem;font-size:.6rem}
+.sec-tea-cta{padding:5rem 0;background:var(--tea-green);color:#fff;text-align:center;border-radius:4px;margin:2rem}
+.sec-tea-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-tea-cta p{opacity:.7;margin-bottom:1.5rem}
+.ft-tea{padding:2rem 0;background:var(--tea-green);color:rgba(255,255,255,.5)}
+.ft-tea h5{color:#fff}
+.ft-tea hr{border-color:rgba(255,255,255,.1)}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .nav-tea {
+  background: rgba(245,240,232,.95) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .nav-tea-logo { color: var(--dark,#0d6efd) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-tea-menu a { color: #2d2d2d !important; }
+body:not(.page-home) .nav-tea .navbar-toggler,
+body:not(.page-home) .nav-tea .nav-toggle { color: #2d2d2d !important; }

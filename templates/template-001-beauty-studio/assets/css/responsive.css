@@ -1,0 +1,279 @@
+/* Responsive CSS for Beauty Studio */
+
+/* Large Devices (Desktops) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1199.98px) {
+    .hero-title {
+        font-size: 56px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 15px 0;
+    }
+    
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        padding: 20px;
+        border-radius: 16px;
+        margin-top: 15px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-nav {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 42px;
+    }
+    
+    .hero-desc {
+        font-size: 16px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .service-circle-card {
+        padding: 30px 15px;
+    }
+    
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+    
+    .carousel-control-prev {
+        left: -10px;
+    }
+    
+    .carousel-control-next {
+        right: -10px;
+    }
+    
+    .about-image {
+        margin-bottom: 30px;
+    }
+    
+    .contact-info {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .booking-form-card {
+        padding: 30px 20px;
+    }
+    
+    .contact-form-card {
+        padding: 30px 20px;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 450px;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .circle-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .service-circle-card h3 {
+        font-size: 18px;
+    }
+    
+    .ba-before img,
+    .ba-after img {
+        height: 300px;
+    }
+    
+    .testimonial-text {
+        font-size: 16px;
+    }
+    
+    .stat-item h3 {
+        font-size: 28px;
+    }
+    
+    .page-header {
+        padding: 120px 0 40px;
+    }
+    
+    .page-header h1 {
+        font-size: 36px;
+    }
+    
+    .experience-badge {
+        bottom: -10px;
+        right: -10px;
+        padding: 15px;
+    }
+    
+    .experience-badge .number {
+        font-size: 28px;
+    }
+    
+    .service-detail-content {
+        margin-top: 30px;
+    }
+    
+    .blog-detail-meta {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .blog-detail-image img {
+        height: 250px;
+    }
+    
+    .process-timeline::before {
+        left: 20px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .process-step {
+        gap: 20px;
+    }
+    
+    .step-content {
+        padding: 20px;
+    }
+    
+    .portfolio-card img {
+        height: 250px;
+    }
+    
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer h5 {
+        margin-top: 20px;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .btn-gold {
+        padding: 10px 25px;
+    }
+    
+    .cta-section h2 {
+        font-size: 28px;
+    }
+    
+    .page-header h1 {
+        font-size: 30px;
+    }
+    
+    .booking-header h2 {
+        font-size: 24px;
+    }
+    
+    .contact-info h2 {
+        font-size: 24px;
+    }
+    
+    .contact-form-card h2 {
+        font-size: 24px;
+    }
+    
+    .blog-detail-content h2 {
+        font-size: 20px;
+    }
+    
+    .accordion-button {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+}
+
+/* Landscape Phones */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 100vh;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .cta-section,
+    .hero-section {
+        display: none !important;
+    }
+    
+    .section-padding {
+        padding: 20px 0;
+    }
+    
+    body {
+        color: #000;
+        background: #fff;
+    }
+}

@@ -1,0 +1,790 @@
+/* ============================================
+   T022 Tea Brand - 東方茶道
+   Noto Serif TC + Noto Sans TC
+   墨綠東方 / 水墨風格 / 禪意排版
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary: #2d4a3e;
+  --primary-light: #3d6b5a;
+  --secondary: #8b9a6b;
+  --accent: #c4a35a;
+  --cream: #f5f0e8;
+  --ink: #1a1a1a;
+  --text-dark: #2c2c2c;
+  --text-muted: #6b6b6b;
+  --white: #fefdfb;
+  --font-heading: 'Noto Serif TC', serif;
+  --font-body: 'Noto Sans TC', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: var(--white);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.4;
+}
+
+/* ---- Navbar ---- */
+.navbar-tea {
+  background: rgba(254, 253, 251, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(45, 74, 62, 0.08);
+  transition: all 0.3s;
+}
+
+.navbar-tea.scrolled {
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--primary) !important;
+  letter-spacing: 0.2em;
+}
+
+.nav-link {
+  font-weight: 400;
+  color: var(--text-dark) !important;
+  padding: 0.5rem 1.2rem !important;
+  letter-spacing: 0.1em;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: all 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::before,
+.nav-link.active::before { width: 80%; }
+
+.nav-link:hover { color: var(--primary) !important; }
+
+/* ---- Hero ---- */
+.hero-tea {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--white) 100%);
+}
+
+.hero-tea::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 30%, rgba(45, 74, 62, 0.03) 100%);
+}
+
+.hero-vertical-text {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: rgba(45, 74, 62, 0.15);
+  letter-spacing: 0.5em;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-tag {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  padding: 0.3rem 1.5rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.3em;
+  margin-bottom: 2rem;
+}
+
+.hero-tea h1 {
+  font-size: 3.5rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.15em;
+  line-height: 1.3;
+}
+
+.hero-tea h1 .accent { color: var(--accent); }
+
+.hero-text {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+  line-height: 2;
+}
+
+.hero-categories {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-cat-item {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-cat-item:hover { transform: translateY(-3px); }
+
+.hero-cat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-size: 1.5rem;
+  color: var(--primary);
+  border: 1px solid rgba(45, 74, 62, 0.1);
+}
+
+.hero-cat-item span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+.hero-image-area {
+  position: relative;
+}
+
+.hero-image-area img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.hero-image-overlay {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(196, 163, 90, 0.3);
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+/* ---- Buttons ---- */
+.btn-tea {
+  background: var(--primary);
+  color: white;
+  padding: 0.7rem 2.5rem;
+  border: none;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-tea:hover {
+  background: var(--primary-light);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-tea-outline {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.7rem 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-tea-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ---- Section Title ---- */
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  letter-spacing: 0.15em;
+}
+
+/* ---- Tea Products ---- */
+.tea-card {
+  background: var(--white);
+  border: 1px solid rgba(45, 74, 62, 0.06);
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.tea-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 10px 40px rgba(45, 74, 62, 0.08);
+}
+
+.tea-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.tea-card:hover img { transform: scale(1.03); }
+
+.tea-card .card-body {
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.tea-card .tea-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.15em;
+}
+
+.tea-card .tea-origin {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.tea-card .tea-price {
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ---- About ---- */
+.about-section {
+  padding: 6rem 0;
+  background: var(--cream);
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.about-image::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: -15px;
+  bottom: -15px;
+  border: 1px solid var(--accent);
+  z-index: -1;
+}
+
+/* ---- Service ---- */
+.service-card {
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 1px solid rgba(45, 74, 62, 0.06);
+  background: var(--white);
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.service-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+/* ---- Testimonials ---- */
+.testimonial-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border: 1px solid rgba(45, 74, 62, 0.06);
+  text-align: center;
+}
+
+.testimonial-card .quote {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.9;
+}
+
+.testimonial-card .author {
+  font-weight: 500;
+  color: var(--primary);
+  letter-spacing: 0.1em;
+}
+
+/* ---- FAQ ---- */
+.faq-section {
+  padding: 6rem 0;
+  background: var(--cream);
+}
+
+.accordion-tea .accordion-item {
+  background: var(--white);
+  border: none;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(45, 74, 62, 0.06);
+}
+
+.accordion-tea .accordion-button {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--primary);
+  padding: 1.2rem 1.5rem;
+  background: var(--white);
+  letter-spacing: 0.1em;
+}
+
+.accordion-tea .accordion-button:not(.collapsed) {
+  background: var(--cream);
+  color: var(--primary);
+  box-shadow: none;
+}
+
+.accordion-tea .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%232d4a3e' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+}
+
+.accordion-tea .accordion-body {
+  padding: 1rem 1.5rem 1.5rem;
+  color: var(--text-muted);
+  line-height: 2;
+}
+
+/* ---- Booking ---- */
+.booking-section {
+  padding: 6rem 0;
+}
+
+.booking-form {
+  background: var(--cream);
+  padding: 3rem;
+  border: 1px solid rgba(45, 74, 62, 0.08);
+}
+
+.form-control, .form-select {
+  border: 1px solid rgba(45, 74, 62, 0.15);
+  border-radius: 2px;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-body);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(196, 163, 90, 0.1);
+}
+
+.form-label {
+  font-weight: 400;
+  color: var(--primary);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Process ---- */
+.process-step {
+  text-align: center;
+  padding: 2rem;
+}
+
+.process-step .step-num {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.process-step h5 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.15em;
+}
+
+.process-step p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---- Blog ---- */
+.blog-card {
+  background: var(--white);
+  border: 1px solid rgba(45, 74, 62, 0.06);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.blog-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 30px rgba(45, 74, 62, 0.08);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-card .card-body {
+  padding: 1.5rem 2rem;
+}
+
+.blog-card .blog-date {
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.blog-card .card-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  letter-spacing: 0.1em;
+}
+
+.blog-card .card-text {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---- Blog Detail ---- */
+.blog-detail-content {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.blog-detail-content p { margin-bottom: 1.5rem; }
+
+.blog-detail-content h3 {
+  margin: 2.5rem 0 1rem;
+  font-family: var(--font-heading);
+  letter-spacing: 0.1em;
+}
+
+.blog-detail-content blockquote {
+  border-left: 2px solid var(--accent);
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  background: var(--cream);
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* ---- Contact ---- */
+.contact-info-card {
+  background: var(--primary);
+  padding: 3rem;
+  color: white;
+}
+
+.contact-info-card h3 {
+  color: white;
+  font-family: var(--font-heading);
+  margin-bottom: 2rem;
+  letter-spacing: 0.15em;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-item i {
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.contact-form-wrapper {
+  background: var(--cream);
+  padding: 3rem;
+}
+
+/* ---- Portfolio ---- */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.portfolio-item:hover img { transform: scale(1.08); }
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(45, 74, 62, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay { opacity: 1; }
+
+.portfolio-overlay h5 {
+  color: white;
+  font-family: var(--font-heading);
+  letter-spacing: 0.15em;
+}
+
+.portfolio-overlay p {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+/* ---- Reviews ---- */
+.review-summary {
+  text-align: center;
+  padding: 3rem;
+  background: var(--cream);
+  margin-bottom: 3rem;
+}
+
+.review-summary .big-number {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.review-summary .stars {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+/* ---- Footer ---- */
+.footer-tea {
+  background: var(--primary);
+  color: rgba(255,255,255,0.7);
+  padding: 4rem 0 2rem;
+}
+
+.footer-tea h5 {
+  color: white;
+  font-family: var(--font-heading);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.15em;
+}
+
+.footer-tea a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-tea a:hover { color: var(--accent); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* ---- Breadcrumb ---- */
+.breadcrumb-section {
+  padding: 8rem 0 3rem;
+  background: var(--cream);
+  text-align: center;
+}
+
+.breadcrumb-section h1 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb { justify-content: center; }
+
+.breadcrumb-item a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active { color: var(--text-muted); }
+
+/* ---- Back to Top ---- */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 45px;
+  height: 45px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 999;
+  border: none;
+  cursor: pointer;
+}
+
+.back-to-top.show { opacity: 1; visibility: visible; }
+
+.back-to-top:hover {
+  background: var(--primary-light);
+  transform: translateY(-3px);
+}
+
+/* ---- Utility ---- */
+.bg-cream { background: var(--cream); }
+.section-padding { padding: 6rem 0; }
+
+/* ---- Animations ---- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ---- Service Detail ---- */
+.service-detail-hero {
+  padding: 8rem 0 4rem;
+  background: var(--cream);
+}
+
+.service-feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-feature-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(45, 74, 62, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.service-feature-list li i {
+  color: var(--accent);
+}
+
+/* === Subpage nav fix: transparent hero nav invisible on light-bg subpages ===
+   index.html has class="page-home" on <body>; all other pages get opaque nav */
+body:not(.page-home) .navbar {
+  background: rgba(255,255,255,0.97) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07) !important;
+}
+body:not(.page-home) .navbar-brand { color: var(--dark,#2d4a3e) !important; color: #2d2d2d !important; }
+body:not(.page-home) .nav-link { color: #2d2d2d !important; }
+body:not(.page-home) .navbar .navbar-toggler,
+body:not(.page-home) .navbar .nav-toggle { color: #2d2d2d !important; }

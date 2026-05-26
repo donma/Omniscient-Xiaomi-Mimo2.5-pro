@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課程目錄 - SkillUp 線上課程平台</title>
+  <meta name="description" content="瀏覽 SkillUp 超過 500 門專業線上課程，包含網頁設計、資料科學、數位行銷等領域。">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-mortarboard-fill me-2"></i>SkillUp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="bi bi-list fs-4"></i></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link active" href="courses.html">課程</a></li>
+          <li class="nav-item"><a class="nav-link" href="instructors.html">講師</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">價格</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">部落格</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我們</a></li>
+        </ul>
+        <a href="enroll.html" class="btn btn-primary-custom">開始學習</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>課程目錄</h1>
+      <nav aria-label="breadcrumb"><ol class="breadcrumb justify-content-center"><li class="breadcrumb-item"><a href="index.html">首頁</a></li><li class="breadcrumb-item active">課程目錄</li></ol></nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="category-filter fade-in">
+        <button class="btn btn-outline-primary active" data-filter="all">全部</button>
+        <button class="btn btn-outline-primary" data-filter="web">網頁設計</button>
+        <button class="btn btn-outline-primary" data-filter="data">資料科學</button>
+        <button class="btn btn-outline-primary" data-filter="marketing">數位行銷</button>
+        <button class="btn btn-outline-primary" data-filter="business">商業管理</button>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 course-item web fade-in">
+          <div class="course-card card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" class="card-img-top" alt="網頁設計">
+            <div class="card-body">
+              <span class="category">網頁設計</span>
+              <h5 class="card-title">響應式網頁設計完全指南</h5>
+              <p class="text-muted small">學習 HTML、CSS、JavaScript，打造專業網站</p>
+              <div class="meta"><span><i class="bi bi-clock me-1"></i>32 小時</span><span class="price">NT$2,990</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 course-item data fade-in">
+          <div class="course-card card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" class="card-img-top" alt="資料科學">
+            <div class="card-body">
+              <span class="category">資料科學</span>
+              <h5 class="card-title">Python 資料分析實戰</h5>
+              <p class="text-muted small">掌握 Pandas、NumPy、Matplotlib 資料分析工具</p>
+              <div class="meta"><span><i class="bi bi-clock me-1"></i>28 小時</span><span class="price">NT$3,490</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 course-item marketing fade-in">
+          <div class="course-card card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" class="card-img-top" alt="數位行銷">
+            <div class="card-body">
+              <span class="category">數位行銷</span>
+              <h5 class="card-title">SEO 與內容行銷策略</h5>
+              <p class="text-muted small">提升網站流量，打造高效內容行銷策略</p>
+              <div class="meta"><span><i class="bi bi-clock me-1"></i>24 小時</span><span class="price">NT$2,490</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 course-item web fade-in">
+          <div class="course-card card">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600" class="card-img-top" alt="React">
+            <div class="card-body">
+              <span class="category">網頁設計</span>
+              <h5 class="card-title">React 前端開發入門</h5>
+              <p class="text-muted small">從零開始學習 React，建構現代化應用</p>
+              <div class="meta"><span><i class="bi bi-clock me-1"></i>36 小時</span><span class="price">NT$3,990</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 course-item data fade-in">
+          <div class="course-card card">
+            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600" class="card-img-top" alt="機器學習">
+            <div class="card-body">
+              <span class="category">資料科學</span>
+              <h5 class="card-title">機器學習基礎入門</h5>
+              <p class="text-muted small">了解機器學習核心概念與實作應用</p>
+              <div class="meta"><span><i class="bi bi-clock me-1"></i>40 小時</span><span class="price">NT$4,990</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 course-item business fade-in">
+          <div class="course-card card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" class="card-img-top" alt="專案管理">
+            <div class="card-body">
+              <span class="category">商業管理</span>
+              <h5 class="card-title">專案管理實務</h5>
+              <p class="text-muted small">學習 Agile、Scrum 專案管理方法論</p>
+              <div class="meta"><span><i class="bi bi-clock me-1"></i>20 小時</span><span class="price">NT$2,490</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 fade-in">
+        <a href="enroll.html" class="btn btn-primary-custom">立即報名 <i class="bi bi-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4"><h5><i class="bi bi-mortarboard-fill me-2"></i>SkillUp</h5><p>專業的線上學習平台。</p></div>
+        <div class="col-lg-2 col-md-4"><h5>快速連結</h5><ul class="footer-links"><li><a href="about.html">關於我們</a></li><li><a href="courses.html">課程</a></li><li><a href="contact.html">聯絡</a></li></ul></div>
+        <div class="col-lg-2 col-md-4"><h5>課程</h5><ul class="footer-links"><li><a href="#">網頁設計</a></li><li><a href="#">資料科學</a></li><li><a href="#">行銷</a></li></ul></div>
+        <div class="col-lg-4"><h5>聯絡</h5><ul class="footer-links"><li><i class="bi bi-envelope me-2"></i>info@skillup.com</li><li><i class="bi bi-telephone me-2"></i>+886 2 1234 5678</li></ul></div>
+      </div>
+      <div class="footer-bottom"><p class="mb-0">&copy; 2026 SkillUp. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <button class="scroll-top"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

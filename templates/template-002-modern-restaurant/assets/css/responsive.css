@@ -1,0 +1,241 @@
+/* Responsive CSS for Modern Restaurant */
+
+/* Large Devices (Desktops) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1199.98px) {
+    .hero-title {
+        font-size: 56px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 15px 0;
+    }
+    
+    .navbar-collapse {
+        background: rgba(26, 26, 26, 0.98);
+        padding: 20px;
+        border-radius: 16px;
+        margin-top: 15px;
+        border: 1px solid rgba(201, 169, 110, 0.2);
+    }
+    
+    .navbar-nav {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 42px;
+    }
+    
+    .hero-desc {
+        font-size: 16px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .menu-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .contact-info {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .booking-form-card {
+        padding: 30px 20px;
+    }
+    
+    .contact-form-card {
+        padding: 30px 20px;
+    }
+    
+    .chef-awards {
+        flex-wrap: wrap;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 450px;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .neon-text {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+    
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .page-header {
+        padding: 120px 0 40px;
+    }
+    
+    .page-header h1 {
+        font-size: 36px;
+    }
+    
+    .special-card {
+        margin-bottom: 20px;
+    }
+    
+    .menu-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .process-card {
+        padding: 30px 15px;
+    }
+    
+    .process-number {
+        font-size: 36px;
+    }
+    
+    .blog-detail-meta {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .blog-detail-image img {
+        height: 250px;
+    }
+    
+    .portfolio-card img {
+        height: 250px;
+    }
+    
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer h5 {
+        margin-top: 20px;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .btn-gold {
+        padding: 10px 25px;
+    }
+    
+    .cta-section h2 {
+        font-size: 28px;
+    }
+    
+    .page-header h1 {
+        font-size: 30px;
+    }
+    
+    .booking-header h2 {
+        font-size: 24px;
+    }
+    
+    .contact-info h2 {
+        font-size: 24px;
+    }
+    
+    .contact-form-card h2 {
+        font-size: 24px;
+    }
+    
+    .blog-detail-content h2 {
+        font-size: 20px;
+    }
+    
+    .accordion-button {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+    
+    .menu-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    
+    .menu-tabs .nav-link {
+        white-space: nowrap;
+    }
+}
+
+/* Landscape Phones */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 100vh;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .cta-section,
+    .hero-section {
+        display: none !important;
+    }
+    
+    .section-padding {
+        padding: 20px 0;
+    }
+    
+    body {
+        color: #000;
+        background: #fff;
+    }
+}

@@ -1,0 +1,41 @@
+﻿{
+  "author": "Omniscient Gallery",
+  "version": "1.0.0",
+  "fonts": [
+    "Noto Serif TC",
+    "Inter"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "mission.html",
+    "impact.html",
+    "projects.html",
+    "team.html",
+    "blog.html",
+    "testimonials.html",
+    "faq.html",
+    "contact.html",
+    "donate.html",
+    "volunteer.html"
+  ],
+  "features": [
+    "Responsive design",
+    "FAQ accordion",
+    "Contact form",
+    "Mobile menu"
+  ],
+  "name": "Nonprofit Organization",
+  "hasZip": false,
+  "id": "T060",
+  "category": "Nonprofit",
+  "colors": {
+    "accent": "#d4956a",
+    "light": "#faf8f5",
+    "dark": "#1a3a0a",
+    "primary": "#2d5016",
+    "secondary": "#f5f0e8"
+  },
+  "createdAt": "2026-05-25",
+  "description": "Warm human nonprofit organization website"
+}

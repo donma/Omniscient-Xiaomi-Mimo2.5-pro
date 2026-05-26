@@ -1,0 +1,68 @@
+/* PilAtelier 精品皮拉提斯 - 精品型錄風 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+:root{--pa-gold:#b8860b;--pa-dark:#1a1a1a;--pa-cream:#faf8f5;--pa-text:#2c2c2c;--pa-muted:#888;--pa-border:#e8e4de}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:var(--pa-text);background:var(--pa-cream)}
+h1,h2,h3,h4,h5{font-family:'Playfair Display',serif;font-weight:400}
+
+/* NAV: 深色精品風 */
+.nav-pa{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--pa-dark);padding:1rem 0}
+.nav-pa-logo{color:var(--pa-gold);text-decoration:none;font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:600;letter-spacing:.15em}
+.nav-pa-menu{list-style:none;display:flex;align-items:center;gap:2rem;margin:0;padding:0}
+.nav-pa-menu a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.85rem;letter-spacing:.05em;transition:.2s}
+.nav-pa-menu a:hover{color:#fff}
+.nav-pa-menu a.active{color:#fff}
+.nav-pa-cta{background:var(--pa-gold)!important;color:#fff!important;padding:.5rem 1.5rem;font-size:.8rem!important;letter-spacing:.1em!important}
+.nav-pa-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+@media(max-width:991px){.nav-pa-toggle{display:block;margin-left:auto}.nav-pa-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--pa-dark);flex-direction:column;padding:1.5rem;gap:1rem}.nav-pa.open .nav-pa-menu{display:flex}}
+
+/* HERO: 左圖右文 */
+.hero-pa{display:flex;min-height:100vh;padding-top:60px}
+.hero-pa-left{flex:1;position:relative;overflow:hidden}
+.hero-pa-left img{width:100%;height:100%;object-fit:cover}
+.hero-pa-right{flex:1;display:flex;flex-direction:column;justify-content:center;padding:4rem}
+.hero-pa-tag{font-size:.75rem;letter-spacing:.3em;color:var(--pa-gold);margin-bottom:2rem}
+.hero-pa h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-pa h1 span{font-style:italic;color:var(--pa-gold)}
+.hero-pa-right p{font-size:1rem;color:var(--pa-muted);margin-bottom:2rem;max-width:400px}
+.hero-pa-features{display:flex;gap:2rem;margin-bottom:2.5rem}
+.hero-pa-features div{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--pa-muted)}
+.hero-pa-features i{color:var(--pa-gold);font-size:1.2rem}
+.btn-pa{display:inline-block;background:var(--pa-gold);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.85rem;letter-spacing:.1em;transition:.3s}
+.btn-pa:hover{background:#9a7209;color:#fff}
+@media(max-width:991px){.hero-pa{flex-direction:column}.hero-pa-left{height:40vh}.hero-pa-right{padding:2rem}}
+
+/* PROGRAMS */
+.sec-pa-programs{padding:5rem 0}
+.pa-title{font-size:2rem;margin-bottom:3rem;text-align:center}
+.pa-program{background:#fff;padding:2.5rem;border:1px solid var(--pa-border);height:100%;display:flex;flex-direction:column}
+.pa-program.featured{border-color:var(--pa-gold);position:relative}
+.pa-program-badge{position:absolute;top:-1px;right:2rem;background:var(--pa-gold);color:#fff;padding:.3rem 1rem;font-size:.7rem;letter-spacing:.1em}
+.pa-program-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--pa-border)}
+.pa-program-header h5{font-size:1.2rem}
+.pa-program-price{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--pa-gold)}
+.pa-program-price small{font-size:.7rem;color:var(--pa-muted)}
+.pa-program ul{list-style:none;padding:0;margin-bottom:2rem;flex:1}
+.pa-program ul li{padding:.5rem 0;font-size:.9rem;color:var(--pa-muted);border-bottom:1px solid rgba(0,0,0,.05)}
+.pa-program ul li::before{content:'✓';color:var(--pa-gold);margin-right:.5rem}
+.btn-pa-outline{display:block;text-align:center;border:1px solid var(--pa-dark);color:var(--pa-dark);padding:.7rem;text-decoration:none;font-size:.85rem;letter-spacing:.1em;transition:.3s}
+.btn-pa-outline:hover{background:var(--pa-dark);color:#fff}
+
+/* EQUIPMENT */
+.sec-pa-equipment{padding:5rem 0;background:#fff}
+.pa-equipment-img{width:100%;height:400px;object-fit:cover}
+.pa-equipment-list{margin-top:1.5rem}
+.pa-equipment-list div{display:flex;align-items:center;gap:.8rem;padding:.6rem 0;font-size:.95rem}
+.pa-equipment-list i{color:var(--pa-gold)}
+
+/* CTA */
+.sec-pa-cta{padding:5rem 0;background:var(--pa-dark);color:#fff;text-align:center}
+.sec-pa-cta h2{font-size:2rem;margin-bottom:1rem}
+.sec-pa-cta p{color:rgba(255,255,255,.6);margin-bottom:2rem}
+
+/* FOOTER */
+.ft-pa{padding:3rem 0 1.5rem;background:#111;color:rgba(255,255,255,.5)}
+.ft-pa h5,.ft-pa h6{color:#fff;margin-bottom:1rem}
+.ft-pa a{color:rgba(255,255,255,.4);text-decoration:none}
+.ft-pa a:hover{color:var(--pa-gold)}
+.ft-pa hr{border-color:rgba(255,255,255,.1)}

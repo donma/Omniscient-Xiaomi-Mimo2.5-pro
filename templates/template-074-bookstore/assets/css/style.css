@@ -1,0 +1,42 @@
+/* 讀冊時光 - 暖棕文學風 */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+:root{--bk-brown:#5c3d2e;--bk-gold:#8b6914;--bk-cream:#f4e9d9;--bk-text:#333;--bk-muted:#888;--bk-border:#d4c5a9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--bk-text);background:var(--bk-cream)}
+h1,h2,h3,h4,h5{font-family:'Lora','Noto Sans TC',serif}
+.nav-bk{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(244,233,217,.95);backdrop-filter:blur(10px);padding:.8rem 0}
+.nav-bk-logo{color:var(--bk-brown);text-decoration:none;font-weight:600;font-size:1.3rem}
+.nav-bk-menu{list-style:none;display:flex;gap:1.5rem;margin:0;padding:0}
+.nav-bk-menu a{color:var(--bk-muted);text-decoration:none;font-size:.9rem}
+.nav-bk-menu a:hover,.nav-bk-menu a.active{color:var(--bk-brown)}
+.nav-bk-toggle{display:none;background:none;border:none;color:var(--bk-brown);font-size:1.5rem}
+@media(max-width:991px){.nav-bk-toggle{display:block;margin-left:auto}.nav-bk-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bk-cream);flex-direction:column;padding:1rem;gap:1rem}.nav-bk-menu.open{display:flex}}
+.hero-bk{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;text-align:center}
+.hero-bk-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-bk-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(92,61,46,.6),rgba(92,61,46,.4))}
+.hero-bk-content{position:relative;color:#fff;max-width:600px;margin:0 auto;padding:0 2rem}
+.hero-bk h1{font-size:3.5rem;font-weight:400;line-height:1.2;margin-bottom:1.5rem}
+.hero-bk h1 span{font-style:italic;color:var(--bk-gold)}
+.hero-bk-content p{font-size:1rem;opacity:.8;margin-bottom:2rem}
+.btn-bk{display:inline-block;background:var(--bk-brown);color:#fff;padding:.8rem 2.5rem;text-decoration:none;font-size:.9rem;transition:.3s}
+.btn-bk:hover{background:#7a5a4a;color:#fff}
+.sec-bk-picks{padding:5rem 0}
+.bk-title{text-align:center;font-size:2rem;margin-bottom:3rem}
+.bk-book{text-align:center}
+.bk-book img{width:100%;height:250px;object-fit:cover;border-radius:4px;margin-bottom:1rem}
+.bk-book h5{font-size:1rem;margin-bottom:.3rem}
+.bk-book p{font-size:.85rem;color:var(--bk-muted)}
+.sec-bk-events{padding:4rem 0;background:#fff}
+.bk-event{display:flex;gap:2rem;align-items:center;padding:1.5rem 0;border-bottom:1px solid var(--bk-border)}
+.bk-event-date span{font-family:'Lora',serif;font-size:1.5rem;color:var(--bk-brown);font-weight:600}
+.bk-event-info h5{font-size:1.1rem;margin-bottom:.3rem}
+.bk-event-info p{font-size:.85rem;color:var(--bk-muted)}
+.sec-bk-cta{padding:4rem 0;background:var(--bk-brown);color:#fff;text-align:center;border-radius:8px;margin:2rem}
+.sec-bk-cta h2{font-size:1.8rem;margin-bottom:1rem}
+.sec-bk-cta p{opacity:.7;margin-bottom:1.5rem}
+.ft-bk{padding:2rem 0;background:var(--bk-brown);color:rgba(255,255,255,.5)}
+.ft-bk h5{color:#fff}
+.ft-bk hr{border-color:rgba(255,255,255,.1)}
+.page-bk-hero{padding:8rem 0 3rem;text-align:center}
+.page-bk-hero p{max-width:640px;margin:1rem auto 0;color:var(--bk-muted);line-height:1.8}
+.bk-book span{display:block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--bk-gold);margin-top:.35rem}
