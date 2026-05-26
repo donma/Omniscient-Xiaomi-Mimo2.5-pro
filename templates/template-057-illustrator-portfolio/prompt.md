@@ -1,5 +1,124 @@
-# Illustrator Portfolio Template
+# T057 Illustrator Portfolio Prompt
 
-## Design
-- Colors: Primary=#ff6b6b, Secondary=#4ecdc4
-- Fonts: Nunito,Noto Sans TC
+複製下面整段提示詞給任何網站生成型 AI，即可生成與這套樣板同等結構、視覺語言與完成度的完整網站：
+
+```text
+你是一位頂尖品牌策略師、UI/UX 設計師與前端工程師。請直接生成一套「可交付、可本機直接開啟、可作為客戶提案或正式網站基底」的完整多頁靜態網站專案，高精度重現以下樣板的資訊架構、版面節奏、色彩系統、元件風格與內容調性。
+
+【硬性要求】
+- 必須使用 HTML5 + Bootstrap 5 + 原生 CSS + 原生 JavaScript。
+- 不可使用 React、Vue、Next.js、Tailwind、TypeScript、打包工具或任何需要編譯的框架。
+- 所有頁面都要能以靜態檔案直接開啟，導覽與 CTA 連結必須互相對應。
+- 全站內容請使用繁體中文，不可使用 lorem ipsum、假文或只寫標題不寫內容。
+- 請一次輸出完整專案，不要只做首頁，不要省略任何頁面。
+- 請先輸出完整檔案樹，再逐一輸出每個檔案的完整內容。
+- 所有頁面都要具備完整 SEO：title、meta description、Open Graph、適合產業的 JSON-LD Schema、語意化 HTML、圖片 alt。
+- 必須完整支援桌機、平板、手機，手機版需要可用的漢堡選單與合理間距。
+
+【樣板定位】
+- 樣板 ID：T057
+- 網站主題：Illustrator Portfolio / DrawJoy
+- 產業分類：Creative
+- 核心描述：Colorful playful illustrator portfolio
+- 技術框架：Bootstrap 5
+- 首頁 title 參考：DrawJoy
+- Hero 主標方向：繽紛世界 插畫人生
+- Meta description 請依服務價值與信任感撰寫。
+- 視覺關鍵字：個人品牌、編輯感、內容驅動、作品導向
+
+【固定輸出檔案】
+- assets/css/style.css
+- assets/css/responsive.css
+- assets/js/main.js
+- index.html
+- about.html
+- services.html
+- service-detail.html
+- portfolio.html
+- reviews.html
+- faq.html
+- booking.html
+- process.html
+- blog.html
+- blog-detail.html
+- contact.html
+- testimonials.html
+- gallery.html
+- commission.html
+- clients.html
+- style-guide.html
+- shop.html
+
+【主導覽參考】
+- index.html -> DrawJoy
+- services.html -> 服務
+- contact.html -> 聯絡我們
+- booking.html -> 委託合作
+
+【首頁必備區塊】
+- 需要有強烈 hero 區塊、品牌價值主張、代表性內容區塊、信任元素與明確 CTA。
+- 請保留與此樣板一致的首頁節奏與敘事順序，不要改成通用企業模板。
+- 參考首頁區塊標題與主題如下：
+- 服務項目
+- 委託合作
+
+【每個頁面的內容職責】
+- index.html：導覽文案為「DrawJoy」。首頁：建立第一印象，包含 hero、核心賣點、代表性內容區塊、轉換 CTA 與完整 footer。 如果檔名與實際頁面定位略有差異，請以導覽文案與整體樣板脈絡優先。
+- about.html：關於頁：介紹品牌背景、理念、團隊、專業優勢與信任建立內容。
+- services.html：導覽文案為「服務」。服務總覽頁：整理主要服務、方案、功能或產品分類，方便比較與導流。 如果檔名與實際頁面定位略有差異，請以導覽文案與整體樣板脈絡優先。
+- service-detail.html：服務詳情頁：深度說明單一服務的價值、流程、對象、FAQ 與 CTA。
+- portfolio.html：案例/作品頁：呈現精選案例、作品成果、情境照片或實績展示。
+- reviews.html：評價頁：整理客戶見證、推薦內容、成果回饋與信任背書。
+- faq.html：FAQ 頁：用手風琴或條列方式解答常見問題，降低諮詢門檻。
+- booking.html：導覽文案為「委託合作」。預約/諮詢頁：提供表單、預約流程、方案說明與行動呼籲。 如果檔名與實際頁面定位略有差異，請以導覽文案與整體樣板脈絡優先。
+- process.html：流程頁：清楚說明合作步驟、服務節點、時間安排與交付方式。
+- blog.html：文章列表頁：整理內容分類、精選文章卡片與延伸閱讀 CTA。
+- blog-detail.html：文章內頁：完整文章版型，含標題、摘要、內文、圖片、相關文章。
+- contact.html：導覽文案為「聯絡我們」。聯絡頁：提供表單、聯絡資訊、地圖、社群與聯絡 CTA。 如果檔名與實際頁面定位略有差異，請以導覽文案與整體樣板脈絡優先。
+- testimonials.html：見證頁：展示推薦語、故事、成果與社會證明。
+- gallery.html：圖庫頁：以高質感圖片牆展示作品、空間或活動內容。
+- commission.html：委託頁：說明委託流程、報價邏輯、交付內容與 CTA。
+- clients.html：客戶頁：展示合作客戶、品牌案例與信任證明。
+- style-guide.html：風格頁：整理品牌風格、選品方向或穿搭/設計指南。
+- shop.html：商店頁：展示商品列表、分類與購買導向。
+
+【視覺系統】
+- 請嚴格沿用此樣板的色彩關係，不可任意改掉品牌主色。
+- primary：#ff6b6b
+- secondary：#4ecdc4
+- accent：#ffe66d
+- dark：#2d3436
+- light：#fff
+- 請沿用或等價重現以下字體組合與字重層級：
+- Nunito
+- Noto Sans TC
+- 請保留與樣板一致的卡片樣式、按鈕語氣、區塊留白、圓角、陰影、背景層次與圖片使用方式。
+- 如果此樣板偏深色、精品、科技、工業或生活風格，請完整延續，不要改成平庸的通用 SaaS/企業版型。
+
+【功能與互動】
+- 請把下列功能做成可用的前端互動，而不是只做靜態外觀：
+- Responsive design
+- FAQ accordion
+- Contact form
+- Mobile menu
+- Lead Form
+- Blog / Content Hub
+- Portfolio / Gallery
+- Testimonials
+- FAQ 頁或 FAQ 區塊請做可展開收合。
+- 表單頁請有欄位、狀態、送出後成功訊息與基本驗證。
+- 如果樣板屬於作品、活動、課程、產品或文章型網站，請補齊合理的卡片列表與詳情頁內容。
+
+【內容生成規則】
+- 全站文案必須具備真實感，符合該產業，不要空泛，不要只有一句話。
+- 若首頁或導覽顯示某些檔名實際對應其他內容定位，請以實際頁面角色優先，但檔名保持不變。
+- 請為每一頁補齊對應的段落、清單、CTA、表單欄位、案例內容、FAQ 與社會證明。
+- 請使用與此品牌/產業一致的圖片主題，可用合法授權圖片網址或可替換的高品質佔位圖。
+- 每張圖片都要有具描述性的 alt。
+
+【輸出格式】
+- 先輸出完整檔案樹。
+- 再依序輸出每個檔案的完整內容。
+- 每個檔案都要用清楚的檔名標題與程式碼區塊包起來。
+- 不要只輸出概要、設計說明或 TODO。我要的是完整可直接落地的網站專案。
+```
