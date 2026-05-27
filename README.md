@@ -2,7 +2,9 @@
 
 這是一個以靜態 HTML 為核心的網站樣板展示庫，提供多產業網站範本、樣板詳情頁、篩選式樣板列表，以及對應的 Prompt 與資料索引，方便設計師或開發者快速預覽、挑選、延伸修改並交付客戶。
 
-> 註記：本專案內容整理與 `README.md` 為使用 `Xiaomi Mimo 2.5 Pro` 撰寫。
+> 註記：本專案內容整理 為使用 `Xiaomi Mimo 2.5 Pro` 撰寫。
+
+> [線上展示](https://donma.github.io/Omniscient-Xiaomi-Mimo2.5-pro)
 
 ## 專案特色
 
