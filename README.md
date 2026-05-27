@@ -4,7 +4,7 @@
 
 > 註記：本專案內容整理 為使用 `Xiaomi Mimo 2.5 Pro` 撰寫。
 
->[感謝 小米 Mimo 大力贊助](https://platform.xiaomimimo.com/) 
+>[感謝 小米 Mimo 大力贊助](https://platform.xiaomimimo.com/?utm_source=donmalab.com) 
 
 > [線上展示](https://donma.github.io/Omniscient-Xiaomi-Mimo2.5-pro)
 
